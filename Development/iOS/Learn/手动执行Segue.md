@@ -1,0 +1,9 @@
+一般如果是从一个Button或其他可点击的控件关联一个Segue到另一个ViewController，点击那个Button后会自动跳转到关联的ViewController。有时候我们想要手动执行一个Segue，比如说等待网络请求成功后再跳转，这个时候就不能从Button上关联Segue，而是从该Button所在的ViewController关联到另一个ViewController。如图：
+
+<div>
+
+![](手动执行Segue_files/5294205.png)
+
+</div>
+
+关联后还需要设置Segue的identifier，接下来就可以在代码中调用performSegueWithIdentifier来执行这个Segue了。

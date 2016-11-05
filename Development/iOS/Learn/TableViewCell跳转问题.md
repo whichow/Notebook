@@ -1,0 +1,9 @@
+要在InterfaceBuilder中实现点击TableViewCell跳转到另一个ViewController，一定不能实现tableView:
+didSelectRowAtIndexPath:
+方法，否则会被认为是选择TableViewCell而不是点击。
+<div>
+
+要通过Identifier使用IB中已经绑定好Segue的TableViewCell，而不能通过代码创建
+TableViewCell。
+
+</div>

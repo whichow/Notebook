@@ -1,0 +1,1 @@
+如果一个UIViewController在退出时没有调用它的dealloc方法，则需要仔细检查代码，看是否设置了deleagte,NotificationCenter,kvo,属性或实例变量在block中被引强用了，如果有的话需要在viewWillDisappear中释放这些资源。
