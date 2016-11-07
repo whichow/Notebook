@@ -25,15 +25,15 @@ class Person
 
         Person() { }
 
-        Person(char\* n, int a):name(n), age(a) { }
+        Person(char* n, int a):name(n), age(a) { }
 
         Person(const Person& p)
 
         {
 
-            this-&gt;name = p-&gt;name;
+            this->name = p->name;
 
-            this-&gt;age = p-&gt;age;
+            this->age = p->age;
 
         }
 
@@ -41,17 +41,17 @@ class Person
 
         {
 
-            this-&gt;name = p.name;
+            this->name = p.name;
 
-            this-&gt;age = p.age;
+            this->age = p.age;
 
-            return \*this;
+            return *this;
 
         }
 
     private:
 
-        char\* name;
+        char* name;
 
         int age;
 
