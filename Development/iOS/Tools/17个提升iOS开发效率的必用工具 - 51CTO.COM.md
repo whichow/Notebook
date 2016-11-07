@@ -1,144 +1,38 @@
-<div id="topx" class="home-top">
-
-<div class="w1001 cent">
-
-<div class="pdr10 fl">
-
 中国领先的IT技术网站
 
-</div>
-
-<div class="pdr10 fl">
-
 |
 
-</div>
-
-<div class="pdr10 fl">
-
-<div class="subweb">
-
-<span class="trans">51CTO旗下网站</span>**
-<div class="subweb-list">
-
-[51CTO.com](http://www.51cto.com/) [CIOage.com](http://www.cioage.com/)
-[WatchStor.com](http://www.watchstor.com/)
-[HC3i.cn](http://www.hc3i.cn/)
-
-</div>
-
-</div>
-
-</div>
-
-<div class="pdr10 fl">
+51CTO旗下网站**
+[51CTO.com](http://www.51cto.com/) [CIOage.com](http://www.cioage.com/) [WatchStor.com](http://www.watchstor.com/) [HC3i.cn](http://www.hc3i.cn/)
 
 |
-
-</div>
-
-<div class="pdr10 fl">
 
 [地图](http://www.51cto.com/about/map.htm)
 
-</div>
+**[登录](http://home.51cto.com/index?reback=http://mdsa.51cto.com/art/201511/496654.htm) [注册](http://ucenter.51cto.com/2015/register.php?reback=http://mdsa.51cto.com/art/201511/496654.htm)|[收藏本站](http://www.51cto.com/)
 
-<div class="top-r">
-
-<div id="login_status" class="login" style="text-align:right;">
-
-**[登录](http://home.51cto.com/index?reback=http://mdsa.51cto.com/art/201511/496654.htm)
-[注册](http://ucenter.51cto.com/2015/register.php?reback=http://mdsa.51cto.com/art/201511/496654.htm)<span
-class="fl">|</span>[收藏本站](http://www.51cto.com/)
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="top_bg">
-
-<div class="wrap">
-
-<div id="tonglanad" class="left">
-
-</div>
-
-<div id="list4" class="right" style="position: relative;">
-
--   <div id="wordlinkad1">
-
-    </div>
+-   
 
     [网络安全一个大写的反“作死”](http://gg3.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3933__zoneid=270__cb=0ef5bab7c4__oadest=http://edu.51cto.com/zt/zt_id-1.html?an)
-    <div id="beacon_0ef5bab7c4"
-    style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+    ![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg.gif)
 
-    ![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg.gif){width="0"
-    height="0"}
-
-    </div>
-
--   <div id="wordlinkad2">
-
-    </div>
+-   
 
     [信息安全工程师，会挣钱的考试](http://gg1.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3546__zoneid=631__cb=6b7ea17b4e__oadest=http://edu.51cto.com/px/train/88)
-    <div id="beacon_6b7ea17b4e"
-    style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+    ![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_2.gif)
 
-    ![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_2.gif){width="0"
-    height="0"}
-
-    </div>
-
--   <div id="wordlinkad3">
-
-    </div>
+-   
 
     [微软企业级内训课程免费学](http://gg3.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3717__zoneid=594__cb=30e3970e8d__oadest=http://edu.51cto.com/training/training_id-18.html?xiaoshou)
-    <div id="beacon_30e3970e8d"
-    style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+    ![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_3.gif)
 
-    ![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_3.gif){width="0"
-    height="0"}
-
-    </div>
-
--   <div id="wordlinkad4">
-
-    </div>
+-   
 
     [2016年备战软考-重难点解析](http://gg.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3549__zoneid=636__cb=216ebf4905__oadest=http://edu.51cto.com/training/training_id-17.html?xiaoshou)
-    <div id="beacon_216ebf4905"
-    style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+    ![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_4.gif)
 
-    ![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_4.gif){width="0"
-    height="0"}
-
-    </div>
-
-<div
-style="right: 0px; width: 24px; height: 14px; z-index: 12; position: absolute; background: transparent url(&quot;17个提升iOS开发效率的必用工具 - 51CTO.COM_files/wKiom1fI4nWStYqXAAAEoZQn6vs942.png&quot;) repeat scroll 0% 0%; bottom: 2px;">
-
-<div
-style="right: 0px; width: 24px; height: 14px; z-index: 12; position: absolute; background: transparent url(&quot;17个提升iOS开发效率的必用工具 - 51CTO.COM_files/wKiom1fI4nWStYqXAAAEoZQn6vs942.png&quot;) repeat scroll 0% 0%; bottom: 2px;">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="nav">
-
-[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/nr_logo.png)](http://www.51cto.com/){.logo}
--   [MDSA频道](http://mdsa.51cto.com/){.active}
+[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/nr_logo.png)](http://www.51cto.com/)
+-   [MDSA频道](http://mdsa.51cto.com/)
 -   [首页](http://mdsa.51cto.com/)
 -   [开发资讯](http://mdsa.51cto.com/list/news/1674)
 -   [源码下载](http://mdsa.51cto.com/list/news/1675)
@@ -146,43 +40,15 @@ style="right: 0px; width: 24px; height: 14px; z-index: 12; position: absolute; b
 -   [开发者服务](http://mdsa.51cto.com/services)
 -   [活动中心](http://mdsa.51cto.com/list/activity)
 
-<div class="nav-rsear">
-
-</div>
-
-</div>
-
-</div>
-
-<div class="main">
-
-<div class="main_left">
-
-<div class="wznr">
-
 17个提升iOS开发效率的必用工具
 -----------------------------
 
 时间就是金钱。编码效率的提升意味着更多的收入。可是当我们的开发技巧已经到达一定高度时，如何让开发效率更上一层楼呢？答案就是使用开发工具！在这篇文章中，我会向你介绍一些帮助我提升编码速度和工作效率的工具。
 
-<span>作者：Patryk Kaczmarek</span><span>来源：[netguru.co](http://www.cocoachina.com/ios/20151110/14102.html)</span>|*2015-11-10 10:11*
+作者：Patryk Kaczmarek来源：[netguru.co](http://www.cocoachina.com/ios/20151110/14102.html)|*2015-11-10 10:11*  
+[ 收藏]( "一键收藏，随时查看，分享好友！")
 
-:   <div class="left" style="padding-right: 10px">
-
-    [ 收藏]( "一键收藏，随时查看，分享好友！"){.bds_more1}
-
-    </div>
-
-    <div class="bdsharebuttonbox left bdshare-button-style0-16"
-    data-tag="share_2" data-bd-bind="1474124613894">
-
-    [  分享](){.bds_more}
-
-    </div>
-
-</div>
-
-<div class="zwnr">
+[  分享]()
 
 [](#)
 -----
@@ -209,21 +75,15 @@ style="right: 0px; width: 24px; height: 14px; z-index: 12; position: absolute; b
 
 ![33.gif](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/67eaeee6-eaf9-4309-9c13-26ca12c5afec.jpg "1446803501934363.gif")
 
-[**8.Derived Data
-Exterminator**](https://github.com/kattrali/deriveddata-exterminator)
+[**8.Derived Data Exterminator**](https://github.com/kattrali/deriveddata-exterminator)
 
-当你在编译项目的时候，是否曾为Xcode爆出的某个奇怪的错误绞尽脑汁？我想答案是肯定的，并且我们都明白，其中的一种错误的解决办法就是—删除DerivedData!尽管我们有很多种方法解决这个问题，但Derived
-Data
-Exterminator无疑是最便捷的那种。在我们将它集成到Xcode后，就可以一键清理Derived
-Data。
+当你在编译项目的时候，是否曾为Xcode爆出的某个奇怪的错误绞尽脑汁？我想答案是肯定的，并且我们都明白，其中的一种错误的解决办法就是—删除DerivedData!尽管我们有很多种方法解决这个问题，但Derived Data Exterminator无疑是最便捷的那种。在我们将它集成到Xcode后，就可以一键清理Derived Data。
 
 ![36.jpg](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/369b3040-636d-46d3-a04b-ee837e16a512.jpg "1446803742972826.jpg")
 
 [**7.QuickLocalization**](https://github.com/nanaimostudio/Xcode-Quick-Localization)
 
-你是否已经厌倦了反复写NSLocalizedString？如果是，那么QuickLocalization插件可以助你一臂之力。当你在编辑字符串的时候，只需要按下option+shift+d，就可以将@“Any
-String”转换成NSLocalizedString(@"Any String",
-nil)。而且还可以通过修改配置来定义要出现在comment字段中的内容。我已经离不开它了！
+你是否已经厌倦了反复写NSLocalizedString？如果是，那么QuickLocalization插件可以助你一臂之力。当你在编辑字符串的时候，只需要按下option+shift+d，就可以将@“Any String”转换成NSLocalizedString(@"Any String", nil)。而且还可以通过修改配置来定义要出现在comment字段中的内容。我已经离不开它了！
 
 ![1442319418-1442319251-iostools2.gif](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/04de4671-d615-445a-81a6-acdce5bf37b6.jpg "1446803817490208.gif")
 
@@ -233,8 +93,7 @@ nil)。而且还可以通过修改配置来定义要出现在comment字段中的
 
 ![1442319064-iostools3.gif](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/b03f1b87-7497-4d87-b599-48272bf8767f.jpg "1446803893511377.gif")
 
-图片由[Kent
-Sutherland](https://camo.githubusercontent.com/c354bf04524df86daeabe7a6d2b9926fac790f85/68747470733a2f2f7261772e6769746875622e636f6d2f6b7375746865722f4b53496d6167654e616d65642d58636f64652f6d61737465722f73637265656e73686f742e676966)提供
+图片由[Kent Sutherland](https://camo.githubusercontent.com/c354bf04524df86daeabe7a6d2b9926fac790f85/68747470733a2f2f7261772e6769746875622e636f6d2f6b7375746865722f4b53496d6167654e616d65642d58636f64652f6d61737465722f73637265656e73686f742e676966)提供
 
 [**5.ShowInGithub**](https://github.com/larsxschneider/ShowInGitHub)
 
@@ -248,8 +107,7 @@ Switch语句相当繁琐。虽然它清楚地列出了在每种情况下应该�
 
 ![02.gif](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/1aba0dfa-2de2-41b0-8d62-cfca6ef9e769.jpg "1446804113806078.gif")
 
-图片由[Stefan
-Ceriu](https://camo.githubusercontent.com/a544a54d43b6e26c75d56889b7a6a4df8a90b4a5/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f31323734383230312f534358636f6465537769746368457870616e6465722f534358636f6465537769746368457870616e646572322e676966)提供
+图片由[Stefan Ceriu](https://camo.githubusercontent.com/a544a54d43b6e26c75d56889b7a6a4df8a90b4a5/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f31323734383230312f534358636f6465537769746368457870616e6465722f534358636f6465537769746368457870616e646572322e676966)提供
 
 [**3.VVDocumenter-Xcode**](https://github.com/onevcat/VVDocumenter-Xcode)
 
@@ -257,15 +115,11 @@ Ceriu](https://camo.githubusercontent.com/a544a54d43b6e26c75d56889b7a6a4df8a90b4
 
 ![03.gif](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/5fc63be8-bd51-46d9-9155-1c8e9e7d5189.jpg "1446804256505219.gif")
 
-图片由[Wei
-Wang](https://camo.githubusercontent.com/ca5518c9872e15b8a95b9d8c5f44bc331977d710/68747470733a2f2f7261772e6769746875622e636f6d2f6f6e65766361742f5656446f63756d656e7465722d58636f64652f6d61737465722f53637265656e53686f742e676966)提供
+图片由[Wei Wang](https://camo.githubusercontent.com/ca5518c9872e15b8a95b9d8c5f44bc331977d710/68747470733a2f2f7261772e6769746875622e636f6d2f6f6e65766361742f5656446f63756d656e7465722d58636f64652f6d61737465722f53637265656e53686f742e676966)提供
 
 [**2.FuzzyAutocomplete**](https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin)
 
-这个插件可以在编码的时候自动补全代码。它的强大之处在于，使用了与”Open
-Quickly”功能相同的算法，如，当你想使用“tableView:cellForRowAtIndexPath:”方法，原来需要输入冗长的“-
-(void)tableView:(UITableView \*)tableView
-ce”才能匹配出方法，而现在只需要”- cellFor”就行，省事多了。
+这个插件可以在编码的时候自动补全代码。它的强大之处在于，使用了与”Open Quickly”功能相同的算法，如，当你想使用“tableView:cellForRowAtIndexPath:”方法，原来需要输入冗长的“- (void)tableView:(UITableView \*)tableView ce”才能匹配出方法，而现在只需要”- cellFor”就行，省事多了。
 
 ![04.gif](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/0cec4ed3-ebc9-441c-a6d7-328cea276603.jpg "1446804510309848.gif")
 
@@ -277,18 +131,15 @@ ce”才能匹配出方法，而现在只需要”- cellFor”就行，省事多
 
 ![05.gif](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/d9108726-9453-4c6a-8f23-f0af13f719c3.jpg "1446804665525584.gif")
 
-图片由[Michael
-Fortin](https://github.com/fortinmike/XcodeBoost/blob/master/Images/copy-method-declarations.gif)提供。
+图片由[Michael Fortin](https://github.com/fortinmike/XcodeBoost/blob/master/Images/copy-method-declarations.gif)提供。
 
 **推荐应用**
 
 大部分时候，我使用Xcode进行编码，但同时我也会频繁使用其他的一些应用。
 
-[**7.Status
-Barred**](https://itunes.apple.com/us/app/status-barred/id413853485?mt=12)
+[**7.Status Barred**](https://itunes.apple.com/us/app/status-barred/id413853485?mt=12)
 
-根据[iTunes Connect
-Guidelines](https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Appendices/Properties.html)的要求，屏幕截图不应当包含状态栏，这个工具可以帮助我们平滑地去除状态栏，同时支持iPhone和iPad的屏幕截图。这个小应用虽然只做一件事，但是做得很好。
+根据[iTunes Connect Guidelines](https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Appendices/Properties.html)的要求，屏幕截图不应当包含状态栏，这个工具可以帮助我们平滑地去除状态栏，同时支持iPhone和iPad的屏幕截图。这个小应用虽然只做一件事，但是做得很好。
 
 ![icon128-2x.png](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/31877df0-e5d8-420f-aac3-20b8756fe865.jpg "1447059265967297.png")
 
@@ -304,19 +155,13 @@ SimPholders是一个简单便捷的小应用，它会在Mac的工具栏上设置
 
 ![QQ截图20151109165716.png](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/22a948d8-1a7f-461d-8951-1e9a3edff3d3.jpg "1447059450320496.png")
 
-[**4.Network Link
-Conditioner**](https://developer.apple.com/downloads/?q=Hardware%20IO%20Tools)
+[**4.Network Link Conditioner**](https://developer.apple.com/downloads/?q=Hardware%20IO%20Tools)
 
-这是一个来自苹果官方的工具，它可以模拟任何网络环境，如3G，Edge等等，也可以重新定义当前的网络环境，如网络延迟、带宽或丢包率。Network
-Link
-Conditioner也可以应用于真机，但是使用的时候需要小心，使用这个工具不仅仅对使用者起作用，还会影响整个网络。
+这是一个来自苹果官方的工具，它可以模拟任何网络环境，如3G，Edge等等，也可以重新定义当前的网络环境，如网络延迟、带宽或丢包率。Network Link Conditioner也可以应用于真机，但是使用的时候需要小心，使用这个工具不仅仅对使用者起作用，还会影响整个网络。
 
-[**3.Rest
-Console**](https://chrome.google.com/webstore/detail/rest-console/cokgbflfommojglbmbpenpphppikmonn)
+[**3.Rest Console**](https://chrome.google.com/webstore/detail/rest-console/cokgbflfommojglbmbpenpphppikmonn)
 
-Rest Console是一个基于Google
-Chrome的插件，它提供了一个简单易用的REST可视化界面，使得调试API的工作变得更加有趣。Rest
-Console可以将返回结果格式化，使之便于阅读。同时它也支持oAuth。
+Rest Console是一个基于Google Chrome的插件，它提供了一个简单易用的REST可视化界面，使得调试API的工作变得更加有趣。Rest Console可以将返回结果格式化，使之便于阅读。同时它也支持oAuth。
 
 ![113.png](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/249cd334-5d1b-49e4-89c1-a57befe467a9.jpg "1447059833972670.png")
 
@@ -334,618 +179,248 @@ SQLiteManager是一个Firefox上的管理SQLite的小插件。在用到CoreData�
 
 【编辑推荐】
 
-<div>
-
-1.  [iOS
-    9：快速让你的APP支持spotlight搜索](http://mdsa.51cto.com/art/201510/493509.htm)
-2.  [iOS9.2beta到来
-    新特性或将以手写笔为主](http://mdsa.51cto.com/art/201510/494922.htm)
+1.  [iOS 9：快速让你的APP支持spotlight搜索](http://mdsa.51cto.com/art/201510/493509.htm)
+2.  [iOS9.2beta到来 新特性或将以手写笔为主](http://mdsa.51cto.com/art/201510/494922.htm)
 3.  [iOS和Android哪个更利于赚钱呢?](http://mdsa.51cto.com/art/201511/496164.htm)
 4.  [iOS9人机界面指南：UI设计基础](http://mdsa.51cto.com/art/201511/496182.htm)
-5.  [这些 iOS
-    面试基础题目，你都深入了解吗？](http://mdsa.51cto.com/art/201511/496373.htm)
+5.  [这些 iOS 面试基础题目，你都深入了解吗？](http://mdsa.51cto.com/art/201511/496373.htm)
 
-</div>
+【责任编辑：[倪明](mailto:niming@51cto.com) TEL：（010）68476606】
 
-<div align="right">
+[点赞 0](###)
 
-【责任编辑：[倪明](mailto:niming@51cto.com){.ln} TEL：（010）68476606】
-
-</div>
-
-\
-[点赞 <span>0</span>](###){.dzdz .zhan}
-
-</div>
-
-<div class="share5">
-
--   [ios](http://www.51cto.com/php/search.php?keyword=ios){.underline}  [开发工具](http://www.51cto.com/php/search.php?keyword=��������){.underline}  [效率](http://www.51cto.com/php/search.php?keyword=Ч��){.underline}
+-   [ios](http://www.51cto.com/php/search.php?keyword=ios)  [开发工具](http://www.51cto.com/php/search.php?keyword=��������)  [效率](http://www.51cto.com/php/search.php?keyword=Ч��)
 
 *分享:*
-<div class="bdsharebuttonbox bdshare-button-style0-16"
-data-tag="share_1" data-bd-bind="1474124613894">
+[]( "分享到新浪微博") []( "分享到微信") []()
 
-[]( "分享到新浪微博"){.wb} []( "分享到微信"){.wx} [](){.more}
+内容点评
+已有1条评论,0次赞
 
-</div>
-
-</div>
-
-<div class="nrdp comment">
-
-<div class="comment center">
-
-<div id="cmscmt_iframe" class="inner center">
-
-<div class="title">
-
-<span class="word">内容点评</span>
-已有<span id="cmt_num" class="total">1</span>条评论,<span id="zan_num"
-class="total">0</span>次赞
-
-还可以输入<span id="uyan_tts">500</span>字
-
-</div>
-
-<div class="frame center">
+还可以输入500字
 
 请输入你的评论
 
-</div>
+[提交]()
+![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/5e5b3f7f-8769-47a8-ad73-0169f70d8aef.png)  
+您还没有登录！请先 [登录](http://home.51cto.com/index.php?s=/Index/index/reback/http://mdsa.51cto.com/art/201511/496654.htm) 或 [注册](http://ucenter.51cto.com/reg_01.php?reback=http://mdsa.51cto.com/art/201511/496654.htm) 
 
-<div class="user">
+-   
 
-[提交](){#uyan_cmt_btn .submit}
+    [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar.png)](http://home.51cto.com/index.php?s=/space/10256656.html)  
+    [susansong](http://home.51cto.com/index.php?s=/space/10256656.html)
 
-![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/5e5b3f7f-8769-47a8-ad73-0169f70d8aef.png)
-:   <span>您还没有登录！</span><span
-    class="note">请先</span> [登录](http://home.51cto.com/index.php?s=/Index/index/reback/http://mdsa.51cto.com/art/201511/496654.htm) <span
-    class="note">或</span> [注册](http://ucenter.51cto.com/reg_01.php?reback=http://mdsa.51cto.com/art/201511/496654.htm) 
+    有史以来最高效的团队协同系统邀请内测 欢迎加入交流群讨论：435834166 全球最简洁易用的任务管理功能，知识管理功能，项目管理和客户管理功能。
 
-</div>
+    发表于:2015-11-10 10:25:47
 
--   <div id="cmt_4096">
+    [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/wKioL1SsonugeKo0AAAGlF6KMqM876.png)]()[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/wKiom1SsobuxdEMvAAAF92NU77A112.png)]()[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/wKiom1SsobuDEp5ZAAAGB9ePTKU216.png)]()
 
-    </div>
+    [回  复]()[顶(0)]()[分享]()
 
-    [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar.png)](http://home.51cto.com/index.php?s=/space/10256656.html)
-
-    :   <div class="name">
-
-        [susansong](http://home.51cto.com/index.php?s=/space/10256656.html){#cmt_uname_4096}
-
-        </div>
-
-        有史以来最高效的团队协同系统邀请内测
-        欢迎加入交流群讨论：435834166
-        全球最简洁易用的任务管理功能，知识管理功能，项目管理和客户管理功能。
-
-        <div class="tool line one">
-
-        <div class="date">
-
-        发表于:2015-11-10 10:25:47
-
-        </div>
-
-        <div class="btn">
-
-        <div class="shareBox">
-
-        <div class="jiathis_style_24x24">
-
-        [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/wKioL1SsonugeKo0AAAGlF6KMqM876.png)](){.jiathis_button_tsina}[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/wKiom1SsobuxdEMvAAAF92NU77A112.png)](){.jiathis_button_qzone}[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/wKiom1SsobuDEp5ZAAAGB9ePTKU216.png)](){.jiathis_button_tqq}
-
-        </div>
-
-        </div>
-
-        [回  复](){#cmt_rpy_4096 .reply .self}[顶(<span
-        id="zan_4096">0</span>)](){.support .self}[分享](){.share .self}
-
-        </div>
-
-        </div>
-
--   <div id="uyan_more_rpy_4096">
-
-    </div>
-
-<div id="uyan_more_cmt" class="more line">
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="dzk">
+-   
 
 大家都在看
 猜你喜欢
-<div>
-
--   <div id="djdzk" class="djdzk">
-
-    <div class="m15">
-
-    [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/5ada05979a232f696b3c459159b9a727.jpg "全面解析Swift 2错误处理技术")](http://mobile.51cto.com/iphone-516150.htm)[全面解析Swift
-    2错误处理技术](http://mobile.51cto.com/iphone-516150.htm "全面解析Swift 2错误处理技术")
-
-    </div>
-
-    <div class="m15">
+-   [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/5ada05979a232f696b3c459159b9a727.jpg "全面解析Swift 2错误处理技术")](http://mobile.51cto.com/iphone-516150.htm)[全面解析Swift 2错误处理技术](http://mobile.51cto.com/iphone-516150.htm "全面解析Swift 2错误处理技术")
 
     [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/a6a619c0349c7e20e0cf7e126cdaba22.jpg "数据湖的四个最佳实践")](http://bigdata.51cto.com/art/201608/516283.htm)[数据湖的四个最佳实践](http://bigdata.51cto.com/art/201608/516283.htm "数据湖的四个最佳实践")
 
-    </div>
-
-    <div class="m15">
-
-    [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/5b33e337-fc6c-44d2-a697-db9a624e66da.jpg "Informatica Cloud助您的“入云”之路一臂之力")](http://zhuanlan.51cto.com/art/201608/516184.htm)[Informatica
-    Cloud助您的“入云”之路一臂之力](http://zhuanlan.51cto.com/art/201608/516184.htm "Informatica Cloud助您的“入云”之路一臂之力")
-
-    </div>
-
-    <div>
+    [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/5b33e337-fc6c-44d2-a697-db9a624e66da.jpg "Informatica Cloud助您的“入云”之路一臂之力")](http://zhuanlan.51cto.com/art/201608/516184.htm)[Informatica Cloud助您的“入云”之路一臂之力](http://zhuanlan.51cto.com/art/201608/516184.htm "Informatica Cloud助您的“入云”之路一臂之力")
 
     [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/843a2ad2e9d35a93f8000ed550b0ca47.png "嵌入式系统中，Python与C/C++哪方更为适用？")](http://developer.51cto.com/art/201609/516714.htm)[嵌入式系统中，Python与C/C++哪方更为适用？](http://developer.51cto.com/art/201609/516714.htm "嵌入式系统中，Python与C/C++哪方更为适用？")
 
-    </div>
-
-    </div>
-
--   <div id="cnxh" class="djdzk">
-
-    <div class="m15">
-
-    [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/354634e8f59c9e29b3036d4a2ac1ec70.jpg "百度手机卫士成iOS10防骚扰功能官方合")](http://mdsa.51cto.com/art/201511/?pc)[百度手机卫士成iOS10防骚扰功能官方合](http://mdsa.51cto.com/art/201511/?pc "百度手机卫士成iOS10防骚扰功能官方合")
-
-    </div>
-
-    <div class="m15">
+-   [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/354634e8f59c9e29b3036d4a2ac1ec70.jpg "百度手机卫士成iOS10防骚扰功能官方合")](http://mdsa.51cto.com/art/201511/?pc)[百度手机卫士成iOS10防骚扰功能官方合](http://mdsa.51cto.com/art/201511/?pc "百度手机卫士成iOS10防骚扰功能官方合")
 
     [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/e98cf3dd4b02295f54931e344fc4f10b.gif "C#经典实例（第4版）")](http://book.51cto.com/art/201609/517371.htm?pc)[C\#经典实例（第4版）](http://book.51cto.com/art/201609/517371.htm?pc "C#经典实例（第4版）")
 
-    </div>
-
-    <div class="m15">
-
     [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/0870ce7c4d1d89d1263c488855743775.jpg "前言")](http://book.51cto.com/art/201609/517278.htm?pc)[前言](http://book.51cto.com/art/201609/517278.htm?pc "前言")
-
-    </div>
-
-    <div>
 
     [![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/71a9cab7aa5da84c91874696bf360259.jpg "目录（3）")](http://book.51cto.com/art/201609/517277.htm?pc)[目录（3）](http://book.51cto.com/art/201609/517277.htm?pc "目录（3）")
 
-    </div>
+编辑推荐
+--------
 
-    </div>
+热点  
+[12个鲜为人知的HTML 5设计小技巧](http://mdsa.51cto.com/art/201605/510454.htm "12个鲜为人知的HTML 5设计小技巧")
 
-</div>
+&nbsp;
+头条  
+[查遗补漏！可能你从未注意过的7个用户体验设计细节](http://mdsa.51cto.com/art/201604/508285.htm "查遗补漏！可能你从未注意过的7个用户体验设计细节")
 
-</div>
+&nbsp;
+头条  
+[一周歪评|大声告诉我，小米本着什么理念打造了电饭锅！](http://mdsa.51cto.com/art/201604/508299.htm "一周歪评|大声告诉我，小米本着什么理念打造了电饭锅！")
 
-</div>
+&nbsp;
+热点  
+[小白如何晋级入门级iOS开发者](http://mdsa.51cto.com/art/201603/507923.htm " 小白如何晋级入门级iOS开发者")
 
-<div class="wrap_right">
-
-<div>
-
-<span id="right1_ad" class="mtgg"
-style="height:auto; width:300px;"></span>
-
-</div>
-
-<div class="mtgg m30">
-
-</div>
-
-<div>
-
-</div>
-
-<div class="bjtj m30">
-
-<span>编辑推荐</span>
----------------------
-
-热点
-:   [12个鲜为人知的HTML
-    5设计小技巧](http://mdsa.51cto.com/art/201605/510454.htm "12个鲜为人知的HTML 5设计小技巧")
-
-<!-- -->
-
-头条
-:   [查遗补漏！可能你从未注意过的7个用户体验设计细节](http://mdsa.51cto.com/art/201604/508285.htm "查遗补漏！可能你从未注意过的7个用户体验设计细节")
-
-<!-- -->
-
-头条
-:   [一周歪评|大声告诉我，小米本着什么理念打造了电饭锅！](http://mdsa.51cto.com/art/201604/508299.htm "一周歪评|大声告诉我，小米本着什么理念打造了电饭锅！")
-
-<!-- -->
-
-热点
-:   [小白如何晋级入门级iOS开发者](http://mdsa.51cto.com/art/201603/507923.htm " 小白如何晋级入门级iOS开发者")
-
-<!-- -->
-
-头条
-:   [Android制霸控件View总结](http://mdsa.51cto.com/art/201603/507297.htm " Android制霸控件View总结")
-
-</div>
-
-<div>
-
-</div>
-
-<div class="news m30">
+&nbsp;
+头条  
+[Android制霸控件View总结](http://mdsa.51cto.com/art/201603/507297.htm " Android制霸控件View总结")
 
 24H热文
 一周话题
 本月最赞
--   [突如其来的Visual Studio
-    Code为何这么热门？大牛来给你深度剖析！](http://mdsa.51cto.com/art/201504/474814.htm "突如其来的Visual")[你讨厌百度，翻墙上Google就能解决一切问题？](http://mdsa.51cto.com/art/201605/510598.htm "你讨厌百度，翻墙上Google就能解决一切问题？")[Hybrid
-    App开发者一定不要错过的框架和工具](http://mdsa.51cto.com/art/201412/460555.htm "Hybrid")[十大技巧优化Android
-    App性能](http://mdsa.51cto.com/art/201410/455556.htm "十大技巧优化Android")[值得收藏！神级代码编辑器
-    Sublime Text
-    全程指南](http://mdsa.51cto.com/art/201507/484183.htm "值得收藏！神级代码编辑器")[Android
-    M新的运行时权限开发者需要知道的一切](http://mdsa.51cto.com/art/201508/489882.htm "Android")[Android
-    HOOK工具Cydia
-    Substrate使用详解](http://mdsa.51cto.com/art/201410/454091.htm "Android")[30秒让你加速Android
-    Studio/Gradle构建](http://mdsa.51cto.com/art/201503/469038.htm "30秒让你加速Android")
--   [突如其来的Visual Studio
-    Code为何这么热门？大牛来给你深度剖析！](http://mdsa.51cto.com/art/201504/474814.htm "突如其来的Visual")[Hybrid
-    App开发者一定不要错过的框架和工具](http://mdsa.51cto.com/art/201412/460555.htm "Hybrid")[你讨厌百度，翻墙上Google就能解决一切问题？](http://mdsa.51cto.com/art/201605/510598.htm "你讨厌百度，翻墙上Google就能解决一切问题？")[Android
-    M新的运行时权限开发者需要知道的一切](http://mdsa.51cto.com/art/201508/489882.htm "Android")[十大技巧优化Android
-    App性能](http://mdsa.51cto.com/art/201410/455556.htm "十大技巧优化Android")[iOS使用Charles（青花瓷）抓包并篡改返回数据图文详解](http://mdsa.51cto.com/art/201507/483492.htm "iOS使用Charles（青花瓷）抓包并篡改返回数据图文详解")[值得收藏！神级代码编辑器
-    Sublime Text
-    全程指南](http://mdsa.51cto.com/art/201507/484183.htm "值得收藏！神级代码编辑器")[30秒让你加速Android
-    Studio/Gradle构建](http://mdsa.51cto.com/art/201503/469038.htm "30秒让你加速Android")
--   [Hybrid
-    App开发者一定不要错过的框架和工具](http://mdsa.51cto.com/art/201412/460555.htm "Hybrid")[突如其来的Visual
-    Studio
-    Code为何这么热门？大牛来给你深度剖析！](http://mdsa.51cto.com/art/201504/474814.htm "突如其来的Visual")[Android
-    M新的运行时权限开发者需要知道的一切](http://mdsa.51cto.com/art/201508/489882.htm "Android")[你讨厌百度，翻墙上Google就能解决一切问题？](http://mdsa.51cto.com/art/201605/510598.htm "你讨厌百度，翻墙上Google就能解决一切问题？")[十大技巧优化Android
-    App性能](http://mdsa.51cto.com/art/201410/455556.htm "十大技巧优化Android")[iOS使用Charles（青花瓷）抓包并篡改返回数据图文详解](http://mdsa.51cto.com/art/201507/483492.htm "iOS使用Charles（青花瓷）抓包并篡改返回数据图文详解")[值得收藏！神级代码编辑器
-    Sublime Text
-    全程指南](http://mdsa.51cto.com/art/201507/484183.htm "值得收藏！神级代码编辑器")[30秒让你加速Android
-    Studio/Gradle构建](http://mdsa.51cto.com/art/201503/469038.htm "30秒让你加速Android")
+-   [突如其来的Visual Studio Code为何这么热门？大牛来给你深度剖析！](http://mdsa.51cto.com/art/201504/474814.htm "突如其来的Visual")[你讨厌百度，翻墙上Google就能解决一切问题？](http://mdsa.51cto.com/art/201605/510598.htm "你讨厌百度，翻墙上Google就能解决一切问题？")[Hybrid App开发者一定不要错过的框架和工具](http://mdsa.51cto.com/art/201412/460555.htm "Hybrid")[十大技巧优化Android App性能](http://mdsa.51cto.com/art/201410/455556.htm "十大技巧优化Android")[值得收藏！神级代码编辑器 Sublime Text 全程指南](http://mdsa.51cto.com/art/201507/484183.htm "值得收藏！神级代码编辑器")[Android M新的运行时权限开发者需要知道的一切](http://mdsa.51cto.com/art/201508/489882.htm "Android")[Android HOOK工具Cydia Substrate使用详解](http://mdsa.51cto.com/art/201410/454091.htm "Android")[30秒让你加速Android Studio/Gradle构建](http://mdsa.51cto.com/art/201503/469038.htm "30秒让你加速Android")
+-   [突如其来的Visual Studio Code为何这么热门？大牛来给你深度剖析！](http://mdsa.51cto.com/art/201504/474814.htm "突如其来的Visual")[Hybrid App开发者一定不要错过的框架和工具](http://mdsa.51cto.com/art/201412/460555.htm "Hybrid")[你讨厌百度，翻墙上Google就能解决一切问题？](http://mdsa.51cto.com/art/201605/510598.htm "你讨厌百度，翻墙上Google就能解决一切问题？")[Android M新的运行时权限开发者需要知道的一切](http://mdsa.51cto.com/art/201508/489882.htm "Android")[十大技巧优化Android App性能](http://mdsa.51cto.com/art/201410/455556.htm "十大技巧优化Android")[iOS使用Charles（青花瓷）抓包并篡改返回数据图文详解](http://mdsa.51cto.com/art/201507/483492.htm "iOS使用Charles（青花瓷）抓包并篡改返回数据图文详解")[值得收藏！神级代码编辑器 Sublime Text 全程指南](http://mdsa.51cto.com/art/201507/484183.htm "值得收藏！神级代码编辑器")[30秒让你加速Android Studio/Gradle构建](http://mdsa.51cto.com/art/201503/469038.htm "30秒让你加速Android")
+-   [Hybrid App开发者一定不要错过的框架和工具](http://mdsa.51cto.com/art/201412/460555.htm "Hybrid")[突如其来的Visual Studio Code为何这么热门？大牛来给你深度剖析！](http://mdsa.51cto.com/art/201504/474814.htm "突如其来的Visual")[Android M新的运行时权限开发者需要知道的一切](http://mdsa.51cto.com/art/201508/489882.htm "Android")[你讨厌百度，翻墙上Google就能解决一切问题？](http://mdsa.51cto.com/art/201605/510598.htm "你讨厌百度，翻墙上Google就能解决一切问题？")[十大技巧优化Android App性能](http://mdsa.51cto.com/art/201410/455556.htm "十大技巧优化Android")[iOS使用Charles（青花瓷）抓包并篡改返回数据图文详解](http://mdsa.51cto.com/art/201507/483492.htm "iOS使用Charles（青花瓷）抓包并篡改返回数据图文详解")[值得收藏！神级代码编辑器 Sublime Text 全程指南](http://mdsa.51cto.com/art/201507/484183.htm "值得收藏！神级代码编辑器")[30秒让你加速Android Studio/Gradle构建](http://mdsa.51cto.com/art/201503/469038.htm "30秒让你加速Android")
 
-</div>
+视频课程[+更多](http://edu.51cto.com/)
+--------------------------------------
 
-<div>
+[![UI引擎入门到实战开发视频课程](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/238e06f03776c93dceb504a64e74f82b24bb30.jpg "UI引擎入门到实战开发视频课程")](http://edu.51cto.com/course/course_id-6143.html)  
+### [UI引擎入门到实战开发视频课程](http://edu.51cto.com/course/course_id-6143.html "UI引擎入门到实战开发视频课程")
 
-</div>
+#### 讲师：*[刘火树](http://edu.51cto.com/lecturer/user_id-10892124.html)**5*人学习过
 
-<div class="spkc m30">
+&nbsp;
+[![C\#语言知识系统学习视频课程](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/212957f179c1a451cc8686b3bec129623563ad.jpg "C#语言知识系统学习视频课程")](http://edu.51cto.com/course/course_id-6141.html)  
+### [C\#语言知识系统学习视频课程](http://edu.51cto.com/course/course_id-6141.html "C#语言知识系统学习视频课程")
 
-<span>视频课程</span>[+更多](http://edu.51cto.com/)
----------------------------------------------------
+#### 讲师：*[刘建萍](http://edu.51cto.com/lecturer/user_id-3990033.html)**36*人学习过
 
-[![UI引擎入门到实战开发视频课程](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/238e06f03776c93dceb504a64e74f82b24bb30.jpg "UI引擎入门到实战开发视频课程"){width="100px" height="80px"}](http://edu.51cto.com/course/course_id-6143.html)<span></span>
+&nbsp;
+[![专家解读计算机网络原理视频课程2.0版（上）](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/c1479ba68c7beb9834530125ec9ebd3d884e5c.png "专家解读计算机网络原理视频课程2.0版（上）")](http://edu.51cto.com/course/course_id-6138.html)  
+### [专家解读计算机网络原理视频课程2.0版（上）](http://edu.51cto.com/course/course_id-6138.html "专家解读计算机网络原理视频课程2.0版（上）")
 
-:   ### [UI引擎入门到实战开发视频课程](http://edu.51cto.com/course/course_id-6143.html "UI引擎入门到实战开发视频课程")
+#### 讲师：*[王达](http://edu.51cto.com/lecturer/user_id-55153.html)**5*人学习过
 
-    #### <span class="fl">讲师：*[刘火树](http://edu.51cto.com/lecturer/user_id-10892124.html)*</span><span class="fr">*5*人学习过</span>
+热门职位[+更多](http://gaozhao.51cto.com/)
+------------------------------------------
 
-<!-- -->
+[产品经理](http://gaozhao.51cto.com/job/view/id-3147.html)  
+### 全职/1-3年/大专
 
-[![C\#语言知识系统学习视频课程](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/212957f179c1a451cc8686b3bec129623563ad.jpg "C#语言知识系统学习视频课程"){width="100px" height="80px"}](http://edu.51cto.com/course/course_id-6141.html)<span></span>
+8k-16k[中建网络](http://gaozhao.51cto.com/company/view/id-548.html)
 
-:   ### [C\#语言知识系统学习视频课程](http://edu.51cto.com/course/course_id-6141.html "C#语言知识系统学习视频课程")
+&nbsp;
+[数据分析（实习生）](http://gaozhao.51cto.com/job/view/id-4376.html)  
+### 实习/应届生/本科
 
-    #### <span class="fl">讲师：*[刘建萍](http://edu.51cto.com/lecturer/user_id-3990033.html)*</span><span class="fr">*36*人学习过</span>
+6k-8k[芥末金融](http://gaozhao.51cto.com/company/view/id-844.html)
 
-<!-- -->
+&nbsp;
+[系统架构师](http://gaozhao.51cto.com/job/view/id-4612.html)  
+### 全职/5-10年/本科
 
-[![专家解读计算机网络原理视频课程2.0版（上）](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/c1479ba68c7beb9834530125ec9ebd3d884e5c.png "专家解读计算机网络原理视频课程2.0版（上）"){width="100px" height="80px"}](http://edu.51cto.com/course/course_id-6138.html)<span></span>
+25k-40k[华通铂银](http://gaozhao.51cto.com/company/view/id-876.html)
 
-:   ### [专家解读计算机网络原理视频课程2.0版（上）](http://edu.51cto.com/course/course_id-6138.html "专家解读计算机网络原理视频课程2.0版（上）")
+&nbsp;
+[自然语言处理工程师](http://gaozhao.51cto.com/job/view/id-4105.html)  
+### 全职/1-3年/硕士
 
-    #### <span class="fl">讲师：*[王达](http://edu.51cto.com/lecturer/user_id-55153.html)*</span><span class="fr">*5*人学习过</span>
+30k-50k[DTJ](http://gaozhao.51cto.com/company/view/id-815.html)
 
-</div>
+&nbsp;
+[JAVA通讯工程师](http://gaozhao.51cto.com/job/view/id-4610.html)  
+### 全职/5-10年/大专
 
-<div>
+15k-30k[上海心猎](http://gaozhao.51cto.com/company/view/id-875.html)
 
-</div>
+最新专题[+更多](http://mdsa.51cto.com/speclist/1674)
+----------------------------------------------------
 
-<div class="rmzw m30">
+[![公有云频频受疑 黄金时代是否已大势已去？](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/d317d8ba35fc8ece90556f0623883d80.jpg "公有云频频受疑  黄金时代是否已大势已去？")](http://cloud.51cto.com/art/201605/511628.htm "公有云频频受疑  黄金时代是否已大势已去？")  
+[公有云频频受疑 黄金时代是否已大势已去？](http://cloud.51cto.com/art/201605/511628.htm "公有云频频受疑  黄金时代是否已大势已去？")
 
-<span>热门职位</span>[+更多](http://gaozhao.51cto.com/)
--------------------------------------------------------
+### [云计算](http://www.51cto.com/php/search.php?keyword=�Ƽ���)
 
-<div id="rmzw">
+&nbsp;
+[![淘宝网店推广策略和工具大全（第2版）](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/ae83dc99de81e0627d8e1138c7209ac0.gif "淘宝网店推广策略和工具大全（第2版）")](http://book.51cto.com/art/201605/511533.htm "淘宝网店推广策略和工具大全（第2版）")  
+[淘宝网店推广策略和工具大全（第2版）](http://book.51cto.com/art/201605/511533.htm "淘宝网店推广策略和工具大全（第2版）")
 
-[产品经理](http://gaozhao.51cto.com/job/view/id-3147.html)
+### [淘宝网店推广](http://www.51cto.com/php/search.php?keyword=�Ա������ƹ�)
 
-:   ### 全职/1-3年/大专
+&nbsp;
+[![谁说菜鸟不会数据分析（入门篇）（纪念版）](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/926166be9bf037108f25f43764ae7cc1.gif "谁说菜鸟不会数据分析（入门篇）（纪念版）")](http://book.51cto.com/art/201605/511528.htm "谁说菜鸟不会数据分析（入门篇）（纪念版）")  
+[谁说菜鸟不会数据分析（入门篇）（纪念版）](http://book.51cto.com/art/201605/511528.htm "谁说菜鸟不会数据分析（入门篇）（纪念版）")
 
-    <span>8k-16k</span>[中建网络](http://gaozhao.51cto.com/company/view/id-548.html)
+### [数据分析](http://www.51cto.com/php/search.php?keyword=���ݷ���)
 
-<!-- -->
+&nbsp;
+[![谁说菜鸟不会数据分析（工具篇）（纪念版）](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/951698a80a0f5329657a5e500f6ac6b8.gif "谁说菜鸟不会数据分析（工具篇）（纪念版）")](http://book.51cto.com/art/201605/511523.htm "谁说菜鸟不会数据分析（工具篇）（纪念版）")  
+[谁说菜鸟不会数据分析（工具篇）（纪念版）](http://book.51cto.com/art/201605/511523.htm "谁说菜鸟不会数据分析（工具篇）（纪念版）")
 
-[数据分析（实习生）](http://gaozhao.51cto.com/job/view/id-4376.html)
+### [数据分析](http://www.51cto.com/php/search.php?keyword=���ݷ���)
 
-:   ### 实习/应届生/本科
+精彩评论
+--------
 
-    <span>6k-8k</span>[芥末金融](http://gaozhao.51cto.com/company/view/id-844.html)
+[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar_2.jpg)](http://home.51cto.com/index.php?s=/space/11302312)  
+[](http://home.51cto.com/index.php?s=/space/11302312)
 
-<!-- -->
+### [PankeGao](http://home.51cto.com/index.php?s=/space/11302312)评论了：[移动时代的云安全解析：建立行业新标准](http://zhuanlan.51cto.com/art/201608/516687.htm)
 
-[系统架构师](http://gaozhao.51cto.com/job/view/id-4612.html)
+#### 微软建立了行业标准，苹果成为行业标杆，建立标准的企业本身就具有创新性，甚至是颠覆性，每个企业都想建立行业标准，但是不能只喊口号，如果没有创新性的产品，产品被行业竞相模仿，只能说愿望是美好的；先定一个小目标，生产一个N13产品，用户达到一个亿再说标准。
 
-:   ### 全职/5-10年/本科
+&nbsp;
+[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar_3.jpg)](http://home.51cto.com/index.php?s=/space/11302312)  
+[](http://home.51cto.com/index.php?s=/space/11302312)
 
-    <span>25k-40k</span>[华通铂银](http://gaozhao.51cto.com/company/view/id-876.html)
+### [PankeGao](http://home.51cto.com/index.php?s=/space/11302312)评论了：[蚂蚁金服徐达峰：关于前端的那些事儿！](http://zhuanlan.51cto.com/art/201608/516640.htm)
 
-<!-- -->
+#### 自动化测试市场的确很大，如果能够提供一站式测试服务，对于中小型企业来说将会省去很多精力；另外是因为h5火了，所以带动了前端？
 
-[自然语言处理工程师](http://gaozhao.51cto.com/job/view/id-4105.html)
+&nbsp;
+[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar_4.jpg)](http://home.51cto.com/index.php?s=/space/11302312)  
+[](http://home.51cto.com/index.php?s=/space/11302312)
 
-:   ### 全职/1-3年/硕士
+### [PankeGao](http://home.51cto.com/index.php?s=/space/11302312)评论了：[AWS技术峰会，云生态布局才是关键！](http://zhuanlan.51cto.com/art/201609/517005.htm)
 
-    <span>30k-50k</span>[DTJ](http://gaozhao.51cto.com/company/view/id-815.html)
+#### 把各种局布好，然后就能形成纵横之势，把同行围而灭之，最后等着用户把钱妥妥的交出来！！！
 
-<!-- -->
+&nbsp;
+[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar_5.jpg)](http://home.51cto.com/index.php?s=/space/11302312)  
+[](http://home.51cto.com/index.php?s=/space/11302312)
 
-[JAVA通讯工程师](http://gaozhao.51cto.com/job/view/id-4610.html)
+### [PankeGao](http://home.51cto.com/index.php?s=/space/11302312)评论了：[](http://zhuanlan.51cto.com/art/201608/516684.htm)
 
-:   ### 全职/5-10年/大专
-
-    <span>15k-30k</span>[上海心猎](http://gaozhao.51cto.com/company/view/id-875.html)
-
-</div>
-
-</div>
-
-<div>
-
-</div>
-
-<div class="zxzt m30">
-
-<span>最新专题</span>[+更多](http://mdsa.51cto.com/speclist/1674)
------------------------------------------------------------------
-
-[![公有云频频受疑 黄金时代是否已大势已去？](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/d317d8ba35fc8ece90556f0623883d80.jpg "公有云频频受疑  黄金时代是否已大势已去？")](http://cloud.51cto.com/art/201605/511628.htm "公有云频频受疑  黄金时代是否已大势已去？")
-
-:   [公有云频频受疑
-    黄金时代是否已大势已去？](http://cloud.51cto.com/art/201605/511628.htm "公有云频频受疑  黄金时代是否已大势已去？")
-
-    ### [云计算](http://www.51cto.com/php/search.php?keyword=�Ƽ���)
-
-<!-- -->
-
-[![淘宝网店推广策略和工具大全（第2版）](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/ae83dc99de81e0627d8e1138c7209ac0.gif "淘宝网店推广策略和工具大全（第2版）")](http://book.51cto.com/art/201605/511533.htm "淘宝网店推广策略和工具大全（第2版）")
-
-:   [淘宝网店推广策略和工具大全（第2版）](http://book.51cto.com/art/201605/511533.htm "淘宝网店推广策略和工具大全（第2版）")
-
-    ### [淘宝网店推广](http://www.51cto.com/php/search.php?keyword=�Ա������ƹ�)
-
-<!-- -->
-
-[![谁说菜鸟不会数据分析（入门篇）（纪念版）](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/926166be9bf037108f25f43764ae7cc1.gif "谁说菜鸟不会数据分析（入门篇）（纪念版）")](http://book.51cto.com/art/201605/511528.htm "谁说菜鸟不会数据分析（入门篇）（纪念版）")
-
-:   [谁说菜鸟不会数据分析（入门篇）（纪念版）](http://book.51cto.com/art/201605/511528.htm "谁说菜鸟不会数据分析（入门篇）（纪念版）")
-
-    ### [数据分析](http://www.51cto.com/php/search.php?keyword=���ݷ���)
-
-<!-- -->
-
-[![谁说菜鸟不会数据分析（工具篇）（纪念版）](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/951698a80a0f5329657a5e500f6ac6b8.gif "谁说菜鸟不会数据分析（工具篇）（纪念版）")](http://book.51cto.com/art/201605/511523.htm "谁说菜鸟不会数据分析（工具篇）（纪念版）")
-
-:   [谁说菜鸟不会数据分析（工具篇）（纪念版）](http://book.51cto.com/art/201605/511523.htm "谁说菜鸟不会数据分析（工具篇）（纪念版）")
-
-    ### [数据分析](http://www.51cto.com/php/search.php?keyword=���ݷ���)
-
-</div>
-
-<div>
-
-</div>
-
-<div id="jcpl">
-
-<div class="jcpl m30">
-
-<span>精彩评论</span>
----------------------
-
-[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar_2.jpg){width="45px" height="45px"}](http://home.51cto.com/index.php?s=/space/11302312)
-
-:   [](http://home.51cto.com/index.php?s=/space/11302312)
-
-    ### [PankeGao](http://home.51cto.com/index.php?s=/space/11302312)评论了：[移动时代的云安全解析：建立行业新标准](http://zhuanlan.51cto.com/art/201608/516687.htm)
-
-    #### 微软建立了行业标准，苹果成为行业标杆，建立标准的企业本身就具有创新性，甚至是颠覆性，每个企业都想建立行业标准，但是不能只喊口号，如果没有创新性的产品，产品被行业竞相模仿，只能说愿望是美好的；先定一个小目标，生产一个N13产品，用户达到一个亿再说标准。
-
-<!-- -->
-
-[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar_3.jpg){width="45px" height="45px"}](http://home.51cto.com/index.php?s=/space/11302312)
-
-:   [](http://home.51cto.com/index.php?s=/space/11302312)
-
-    ### [PankeGao](http://home.51cto.com/index.php?s=/space/11302312)评论了：[蚂蚁金服徐达峰：关于前端的那些事儿！](http://zhuanlan.51cto.com/art/201608/516640.htm)
-
-    #### 自动化测试市场的确很大，如果能够提供一站式测试服务，对于中小型企业来说将会省去很多精力；另外是因为h5火了，所以带动了前端？
-
-<!-- -->
-
-[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar_4.jpg){width="45px" height="45px"}](http://home.51cto.com/index.php?s=/space/11302312)
-
-:   [](http://home.51cto.com/index.php?s=/space/11302312)
-
-    ### [PankeGao](http://home.51cto.com/index.php?s=/space/11302312)评论了：[AWS技术峰会，云生态布局才是关键！](http://zhuanlan.51cto.com/art/201609/517005.htm)
-
-    #### 把各种局布好，然后就能形成纵横之势，把同行围而灭之，最后等着用户把钱妥妥的交出来！！！
-
-<!-- -->
-
-[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/avatar_5.jpg){width="45px" height="45px"}](http://home.51cto.com/index.php?s=/space/11302312)
-
-:   [](http://home.51cto.com/index.php?s=/space/11302312)
-
-    ### [PankeGao](http://home.51cto.com/index.php?s=/space/11302312)评论了：[](http://zhuanlan.51cto.com/art/201608/516684.htm)
-
-    #### h5发展取决于基础建设：网速，现在是4g时代，等到5g、6g时代的到来，h5与原生的体验将会没有区别；大家在移动开发中混合开发多吗，使用h5占比有多少？
-
-</div>
-
-</div>
-
-<div>
-
-</div>
-
-<div class="news m30">
+#### h5发展取决于基础建设：网速，现在是4g时代，等到5g、6g时代的到来，h5与原生的体验将会没有区别；大家在移动开发中混合开发多吗，使用h5占比有多少？
 
 精选博文
 论坛热帖
 下载排行
-<div>
+-   [【iOS-cocos2d-X 游戏开发之一】在Ma](http://xiaominghimi.blog.51cto.com/2614927/706479/ "【iOS-cocos2d-X 游戏开发之一】在Mac下结合Xcode搭建Cocos2d-X开发环境！")[读乔布斯传感悟（一）](http://itjiejue.blog.51cto.com/450185/706256/ "读乔布斯传感悟（一）")[联通信号](http://zxgchinese.blog.51cto.com/2508492/706175/ "联通信号")[从《大学》到职业人生规划](http://xiaosuncunzhang.blog.51cto.com/317407/706161/ "从《大学》到职业人生规划")[瞎忙不如不忙——读高德拉特《目标》](http://jimqu.blog.51cto.com/105370/706128/ "瞎忙不如不忙——读高德拉特《目标》有感")
+-   [原创：vSphere Client无法连接vSpher](http://bbs.51cto.com/thread-1108272-1.html "原创：vSphere Client无法连接vSphere server解决一例")[安卓智能聊天机器人的实现及源码分享](http://bbs.51cto.com/thread-1138895-1.html "安卓智能聊天机器人的实现及源码分享")[服务器死机，RAID10阵列4块盘重启后](http://bbs.51cto.com/thread-1150415-1.html "服务器死机，RAID10阵列4块盘重启后丢失一块")[CLOUDSTACK FOR HYPER-V](http://bbs.51cto.com/thread-1152245-1.html "CLOUDSTACK FOR HYPER-V")[【分享】一张图，就能让你学会Python](http://bbs.51cto.com/thread-1156917-1.html "【分享】一张图，就能让你学会Python！")
+-   [Cisco访问列表大解密](http://down.51cto.com/data/198628/ "Cisco访问列表大解密")[Visual+CertExam+绿色版](http://down.51cto.com/data/198625/ "Visual+CertExam+绿色版")[CCNA考试总结](http://down.51cto.com/data/198623/ "CCNA考试总结")[文件下载可以用](http://down.51cto.com/data/198622/ "文件下载可以用")[2011 Cisco认证考试问答详解](http://down.51cto.com/data/198620/ "2011 Cisco认证考试问答详解")
 
--   [【iOS-cocos2d-X
-    游戏开发之一】在Ma](http://xiaominghimi.blog.51cto.com/2614927/706479/ "【iOS-cocos2d-X 游戏开发之一】在Mac下结合Xcode搭建Cocos2d-X开发环境！")[读乔布斯传感悟（一）](http://itjiejue.blog.51cto.com/450185/706256/ "读乔布斯传感悟（一）")[联通信号](http://zxgchinese.blog.51cto.com/2508492/706175/ "联通信号")[从《大学》到职业人生规划](http://xiaosuncunzhang.blog.51cto.com/317407/706161/ "从《大学》到职业人生规划")[瞎忙不如不忙——读高德拉特《目标》](http://jimqu.blog.51cto.com/105370/706128/ "瞎忙不如不忙——读高德拉特《目标》有感")
--   [原创：vSphere
-    Client无法连接vSpher](http://bbs.51cto.com/thread-1108272-1.html "原创：vSphere Client无法连接vSphere server解决一例")[安卓智能聊天机器人的实现及源码分享](http://bbs.51cto.com/thread-1138895-1.html "安卓智能聊天机器人的实现及源码分享")[服务器死机，RAID10阵列4块盘重启后](http://bbs.51cto.com/thread-1150415-1.html "服务器死机，RAID10阵列4块盘重启后丢失一块")[CLOUDSTACK
-    FOR
-    HYPER-V](http://bbs.51cto.com/thread-1152245-1.html "CLOUDSTACK FOR HYPER-V")[【分享】一张图，就能让你学会Python](http://bbs.51cto.com/thread-1156917-1.html "【分享】一张图，就能让你学会Python！")
--   [Cisco访问列表大解密](http://down.51cto.com/data/198628/ "Cisco访问列表大解密")[Visual+CertExam+绿色版](http://down.51cto.com/data/198625/ "Visual+CertExam+绿色版")[CCNA考试总结](http://down.51cto.com/data/198623/ "CCNA考试总结")[文件下载可以用](http://down.51cto.com/data/198622/ "文件下载可以用")[2011
-    Cisco认证考试问答详解](http://down.51cto.com/data/198620/ "2011 Cisco认证考试问答详解")
+读 书 [+更多](http://book.51cto.com/)
+-------------------------------------
 
-</div>
+[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/134731289.gif)](http://book.51cto.com/art/200707/51416.htm "Tomcat与Java Web开发技术详解")  
+### [Tomcat与Java Web开发技术详解](http://book.51cto.com/art/200707/51416.htm "Tomcat与Java Web开发技术详解")
 
-</div>
+本书详细介绍了在最新Tomcat 5版本上开发Java Web应用的各种技术。主要内容包括：Tomcat和Java Web开发的基础知识，Java Web开发的高级技术...
 
-<div>
+![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/71d9005b-cc45-4411-b80d-9bb7ff40b088.jpg)  
+### 订阅51CTO邮刊
 
-</div>
+#### [点击这里查看样刊](http://news.51cto.com/col/1323/)
 
-<div class="ds m30">
-
-<span>读 书 </span>[+更多](http://book.51cto.com/)
---------------------------------------------------
-
-[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/134731289.gif){width="98px" height="144px"}](http://book.51cto.com/art/200707/51416.htm "Tomcat与Java Web开发技术详解")
-
-:   ### [Tomcat与Java Web开发技术详解](http://book.51cto.com/art/200707/51416.htm "Tomcat与Java Web开发技术详解")
-
-    本书详细介绍了在最新Tomcat 5版本上开发Java
-    Web应用的各种技术。主要内容包括：Tomcat和Java
-    Web开发的基础知识，Java Web开发的高级技术...
-
-</div>
-
-<div>
-
-</div>
-
-<div class="dydy">
-
-![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/71d9005b-cc45-4411-b80d-9bb7ff40b088.jpg)
-
-:   ### 订阅51CTO邮刊
-
-    #### [点击这里查看样刊](http://news.51cto.com/col/1323/)
-
-    [![订阅51CTO邮刊](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/947b5cbd-2428-476e-b80f-b879c822fd3c.jpg)](http://home.51cto.com/index.php?s=/Subscribe)
-
-</div>
-
-<div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="footer_nav">
-
-<div class="wrap">
+[![订阅51CTO邮刊](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/947b5cbd-2428-476e-b80f-b879c822fd3c.jpg)](http://home.51cto.com/index.php?s=/Subscribe)
 
 51CTO旗下网站：
 ---------------
 
-[领先的IT技术网站 51CTO](http://www.51cto.com/)|[领先的中文存储媒体
-WatchStor](http://www.watchstor.com/)| [中国首个CIO网站
-CIOage](http://www.cioage.com/)|[中国首家数字医疗网站
-HC3i](http://www.hc3i.cn/)
+[领先的IT技术网站 51CTO](http://www.51cto.com/)|[领先的中文存储媒体 WatchStor](http://www.watchstor.com/)| [中国首个CIO网站 CIOage](http://www.cioage.com/)|[中国首家数字医疗网站 HC3i](http://www.hc3i.cn/)
 
-</div>
+Copyright©2005-2016 [51CTO.COM](http://www.51cto.com/) 版权所有 未经许可 请勿转载
 
-</div>
+[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/3f6772c4-2572-4ce4-84c7-d8cb818c3774.jpg)](###)[](#comment)[](#topx)
 
-<div id="ft">
+0
+[网络安全一个大写的反“作死”](http://gg3.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3933__zoneid=270__cb=0ef5bab7c4__oadest=http://edu.51cto.com/zt/zt_id-1.html?an)
+![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg.gif)
 
-<div id="foot" align="center">
+[信息安全工程师，会挣钱的考试](http://gg1.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3546__zoneid=631__cb=6b7ea17b4e__oadest=http://edu.51cto.com/px/train/88)
+![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_2.gif)
 
-Copyright©2005-2016 [51CTO.COM](http://www.51cto.com/) 版权所有 未经许可
-请勿转载
-<div style="display:none;">
+[微软企业级内训课程免费学](http://gg3.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3717__zoneid=594__cb=30e3970e8d__oadest=http://edu.51cto.com/training/training_id-18.html?xiaoshou)
+![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_3.gif)
 
-</div>
+[2016年备战软考-重难点解析](http://gg.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3549__zoneid=636__cb=216ebf4905__oadest=http://edu.51cto.com/training/training_id-17.html?xiaoshou)
+![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_4.gif)
 
-</div>
 
-</div>
-
-<div class="clk">
-
-[![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/3f6772c4-2572-4ce4-84c7-d8cb818c3774.jpg)](###){.ewm}[](#comment){.yjk}[](#topx){.topx}
-
-</div>
-
-<div id="MyMoveAd" style="display:none">
-
-<span id="pinglun">0</span>
-<span
-id="wordlink_1">[网络安全一个大写的反“作死”](http://gg3.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3933__zoneid=270__cb=0ef5bab7c4__oadest=http://edu.51cto.com/zt/zt_id-1.html?an)</span>
-<div id="beacon_0ef5bab7c4"
-style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
-
-![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg.gif){width="0"
-height="0"}
-
-</div>
-
-<span
-id="wordlink_2">[信息安全工程师，会挣钱的考试](http://gg1.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3546__zoneid=631__cb=6b7ea17b4e__oadest=http://edu.51cto.com/px/train/88)</span>
-<div id="beacon_6b7ea17b4e"
-style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
-
-![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_2.gif){width="0"
-height="0"}
-
-</div>
-
-<span
-id="wordlink_3">[微软企业级内训课程免费学](http://gg3.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3717__zoneid=594__cb=30e3970e8d__oadest=http://edu.51cto.com/training/training_id-18.html?xiaoshou)</span>
-<div id="beacon_30e3970e8d"
-style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
-
-![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_3.gif){width="0"
-height="0"}
-
-</div>
-
-<span
-id="wordlink_4">[2016年备战软考-重难点解析](http://gg.51cto.com/www/delivery/ck.php?oaparams=2__bannerid=3549__zoneid=636__cb=216ebf4905__oadest=http://edu.51cto.com/training/training_id-17.html?xiaoshou)</span>
-<div id="beacon_216ebf4905"
-style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
-
-![](17个提升iOS开发效率的必用工具%20-%2051CTO.COM_files/lg_4.gif){width="0"
-height="0"}
-
-</div>
-
-<span id="wordlink"></span>
-
-</div>

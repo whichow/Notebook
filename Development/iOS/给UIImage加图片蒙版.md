@@ -1,47 +1,21 @@
-<span class="s1">- (</span><span class="s2">UIImage</span><span
-class="s1">\*)maskImage:(</span><span class="s2">UIImage</span><span
-class="s1">\*)image withMask:(</span><span
-class="s2">UIImage</span><span class="s1">\*)maskImage {</span>
+- (UIImage\*)maskImage:(UIImage\*)image withMask:(UIImage\*)maskImage {
 
-<span class="s1">    </span><span class="s2">CGImageRef</span><span
-class="s1"> maskRef = maskImage.</span><span
-class="s2">CGImage</span><span class="s1">;</span>
+    CGImageRef maskRef = maskImage.CGImage;
 
-<span class="s1">    </span>
+    
 
-<span class="s3">    </span><span class="s2">CGImageRef</span><span
-class="s3"> mask = </span><span class="s1">CGImageMaskCreate</span><span
-class="s3">(</span><span class="s1">CGImageGetWidth</span><span
-class="s3">(maskRef), </span><span
-class="s1">CGImageGetHeight</span><span class="s3">(maskRef),
-</span><span class="s1">CGImageGetBitsPerComponent</span><span
-class="s3">(maskRef), </span><span
-class="s1">CGImageGetBitsPerPixel</span><span class="s3">(maskRef),
-</span><span class="s1">CGImageGetBytesPerRow</span><span
-class="s3">(maskRef), </span><span
-class="s1">CGImageGetDataProvider</span><span class="s3">(maskRef),
-</span><span class="s4">NULL</span><span class="s3">, </span><span
-class="s4">false</span><span class="s3">);</span>
+    CGImageRef mask = CGImageMaskCreate(CGImageGetWidth(maskRef), CGImageGetHeight(maskRef), CGImageGetBitsPerComponent(maskRef), CGImageGetBitsPerPixel(maskRef), CGImageGetBytesPerRow(maskRef), CGImageGetDataProvider(maskRef), NULL, false);
 
-<span class="s1">    </span>
+    
 
-<span class="s1">    </span><span class="s2">CGImageRef</span><span
-class="s1"> masked = </span><span
-class="s5">CGImageCreateWithMask</span><span class="s1">(\[image
-</span><span class="s5">CGImage</span><span class="s1">\], mask);</span>
+    CGImageRef masked = CGImageCreateWithMask(\[image CGImage\], mask);
 
-<span class="s3">    </span><span class="s1">CGImageRelease</span><span
-class="s3">(mask);</span>
+    CGImageRelease(mask);
 
-<span class="s1">    </span><span class="s2">UIImage</span><span
-class="s1"> \*maskedImage = \[</span><span
-class="s2">UIImage</span><span class="s1"> </span><span
-class="s5">imageWithCGImage</span><span class="s1">:masked\];</span>
+    UIImage \*maskedImage = \[UIImage imageWithCGImage:masked\];
 
-<span class="s3">    </span><span class="s1">CGImageRelease</span><span
-class="s3">(masked);</span>
+    CGImageRelease(masked);
 
-<span class="s1">    </span><span class="s4">return</span><span
-class="s1"> maskedImage;</span>
+    return maskedImage;
 
-<span class="s1">}</span>
+}

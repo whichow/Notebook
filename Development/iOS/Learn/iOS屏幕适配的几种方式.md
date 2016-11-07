@@ -1,8 +1,6 @@
-<div>
+1.  代码
+2.  多nib
+3.  AutoLayout + SizeClasses
+4.  iOS 9新增的UIStackView
 
-1.  <span style="line-height: 1.6;">代码</span>\
-2.  <span style="line-height: 1.6;">多nib</span>\
-3.  <span style="line-height: 1.6;">AutoLayout + SizeClasses</span>\
-4.  <span style="line-height: 1.6;">iOS 9新增的UIStackView</span>
 
-</div>

@@ -1,23 +1,9 @@
-<div>
-
-<div>
-
 find最强大，但是检索硬盘，比较慢；
 
 whereis只能查二进制文件、说明文档，源文件等；
 
 locate能查所有文件，但跟whereis一样都是查数据库里的内容，速度快，但有延时；
 
-<div>
-
-<div>
-
 which 只能寻找执行文件 ，并在PATH变量里面寻找。
 
-</div>
 
-</div>
-
-</div>
-
-</div>

@@ -1,2 +1,2 @@
-如果想要在程序退出前做一些事情，应该在applicationDidEnterBackground中，而不是applicationWillTerminate，因为在iOS4之后不保证这个函数始终会被调用。\
+如果想要在程序退出前做一些事情，应该在applicationDidEnterBackground中，而不是applicationWillTerminate，因为在iOS4之后不保证这个函数始终会被调用。
 

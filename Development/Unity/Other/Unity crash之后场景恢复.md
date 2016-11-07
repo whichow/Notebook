@@ -1,5 +1,3 @@
-在工程的Temp文件夹中有一个叫做<span
-style="line-height: 1.6;">"\_\_EditModeScene"的场景是最后一次使用的场景，将它重命名为xxx.unity然后就可以像正常的场景文件一样加载了。如果你是正常退出Unity，Temp文件夹将会被删除，但是如果遇到crash了，你就可以通过</span><span
-style="line-height: 1.6;">\_\_EditModeScene来取回crash之前的场景。</span>
+在工程的Temp文件夹中有一个叫做"\_\_EditModeScene"的场景是最后一次使用的场景，将它重命名为xxx.unity然后就可以像正常的场景文件一样加载了。如果你是正常退出Unity，Temp文件夹将会被删除，但是如果遇到crash了，你就可以通过\_\_EditModeScene来取回crash之前的场景。
 
 在Mac中场景文件在\_\_Backupscenes文件夹中。

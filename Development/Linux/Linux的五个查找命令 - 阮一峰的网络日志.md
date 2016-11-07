@@ -1,20 +1,3 @@
-<div id="container">
-
-<div id="container-inner">
-
-<div id="content">
-
-<div id="content-inner">
-
-<div id="alpha">
-
-<div id="alpha-inner">
-
-<div id="entry-1290" class="entry-asset asset hentry">
-
-<div
-style="border: 0px none rgb(17, 17, 17); color: rgb(17, 17, 17); display: block; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 10px; font-family: Georgia, serif; height: 7818px; letter-spacing: -0.1px; line-height: 18px; margin: 0px; outline: rgb(17, 17, 17) none 0px; padding: 0px; text-align: left; text-decoration: none; width: 940px; word-spacing: 2px;">
-
 最近，我在学习Linux，下面是一些笔记。
 
 使用电脑的时候，经常需要查找文件。
@@ -29,7 +12,7 @@ find是最常见和最强大的查找命令，你可以用它找到任何你想�
 
 find的使用格式如下：
 
-　　**\$ find &lt;指定目录&gt; &lt;指定条件&gt; &lt;指定动作&gt;**
+　　**$ find &lt;指定目录&gt; &lt;指定条件&gt; &lt;指定动作&gt;**
 
 　　- &lt;指定目录&gt;： 所要搜索的目录及其所有子目录。默认为当前目录。
 
@@ -41,37 +24,35 @@ find的使用格式如下：
 
 find的使用实例：
 
-　　**\$ find . -name 'my\*'**
+　　**$ find . -name 'my\*'**
 
 搜索当前目录（含子目录，以下同）中，所有文件名以my开头的文件。
 
-　　**\$ find . -name 'my\*' -ls**
+　　**$ find . -name 'my\*' -ls**
 
 搜索当前目录中，所有文件名以my开头的文件，并显示它们的详细信息。
 
-　　**\$ find . -type f -mmin -10**
+　　**$ find . -type f -mmin -10**
 
-搜索当前目录中，所有过去10分钟中更新过的普通文件。如果不加-type
-f参数，则搜索普通文件+特殊文件+目录。
+搜索当前目录中，所有过去10分钟中更新过的普通文件。如果不加-type f参数，则搜索普通文件+特殊文件+目录。
 
 ![](http://photo2.bababian.com/usr491085/upload1/20091008/sPyDXwjuyGPa90ImF1FWWQd+VFEI7soi3o4IGCou34db1QpQ0ttCFyg==.jpg)
 
 **2. locate**
 
-locate命令其实是"find
--name"的另一种写法，但是要比后者快得多，原因在于它不搜索具体目录，而是搜索一个数据库（/var/lib/locatedb），这个数据库中含有本地所有文件信息。Linux系统自动创建这个数据库，并且每天自动更新一次，所以使用locate命令查不到最新变动过的文件。为了避免这种情况，可以在使用locate之前，先使用**updatedb**命令，手动更新数据库。
+locate命令其实是"find -name"的另一种写法，但是要比后者快得多，原因在于它不搜索具体目录，而是搜索一个数据库（/var/lib/locatedb），这个数据库中含有本地所有文件信息。Linux系统自动创建这个数据库，并且每天自动更新一次，所以使用locate命令查不到最新变动过的文件。为了避免这种情况，可以在使用locate之前，先使用**updatedb**命令，手动更新数据库。
 
 locate命令的使用实例：
 
-　　**\$ locate /etc/sh**
+　　**$ locate /etc/sh**
 
 搜索etc目录下所有以sh开头的文件。
 
-　　**\$ locate \~/m**
+　　**$ locate ~/m**
 
 搜索用户主目录下，所有以m开头的文件。
 
-　　**\$ locate -i \~/m**
+　　**$ locate -i ~/m**
 
 搜索用户主目录下，所有以m开头的文件，并且忽略大小写。
 
@@ -83,7 +64,7 @@ whereis命令只能用于程序名的搜索，而且只搜索二进制文件（�
 
 whereis命令的使用实例：
 
-　　**\$ whereis grep**
+　　**$ whereis grep**
 
 ![](http://photo2.bababian.com/usr491085/upload1/20091008/sQd1vxME+KrYoIRYPrviDIwKkc+Mfg22OprkbhxvCKCCPTSHlbpsbOw==.jpg)
 
@@ -93,7 +74,7 @@ which命令的作用是，在PATH变量指定的路径中，搜索某个系统�
 
 which命令的使用实例：
 
-　　**\$ which grep**
+　　**$ which grep**
 
 ![](http://photo2.bababian.com/usr491085/upload1/20091008/swW+ZcKexo65woijErYxjZW5p25VscBxNr2sTR5LRUry26AQADbJWzA==.jpg)
 
@@ -103,15 +84,15 @@ type命令其实不能算查找命令，它是用来区分某个命令到底是�
 
 type命令的使用实例：
 
-　　**\$ type cd**
+　　**$ type cd**
 
 系统会提示，cd是shell的自带命令（build-in）。
 
-　　**\$ type grep**
+　　**$ type grep**
 
 系统会提示，grep是一个外部命令，并显示该命令的路径。
 
-　　**\$ type -p grep**
+　　**$ type -p grep**
 
 加上-p参数后，就相当于which命令。
 
@@ -119,18 +100,4 @@ type命令的使用实例：
 
 （完）
 
-</div>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>

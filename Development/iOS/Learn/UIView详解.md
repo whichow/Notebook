@@ -1,4 +1,4 @@
-1、UIView的简介 {#uiview的简介 style="margin: 20px -20px 20px -24px; text-rendering: optimizeLegibility; padding: 10px 20px 9px 10px; border-left-width: 8px; border-left-style: solid; border-left-color: rgb(0, 166, 124); border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: rgb(0, 166, 124); font-variant-ligatures: normal;"}
+1、UIView的简介
 ---------------
 
 UIView类（视图类）负责管理屏幕上的一块矩形区域，包括这个区域内的显示样式，比如背景颜色，大小，以及行为动作，例如监测用户点击等触碰事件。
@@ -13,12 +13,10 @@ UIView类（视图类）负责管理屏幕上的一块矩形区域，包括这�
 
 在iOS开发中，UIView与UIViewController紧密协作，UIViewController负责UIView的加载与卸载。有关UIViewController的介绍，可以参考UIViewController相关教程：[UIViewController介绍：1-创建控制器](http://www.hcios.com/archives/731)
 
-<div>
-
-2、Frame/Bounds/Center {#frameboundscenter style="margin: 20px -20px 20px -24px; text-rendering: optimizeLegibility; padding: 10px 20px 9px 10px; border-left-width: 8px; border-left-style: solid; border-left-color: rgb(0, 166, 124); border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: rgb(0, 166, 124); font-variant-ligatures: normal;"}
+2、Frame/Bounds/Center
 ----------------------
 
-``` {.prettyprint .linenums style="padding: 8px; border-radius: 2px; margin-top: 0px; margin-bottom: 20px; word-break: break-all; word-wrap: break-word; border: 1px solid rgb(238, 238, 238); border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal; orphans: 2; text-indent: 30px; widows: 2;"}
+``` prettyprint
 @property(nonatomic) CGRect            frame;@property(nonatomic) CGRect            bounds; @property(nonatomic) CGPoint           center; 
 ```
 
@@ -30,103 +28,68 @@ Frame、Bounds以及Center是用来设置视图对象位置以及大小的属性
 -   Bounds：视图在其自己的坐标系中的位置和大小。Bounds属性中，视图的bounds.origin始终是（0，0），因此bounds属性最核心的作用是设置视图的大小，即bounds.size，当需要去修改视图大小的时候，可以修改bounds.size；
 -   Center：视图中心点在父视图坐标系中的坐标，当需要修改视图对象的位置时，可以修改Center属性。
 
-[![frame\_bounds\_rects](UIView详解_files/0.47981316945515573.png){.alignnone
-.size-full .wp-image-1565 width="540"
-height="309"}](http://7xow65.com1.z0.glb.clouddn.com/wp-content/uploads/2016/01/frame_bounds_rects.jpg)
+[![frame\_bounds\_rects](UIView详解_files/0.47981316945515573.png)](http://7xow65.com1.z0.glb.clouddn.com/wp-content/uploads/2016/01/frame_bounds_rects.jpg)
 
-\
- {#section style="margin: 20px -20px 20px -24px; text-rendering: optimizeLegibility; padding: 10px 20px 9px 10px; border-left-width: 8px; border-left-style: solid; border-left-color: rgb(0, 166, 124); border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: rgb(0, 166, 124); font-variant-ligatures: normal;"}
--
-
-视图的变形 {#视图的变形 style="margin: 20px -20px 20px -24px; text-rendering: optimizeLegibility; padding: 10px 20px 9px 10px; border-left-width: 8px; border-left-style: solid; border-left-color: rgb(0, 166, 124); border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: rgb(0, 166, 124); font-variant-ligatures: normal;"}
+视图的变形
 ----------
 
 > 在开发过程中，经常需要对视图对象的样式进行修改，常见的修改操作有位移、放大/缩小、旋转等。当涉及到视图位移的时候，可以修改视图的center以及frame属性；当涉及到视图的缩放以及旋转操作时，推荐修改视图的transform属性。
 
-<div>
-
 当需要修改视图对象的大小时，有两种方法可以完成，第一种方法可以修改视图对象的bounds.size属性，第二种方法是直接修改视图对象的transform属性，即让视图对象进行一次形变操作。在修改形变属性时，需要使用到如下的函数，其中：sx以及sy是在X轴以及Y轴两个方向上放大的比例。
 
-``` {.prettyprint .linenums style="padding: 8px; border-radius: 2px; margin-top: 0px; margin-bottom: 20px; word-break: break-all; word-wrap: break-word; border: 1px solid rgb(238, 238, 238); overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal;"}
+``` prettyprint
 CG_EXTERN CGAffineTransform CGAffineTransformScale(CGAffineTransform t,  CGFloat sx, CGFloat sy) CG_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
 ```
 
 下面的示例代码，实现分别在X轴和Y轴方向放大1.1倍。
 
-``` {.prettyprint .linenums style="padding: 8px; border-radius: 2px; margin-top: 0px; margin-bottom: 20px; word-break: break-all; word-wrap: break-word; border: 1px solid rgb(238, 238, 238); overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal;"}
+``` prettyprint
 - (IBAction)scale:(id)sender {    self.myView.transform = CGAffineTransformScale(self.myView.transform, 1.1, 1.1);    NSLog(@"myview frame :%@",NSStringFromCGRect(self.myView.frame));}
 ```
 
 通过修改视图对象的transform属性，可以实现视图的顺时针旋转以及逆时针旋转，此时需要使用到如下函数，其中，angle属性是旋转的角度。
 
-``` {.prettyprint .linenums style="padding: 8px; border-radius: 2px; margin-top: 0px; margin-bottom: 20px; word-break: break-all; word-wrap: break-word; border: 1px solid rgb(238, 238, 238); overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal;"}
+``` prettyprint
 CG_EXTERN CGAffineTransform CGAffineTransformRotate(CGAffineTransform t,  CGFloat angle) CG_AVAILABLE_STARTING(__MAC_10_0, __IPHONE_2_0);
 ```
 
 下面的示例代码，实现了顺时针旋转45度。
 
-``` {.prettyprint .linenums style="padding: 8px; border-radius: 2px; margin-top: 0px; margin-bottom: 20px; word-break: break-all; word-wrap: break-word; border: 1px solid rgb(238, 238, 238); overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal;"}
+``` prettyprint
 - (IBAction)rotate:(id)sender {    self.myView.transform = CGAffineTransformRotate(self.myView.transform,M_PI_4);    NSLog(@"myview frame :%@",NSStringFromCGRect(self.myView.frame));}
 ```
 
-当需要重置transform属性时，可以进行如下设置。但要注意的是：假如需要完全重置一个视图的样式，除了重置transform属性之外，还需要重置frame,
-center, bounds。
+当需要重置transform属性时，可以进行如下设置。但要注意的是：假如需要完全重置一个视图的样式，除了重置transform属性之外，还需要重置frame, center, bounds。
 
-``` {.prettyprint .linenums style="padding: 8px; border-radius: 2px; margin-top: 0px; margin-bottom: 20px; word-break: break-all; word-wrap: break-word; border: 1px solid rgb(238, 238, 238); overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal;"}
+``` prettyprint
 - (IBAction)reset:(id)sender {    self.myView.transform = CGAffineTransformIdentity; }
 ```
 
-<div>
-
-视图关系的常用属性和方法 {#视图关系的常用属性和方法 style="margin: 20px -20px 20px -24px; text-rendering: optimizeLegibility; padding: 10px 20px 9px 10px; border-left-width: 8px; border-left-style: solid; border-left-color: rgb(0, 166, 124); border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: rgb(0, 166, 124); font-variant-ligatures: normal;"}
+视图关系的常用属性和方法
 ------------------------
 
-``` {.prettyprint .linenums style="padding: 8px; border-radius: 2px; margin-top: 0px; margin-bottom: 20px; word-break: break-all; word-wrap: break-word; border: 1px solid rgb(238, 238, 238); overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal;"}
+``` prettyprint
 /*常用属性*/@property(nullable, nonatomic,readonly) UIView       *superview;//父视图@property(nonatomic,readonly,copy) NSArray *subviews;//所有的子视图@property(nullable, nonatomic,readonly) UIWindow     *window;//视图所在的Window /*常用方法*/- (void)addSubview:(UIView *)view;//添加子视图- (void)bringSubviewToFront:(UIView *)view;//把某个子视图移到最前显示- (void)sendSubviewToBack:(UIView *)view;//把某个子视图移动到最后显示- (void)removeFromSuperview;//从父视图中移除
 ```
 
-</div>
-
-<div style="color:gray">
-
-<span style="font-size: 12.5px; line-height: 20px;"></span>
-
-</div>
-
-</div>
-
-<div style="color: gray;">
-
 [](http://www.hcios.com/archives/1549)
 
-</div>
-
-</div>
-
-<div>
-
-1、UIView类中支持动画的属性 {#uiview类中支持动画的属性 style="margin: 20px -20px 20px -24px; line-height: 18px; color: rgb(85, 85, 85); text-rendering: optimizeLegibility; font-size: 18px; padding: 10px 20px 9px 10px; border-left-width: 8px; border-left-style: solid; border-left-color: rgb(0, 166, 124); border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: rgb(0, 166, 124); font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-variant-ligatures: normal; orphans: 2; text-indent: 30px; widows: 2; background-color: rgb(251, 251, 251);"}
+1、UIView类中支持动画的属性
 ---------------------------
 
 动画为用户界面在不同外观状态之间的迁移过程提供了流畅的视觉效果，动画播放的功能也是苹果自家的看家本领。在UIView类中，支持动画的属性如下所示，即：在开发过程中，修改如下属性，可以考虑添加动画效果。
 
-``` {.prettyprint .linenums style="padding: 8px; color: rgb(68, 68, 68); border-radius: 2px; margin-top: 0px; margin-bottom: 20px; font-size: 14px; line-height: 20px; word-break: break-all; word-wrap: break-word; white-space: pre-wrap; border: 1px solid rgb(238, 238, 238); overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal; orphans: 2; text-indent: 30px; widows: 2; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; background-color: rgb(248, 248, 248);"}
+``` prettyprint
 /*UIView中可以添加动画的属性*/@property(nonatomic) CGRect            frame;@property(nonatomic) CGRect            bounds;@property(nonatomic) CGPoint           center; @property(nonatomic) CGAffineTransform transform;@property(nullable, nonatomic,copy)            UIColor          *backgroundColor; @property(nonatomic)                 CGFloat           alpha;
 ```
 
-2、常用动画播放的方法 {#常用动画播放的方法 style="margin: 20px -20px 20px -24px; line-height: 18px; color: rgb(85, 85, 85); text-rendering: optimizeLegibility; font-size: 18px; padding: 10px 20px 9px 10px; border-left-width: 8px; border-left-style: solid; border-left-color: rgb(0, 166, 124); border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: rgb(0, 166, 124); font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-variant-ligatures: normal; orphans: 2; text-indent: 30px; widows: 2; background-color: rgb(251, 251, 251);"}
+2、常用动画播放的方法
 ---------------------
 
 当需要播放动画时，经常使用如下的类方法，在如下的方法中，可以设置动画播放的时间，动画播放的内容以及动画播放完毕后的操作。动画也可以支持嵌套。
 
-``` {.prettyprint .linenums style="padding: 8px; color: rgb(68, 68, 68); border-radius: 2px; margin-top: 0px; margin-bottom: 20px; font-size: 14px; line-height: 20px; word-break: break-all; word-wrap: break-word; white-space: pre-wrap; border: 1px solid rgb(238, 238, 238); overflow: hidden; box-shadow: rgb(238, 238, 238) 40px 0px 0px inset, rgb(51, 183, 150) 42px 0px 0px inset; font-variant-ligatures: normal; orphans: 2; text-indent: 30px; widows: 2; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; background-color: rgb(248, 248, 248);"}
+``` prettyprint
 /*UIView有关动画的属性和方法*/+ (void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations completion:(void (^ __nullable)(BOOL finished))completion NS_AVAILABLE_IOS(4_0); + (void)animateWithDuration:(NSTimeInterval)duration animations:(void (^)(void))animations NS_AVAILABLE_IOS(4_0);
 ```
 
-</div>
 
-<div>
-
-\
-
-</div>

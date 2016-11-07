@@ -1,14 +1,5 @@
-<span style="font-family:Menlo"></span>
-<div>
-
-``` {.prettyprint .linenums .prettyprinted style=""}
+``` prettyprint
 using UnityEngine;using System.Collections;public class TouchToMoveScaleRotate : MonoBehaviour {    private Touch touch1;    private Touch touch2;    private Vector3 initPosition;    private Vector3 initScale;    private Vector3 initEulerAngles;    private Vector3 touch1InitPosition;    private Vector3 touch2InitPosition;    // Use this for initialization    void Start () {        initScale = transform.localScale;        initEulerAngles = transform.localEulerAngles;        initPosition = transform.localPosition;    }        // Update is called once per frame    void Update () {        if (Input.touchCount == 1) {            touch1 = Input.touches [0];            if (touch1.phase == TouchPhase.Began) {                touch1InitPosition = touch1.position;            }            else if (touch1.phase == TouchPhase.Moved) {                transform.localPosition = initPosition + (new Vector3(touch1.position.x, touch1.position.y, 0f) - touch1InitPosition);            }            else if (touch1.phase == TouchPhase.Ended) {                initPosition = transform.localPosition;            }        }        else if (Input.touchCount == 2) {            touch1 = Input.touches [0];            touch2 = Input.touches [1];            if (touch2.phase == TouchPhase.Began) {                touch1InitPosition = touch1.position;                touch2InitPosition = touch2.position;            }            else if (touch2.phase == TouchPhase.Moved) {                float initDistance = Vector3.Distance (touch1InitPosition, touch2InitPosition);                float curDistance = Vector3.Distance (touch1.position, touch2.position);                transform.localScale = initScale * (curDistance / initDistance);                Vector3 initPosDelta = touch2InitPosition - touch1InitPosition;                Vector3 curPosDelta = touch2.position - touch1.position;                float a = Vector3.Angle (initPosDelta, curPosDelta);                Vector3 c = Vector3.Cross (initPosDelta, curPosDelta);//                Debug.Log(a);//                Debug.Log(c);                if (c.z > 0) {                    transform.localEulerAngles = initEulerAngles + new Vector3(0f, 0f, a);                } else {                    transform.localEulerAngles = initEulerAngles - new Vector3(0f, 0f, a);                }            }            else if (touch2.phase == TouchPhase.Ended) {                initScale = transform.localScale;                initEulerAngles = transform.localEulerAngles;            }        }    }}
 ```
 
-</div>
 
-<div>
-
-\
-
-</div>

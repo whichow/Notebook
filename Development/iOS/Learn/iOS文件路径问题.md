@@ -1,0 +1,5 @@
+iOS中只能保存文件的相对路径，因为每次程序重新编译打包后文件的路径都会改变，导致无法读取文件。
+
+每次需要取文件时需要使用NSSearchPathForDirectoriesInDomains重新获取系统目录。
+
+

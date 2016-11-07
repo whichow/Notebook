@@ -1,7 +1,3 @@
-<div>
-
-os.mknod("test.txt") \
-
-</div>
+os.mknod("test.txt") 
 
 open("test.txt", 'w').close()

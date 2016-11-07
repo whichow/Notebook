@@ -14,35 +14,18 @@ XCode5之后默认使用storyboard来构造应用程序的界面，如果我们�
 
 经过上面两步算是删除了工程对Main.storyboard的依赖，但是运行工程后会发现是黑屏
 
-首先新建一个Cocoa Touch Class，Subclass of选择UIViewController，勾选Also
-create XIB file\
+首先新建一个Cocoa Touch Class，Subclass of选择UIViewController，勾选Also create XIB file
 
 ![](使用nib文件构造应用程序界面_files/3546277.png)
 
-<span
-style="white-space: normal;">接下来在AppDelegate中引入ViewController头文件，</span>
+接下来在AppDelegate中引入ViewController头文件，
 
 在application:didFinishLaunchingWithOptions:方法中添加
 
-<div>
-
-<div>
-
-``` {.prettyprint .linenums .prettyprinted style=""}
+``` prettyprint
 //创建一个UIWindow做为应用程序的窗口，设置其大小为屏幕的大小self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//设置窗口的背景色self.window.backgroundColor = [UIColor whiteColor];//设置窗口的根视图控制器为我们创建的控制器self.window.rootViewController = [[ViewController alloc] init];//设置为主窗口并显示[self.window makeKeyAndVisible];
 ```
 
-</div>
-
-<div>
-
 这样应用程序运行时显示的就是nib文件中的界面了。
 
-</div>
-
-</div>
-
-\
-
-\
 

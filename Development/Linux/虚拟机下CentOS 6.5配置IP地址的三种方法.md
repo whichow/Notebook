@@ -1,10 +1,4 @@
-<div>
-
-<div>
-
 实验软件环境：虚拟机Vmware Workstation10.0 、CentOS 6.5 32位
-
-</div>
 
    
 
@@ -46,8 +40,7 @@ GATEWAY=192.168.4.1
 
 网络重启后，eth0的ip就生效了，使用命令\#ifconfigeth0 查看
 
-接下来检测配置的IP是否可以ping通，在物理机使用快捷键WINDOWS+R 打开运行框，输入命令cmd，输入ping
-192.168.4.10 进行检测，ping通说明IP配置正确。
+接下来检测配置的IP是否可以ping通，在物理机使用快捷键WINDOWS+R 打开运行框，输入命令cmd，输入ping 192.168.4.10 进行检测，ping通说明IP配置正确。
 
 备注：我所在的物理机网段为192.168.4.0 网段。大家做实验的时候根据自己的环境进行设定，保持虚拟机和物理机在同一网段即可。
 
@@ -93,11 +86,10 @@ GATEWAY=192.168.20.2
 
 设置DNS地址,运行命令\#vi /etc/resolv.conf
 
-光标移动到空行，按“O”键，输入 nameserver
-192.168.20.2 退出按ESC键，输入:wq 回车保存配置文件。
+光标移动到空行，按“O”键，输入 nameserver 192.168.20.2 退出按ESC键，输入:wq 回车保存配置文件。
 
 重启网络服务 \#service network restart
 
 重启之后\#ifconfig 查看配置的ip地址，物理机ping这个地址测试是否能通。
 
-</div>
+

@@ -1,17 +1,4 @@
-<div id="show-note-container">
-
-<div id="flag" class="post-bg">
-
-<div class="container">
-
-<div class="article">
-
-<div class="preview">
-
-<div
-style="border: 0px none rgb(47, 47, 47); color: rgb(47, 47, 47); display: block; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 16px; font-family: 'lucida grande', 'lucida sans unicode', lucida, helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif; height: 24662px; line-height: 27.2px; margin: 0px; outline: rgb(47, 47, 47) none 0px; padding: 0px; text-decoration: none; width: 620px;">
-
-Unity技术面试题\
+Unity技术面试题
 
 一：什么是协同程序？
 
@@ -21,11 +8,9 @@ Unity技术面试题\
 
 答：碰撞器是触发器的载体，而触发器只是碰撞器身上的一个属性。
 
-当Is
-Trigger=false时，碰撞器根据物理引擎引发碰撞，产生碰撞的效果，可以调用OnCollisionEnter/Stay/Exit函数；
+当Is Trigger=false时，碰撞器根据物理引擎引发碰撞，产生碰撞的效果，可以调用OnCollisionEnter/Stay/Exit函数；
 
-当Is
-Trigger=true时，碰撞器被物理引擎所忽略，没有碰撞效果，可以调用OnTriggerEnter/Stay/Exit函数。
+当Is Trigger=true时，碰撞器被物理引擎所忽略，没有碰撞效果，可以调用OnTriggerEnter/Stay/Exit函数。
 
 如果既要检测到物体的接触又不想让碰撞检测影响物体移动或要检测一个物件是否经过空间中的某个区域这时就可以用到触发器
 
@@ -179,17 +164,13 @@ protected internal：protected + internal
 
 简而言之，GPU的图形（处理）流水线完成如下的工作：（并不一定是按照如下顺序）
 
-顶点处理：这阶段GPU读取描述3D图形外观的顶点数据并根据顶点数据确定3D图形的形状及位置关系，建立起3D图形的骨架。在支持DX8和DX9规格的GPU中，这些工作由硬件实现的Vertex
-Shader（定点着色器）完成。
+顶点处理：这阶段GPU读取描述3D图形外观的顶点数据并根据顶点数据确定3D图形的形状及位置关系，建立起3D图形的骨架。在支持DX8和DX9规格的GPU中，这些工作由硬件实现的Vertex Shader（定点着色器）完成。
 
 光栅化计算：显示器实际显示的图像是由像素组成的，我们需要将上面生成的图形上的点和线通过一定的算法转换到相应的像素点。把一个矢量图形转换为一系列像素点的过程就称为光栅化。例如，一条数学表示的斜线段，最终被转化成阶梯状的连续像素点。
 
-纹理帖图：顶点单元生成的多边形只构成了3D物体的轮廓，而纹理映射（texture
-mapping）工作完成对多变形表面的帖图，通俗的说，就是将多边形的表面贴上相应的图片，从而生成“真实”的图形。TMU（Texture
-mapping unit）即是用来完成此项工作。
+纹理帖图：顶点单元生成的多边形只构成了3D物体的轮廓，而纹理映射（texture mapping）工作完成对多变形表面的帖图，通俗的说，就是将多边形的表面贴上相应的图片，从而生成“真实”的图形。TMU（Texture mapping unit）即是用来完成此项工作。
 
-像素处理：这阶段（在对每个像素进行光栅化处理期间）GPU完成对像素的计算和处理，从而确定每个像素的最终属性。在支持DX8和DX9规格的GPU中，这些工作由硬件实现的Pixel
-Shader（像素着色器）完成。
+像素处理：这阶段（在对每个像素进行光栅化处理期间）GPU完成对像素的计算和处理，从而确定每个像素的最终属性。在支持DX8和DX9规格的GPU中，这些工作由硬件实现的Pixel Shader（像素着色器）完成。
 
 最终输出：由ROP（光栅化引擎）最终完成像素的输出，1帧渲染完毕后，被送到显存帧缓冲区。
 
@@ -197,8 +178,7 @@ Shader（像素着色器）完成。
 
 二十二：什么是渲染管道？
 
-答：是指在显示器上为了显示出图像而经过的一系列必要操作。
-渲染管道中的很多步骤，都要将几何物体从一个坐标系中变换到另一个坐标系中去。
+答：是指在显示器上为了显示出图像而经过的一系列必要操作。 渲染管道中的很多步骤，都要将几何物体从一个坐标系中变换到另一个坐标系中去。
 
 主要步骤有：
 
@@ -224,8 +204,7 @@ Shader（像素着色器）完成。
 
 2.AssetBundle
 
-Unity5.1版本后可以选择使用Git:
-https://github.com/applexiaohao/LOAssetFramework.git
+Unity5.1版本后可以选择使用Git: https://github.com/applexiaohao/LOAssetFramework.git
 
 二十五：你用过哪些插件？
 
@@ -239,8 +218,7 @@ https://github.com/applexiaohao/LOAssetFramework.git
 
 3.使用2d插件，如：2DToolKit、NGUI
 
-二十七：在物体发生碰撞的整个过程中，有几个阶段，分别列出对应的函数
-三个阶段
+二十七：在物体发生碰撞的整个过程中，有几个阶段，分别列出对应的函数 三个阶段
 
 答：
 
@@ -260,8 +238,7 @@ rigidbody.AddForceAtPosition
 
 二十九：什么叫做链条关节？
 
-答：Hinge
-Joint，可以模拟两个物体间用一根链条连接在一起的情况，能保持两个物体在一个固定距离内部相互移动而不产生作用力，但是达到固定距离后就会产生拉力。
+答：Hinge Joint，可以模拟两个物体间用一根链条连接在一起的情况，能保持两个物体在一个固定距离内部相互移动而不产生作用力，但是达到固定距离后就会产生拉力。
 
 三十：物体自身旋转使用的函数？
 
@@ -299,8 +276,7 @@ FixedUpdate，每固定帧绘制时执行一次，和Update不同的是FixedUpda
 
 三十六：请描述游戏动画有哪几种，以及其原理？
 
-答：主要有关节动画、骨骼动画、单一网格模型动画(关键帧动画)。
-关节动画：把角色分成若干独立部分，一个部分对应一个网格模型，部分的动画连接成一个整体的动画，角色比较灵活，Quake2中使用这种动画；
+答：主要有关节动画、骨骼动画、单一网格模型动画(关键帧动画)。 关节动画：把角色分成若干独立部分，一个部分对应一个网格模型，部分的动画连接成一个整体的动画，角色比较灵活，Quake2中使用这种动画；
 
 骨骼动画，广泛应用的动画方式，集成了以上两个方式的优点，骨骼按角色特点组成一定的层次结构，有关节相连，可做相对运动，皮肤作为单一网格蒙在骨骼之外，决定角色的外观；
 
@@ -312,19 +288,15 @@ FixedUpdate，每固定帧绘制时执行一次，和Update不同的是FixedUpda
 
 三十八：alpha blend工作原理
 
-答：Alpha
-Blend实现透明效果，不过只能针对某块区域进行alpha操作，透明度可设。
+答：Alpha Blend实现透明效果，不过只能针对某块区域进行alpha操作，透明度可设。
 
 三十九：写出光照计算中的diffuse的计算公式
 
-答：diffuse = Kd x colorLight x max(N\*L,0)；Kd 漫反射系数、colorLight
-光的颜色、N 单位法线向量、L
-由点指向光源的单位向量、其中N与L点乘，如果结果小于等于0，则漫反射为0。
+答：diffuse = Kd x colorLight x max(N\*L,0)；Kd 漫反射系数、colorLight 光的颜色、N 单位法线向量、L 由点指向光源的单位向量、其中N与L点乘，如果结果小于等于0，则漫反射为0。
 
 四十：LOD是什么，优缺点是什么？
 
-答：LOD(Level of
-detail)多层次细节，是最常用的游戏优化技术。它按照模型的位置和重要程度决定物体渲染的资源分配，降低非重要物体的面数和细节度，从而获得高效率的渲染运算。
+答：LOD(Level of detail)多层次细节，是最常用的游戏优化技术。它按照模型的位置和重要程度决定物体渲染的资源分配，降低非重要物体的面数和细节度，从而获得高效率的渲染运算。
 
 四十一：两种阴影判断的方法、工作原理。
 
@@ -338,13 +310,9 @@ detail)多层次细节，是最常用的游戏优化技术。它按照模型的�
 
 四十二：Vertex Shader是什么，怎么计算？
 
-答：顶点着色器是一段执行在GPU上的程序，用来取代fixed
-pipeline中的transformation和lighting，Vertex Shader主要操作顶点。
+答：顶点着色器是一段执行在GPU上的程序，用来取代fixed pipeline中的transformation和lighting，Vertex Shader主要操作顶点。
 
-Vertex Shader对输入顶点完成了从local space到homogeneous
-space（齐次空间）的变换过程，homogeneous space即projection
-space的下一个space。在这其间共有world transformation, view
-transformation和projection transformation及lighting几个过程。
+Vertex Shader对输入顶点完成了从local space到homogeneous space（齐次空间）的变换过程，homogeneous space即projection space的下一个space。在这其间共有world transformation, view transformation和projection transformation及lighting几个过程。
 
 四十三：MipMap是什么，作用？
 
@@ -352,8 +320,7 @@ transformation和projection transformation及lighting几个过程。
 
 四十四：请描述Interface与抽象类之间的不同
 
-答：抽象类表示该类中可能已经有一些方法的具体定义，但接口就是公公只能定义各个方法的界面
-，不能具体的实现代码在成员方法中。
+答：抽象类表示该类中可能已经有一些方法的具体定义，但接口就是公公只能定义各个方法的界面 ，不能具体的实现代码在成员方法中。
 
 类是子类用来继承的，当父类已经有实际功能的方法时该方法在子类中可以不必实现，直接引用父类的方法，子类也可以重写该父类的方法。
 
@@ -365,20 +332,17 @@ string a = new string("abc");
 
 a = (a.ToUpper() + "123").Substring(0, 2);
 
-答：其实在C\#中第一行是会出错的（Java中倒是可行）。应该这样初始化：string
-b = new string(new char\[\]{'a','b','c'});
+答：其实在C\#中第一行是会出错的（Java中倒是可行）。应该这样初始化：string b = new string(new char\[\]{'a','b','c'});
 
 四十六：下列代码在运行中会发生什么问题？如何避免？
 
-List ls =newList(newint\[\] {1,2,3,4,5});foreach (intitem in ls){   
-Console.WriteLine(item \* item);    ls.Remove(item);}
+List ls =newList(newint\[\] {1,2,3,4,5});foreach (intitem in ls){    Console.WriteLine(item \* item);    ls.Remove(item);}
 
 答：会产生运行时错误，因为foreach是只读的。不能一边遍历一边修改。
 
 四十七：.Net与Mono的关系？
 
-答：mono是.net的一个开源跨平台工具，就类似java虚拟机，java本身不是跨平台语言，但运行在虚拟机上就能够实现了跨平台。.net只能在windows下运行，mono可以实现跨平台编译运行，可以运行于linux，Unix，Mac
-OS等。
+答：mono是.net的一个开源跨平台工具，就类似java虚拟机，java本身不是跨平台语言，但运行在虚拟机上就能够实现了跨平台。.net只能在windows下运行，mono可以实现跨平台编译运行，可以运行于linux，Unix，Mac OS等。
 
 四十八：简述Unity3D支持的作为脚本的语言的名称
 
@@ -398,8 +362,7 @@ JavaScript、 C\#、Boo
 
 五十：Unity3D的协程和C\#线程之间的区别是什么？
 
-答：多线程程序同时运行多个线程
-，而在任一指定时刻只有一个协程在运行，并且这个正在运行的协同程序只在必要时才被挂起。
+答：多线程程序同时运行多个线程 ，而在任一指定时刻只有一个协程在运行，并且这个正在运行的协同程序只在必要时才被挂起。
 
 除主线程之外的线程无法访问Unity3D的对象、组件、方法。
 
@@ -485,10 +448,7 @@ Unity3D支持iOS、Android、Flash、Windows、Mac、Wii等平台的游戏开发
 
 答：
 
-简单的说：C\# 与C++ 比较的话，最重要的特性就是C\#
-是一种完全面向对象的语言，而C++ 不是，另外C\# 是基于IL 中间语言和.NET
-Framework CLR 的，在可移植性，可维护性和强壮性都比C++ 有很大的改进。C\#
-的设计目标是用来开发快速稳定可扩展的应用程序，当然也可以通过Interop
+简单的说：C\# 与C++ 比较的话，最重要的特性就是C\# 是一种完全面向对象的语言，而C++ 不是，另外C\# 是基于IL 中间语言和.NET Framework CLR 的，在可移植性，可维护性和强壮性都比C++ 有很大的改进。C\# 的设计目标是用来开发快速稳定可扩展的应用程序，当然也可以通过Interop
 
 和Pinvoke 完成一些底层操作
 
@@ -510,25 +470,17 @@ char \* strcpy(char \* strDest,const char \* strSrc);
 
 2.解释为什么要返回char \*
 
-char\*strcpy(char\* strDest,constchar\*
-strSrc){if((strDest==NULL)||(strSrc==NULL))//\[1\]throw"Invalid
-argument(s)";//\[2\]char\*
-strDestCopy=strDest;//\[3\]while((\*strDest++=\*strSrc++)!='\\0');//\[4\]returnstrDestCopy; 
-      }
+char\*strcpy(char\* strDest,constchar\* strSrc){if((strDest==NULL)||(strSrc==NULL))//\[1\]throw"Invalid argument(s)";//\[2\]char\* strDestCopy=strDest;//\[3\]while((\*strDest++=\*strSrc++)!='\\0');//\[4\]returnstrDestCopy;        }
 
 **错误的做法：**
 
-//不检查指针的有效性，说明答题者不注重代码的健壮性。//检查指针的有效性时使用((!strDest)||(!strSrc))或(!(strDest&&strSrc))，说明答题者对C语言中类型的隐式转换没有深刻认识。在本例中char
-\*转换为bool即是类型隐式转换，这种功能虽然灵活，但更多的是导致出错概率增大和维护成本升高。所以C++专门增加了bool、true、false三个关键字以提供更安全的条件表达式。//检查指针的有效性时使用((strDest==0)||(strSrc==0))，说明答题者不知道使用常量的好处。直接使用字面常量（如本例中的0）会减少程序的可维护性。0虽然简单，但程序中可能出现很多处对指针的检查，万一出现笔误，编译器不能发现，生成的程序内含逻辑错误，很难排除。而使用NULL代替0，如果出现拼写错误，编译器就会检查出来。
+//不检查指针的有效性，说明答题者不注重代码的健壮性。//检查指针的有效性时使用((!strDest)||(!strSrc))或(!(strDest&&strSrc))，说明答题者对C语言中类型的隐式转换没有深刻认识。在本例中char \*转换为bool即是类型隐式转换，这种功能虽然灵活，但更多的是导致出错概率增大和维护成本升高。所以C++专门增加了bool、true、false三个关键字以提供更安全的条件表达式。//检查指针的有效性时使用((strDest==0)||(strSrc==0))，说明答题者不知道使用常量的好处。直接使用字面常量（如本例中的0）会减少程序的可维护性。0虽然简单，但程序中可能出现很多处对指针的检查，万一出现笔误，编译器不能发现，生成的程序内含逻辑错误，很难排除。而使用NULL代替0，如果出现拼写错误，编译器就会检查出来。
 
-//returnnewstring("Invalid
-argument(s)");，说明答题者根本不知道返回值的用途，并且他对内存泄漏也没有警惕心。从函数中返回函数体内分配的内存是十分危险的做法，他把释放内存的义务抛给不知情的调用者，绝大多数情况下，调用者不会释放内存，这导致内存泄漏。//return0;，说明答题者没有掌握异常机制。调用者有可能忘记检查返回值，调用者还可能无法检查返回值（见后面的链式表达式）。妄想让返回值肩负返回正确值和异常值的双重功能，其结果往往是两种功能都失效。应该以抛出异常来代替返回值，这样可以减轻调用者的负担、使错误不会被忽略、增强程序的可维护性。
+//returnnewstring("Invalid argument(s)");，说明答题者根本不知道返回值的用途，并且他对内存泄漏也没有警惕心。从函数中返回函数体内分配的内存是十分危险的做法，他把释放内存的义务抛给不知情的调用者，绝大多数情况下，调用者不会释放内存，这导致内存泄漏。//return0;，说明答题者没有掌握异常机制。调用者有可能忘记检查返回值，调用者还可能无法检查返回值（见后面的链式表达式）。妄想让返回值肩负返回正确值和异常值的双重功能，其结果往往是两种功能都失效。应该以抛出异常来代替返回值，这样可以减轻调用者的负担、使错误不会被忽略、增强程序的可维护性。
 
 //忘记保存原始的strDest值，说明答题者逻辑思维不严密。
 
-//循环写成while (\*strDest++=\*strSrc++);，同\[1\](B)。//循环写成while
-(\*strSrc!='\\0')
-\*strDest++=\*strSrc++;，说明答题者对边界条件的检查不力。循环体结束后，strDest字符串的末尾没有正确地加上'\\0'。
+//循环写成while (\*strDest++=\*strSrc++);，同\[1\](B)。//循环写成while (\*strSrc!='\\0') \*strDest++=\*strSrc++;，说明答题者对边界条件的检查不力。循环体结束后，strDest字符串的末尾没有正确地加上'\\0'。
 
 /\*\*
 
@@ -542,8 +494,7 @@ argument(s)");，说明答题者根本不知道返回值的用途，并且他对
 
 char \* strA=strcpy(new char\[10\],strB);
 
-返回strSrc的原始值是错误的。其一，源字符串肯定是已知的，返回它没有意义。其二，不能支持形如第二例的表达式。其三，为了保护源字符串，形参用const限定strSrc所指的内容，把const
-char \*作为char \*返回，类型不符，编译报错。
+返回strSrc的原始值是错误的。其一，源字符串肯定是已知的，返回它没有意义。其二，不能支持形如第二例的表达式。其三，为了保护源字符串，形参用const限定strSrc所指的内容，把const char \*作为char \*返回，类型不符，编译报错。
 
 \*/
 
@@ -581,8 +532,7 @@ abstract：指示该方法或属性没有实现。
 
 sealed：密封方法。可以防止在派生类中对该方法的override（重载）。不是类的每个成员方法都可以作为密封方法密封方法，必须对基类的虚方法进行重载，提供具体的实现方法。所以，在方法的声明中，sealed修饰符总是和override修饰符同时使用。
 
-delegate：委托。用来定义一个函数指针。C\#中的事件驱动是基于delegate +
-event的。
+delegate：委托。用来定义一个函数指针。C\#中的事件驱动是基于delegate + event的。
 
 const：指定该成员的值只读不允许修改。
 
@@ -598,9 +548,7 @@ static：指示一个成员属于类型本身，而不是属于特定的对象�
 
 virtual：指示一个方法或存取器的实现可以在继承类中被覆盖。
 
-new：在派生类中隐藏指定的基类成员，从而实现重写的功能。
-若要隐藏继承类的成员，请使用相同名称在派生类中声明该成员，并用 new
-修饰符修饰它。
+new：在派生类中隐藏指定的基类成员，从而实现重写的功能。 若要隐藏继承类的成员，请使用相同名称在派生类中声明该成员，并用 new 修饰符修饰它。
 
 六十七：Heap与Stack有何区别？
 
@@ -632,10 +580,7 @@ new：在派生类中隐藏指定的基类成员，从而实现重写的功能�
 
 七十：请写出求斐波那契数列任意一位的值得算法
 
-staticintFn(intn){if(n &lt;=0)           
-{thrownewArgumentOutOfRangeException();            }if(n ==1||n==2)     
-      {return1;            }returnchecked(Fn(n -1) + Fn(n -2));// when
-n&gt;46 memory will  overflow}
+staticintFn(intn){if(n &lt;=0)            {thrownewArgumentOutOfRangeException();            }if(n ==1||n==2)            {return1;            }returnchecked(Fn(n -1) + Fn(n -2));// when n&gt;46 memory will  overflow}
 
 七十一：ref参数和out参数是什么？有什么区别？
 
@@ -653,18 +598,7 @@ ref参数是引用，out参数为输出参数。
 
 七十三：协同程序的执行代码是什么？有何用处，有何缺点？
 
-functionStart() {    // -After0seconds, prints"Starting 0.0"//
--After0seconds, prints"Before WaitAndPrint Finishes 0.0"//
--After2seconds, prints"WaitAndPrint 2.0"// 先打印"Starting 0.0"和"Before
-WaitAndPrint Finishes 0.0"两句,2秒后打印"WaitAndPrint 2.0"print
-("Starting "+Time.time);//StartfunctionWaitAndPrintasa
-coroutine.Andcontinue executionwhileitisrunning    // thisisthe
-sameasWaintAndPrint(2.0)asthe compiler does itforyou automatically    //
-协同程序WaitAndPrint在Start函数内执行,可以视同于它与Start函数同步执行. 
-  StartCoroutine(WaitAndPrint(2.0));print ("Before WaitAndPrint Finishes
-" + Time.time );}function WaitAndPrint (waitTime : float) {    //
-suspend execution for waitTime seconds    // 暂停执行waitTime秒    yield
-WaitForSeconds (waitTime);    print ("WaitAndPrint "+ Time.time );}
+functionStart() {    // -After0seconds, prints"Starting 0.0"// -After0seconds, prints"Before WaitAndPrint Finishes 0.0"// -After2seconds, prints"WaitAndPrint 2.0"// 先打印"Starting 0.0"和"Before WaitAndPrint Finishes 0.0"两句,2秒后打印"WaitAndPrint 2.0"print ("Starting "+Time.time);//StartfunctionWaitAndPrintasa coroutine.Andcontinue executionwhileitisrunning    // thisisthe sameasWaintAndPrint(2.0)asthe compiler does itforyou automatically    // 协同程序WaitAndPrint在Start函数内执行,可以视同于它与Start函数同步执行.    StartCoroutine(WaitAndPrint(2.0));print ("Before WaitAndPrint Finishes " + Time.time );}function WaitAndPrint (waitTime : float) {    // suspend execution for waitTime seconds    // 暂停执行waitTime秒    yield WaitForSeconds (waitTime);    print ("WaitAndPrint "+ Time.time );}
 
 作用：一个协同程序在执行过程中,可以在任意位置使用yield语句。yield的返回值控制何时恢复协同程序向下执行。协同程序在对象自有帧执行过程中堪称优秀。协同程序在性能上没有更多的开销。
 
@@ -672,9 +606,7 @@ WaitForSeconds (waitTime);    print ("WaitAndPrint "+ Time.time );}
 
 七十四：什么是里氏代换元则？
 
-答：里氏替换原则(Liskov Substitution Principle
-LSP)面向对象设计的基本原则之一。
-里氏替换原则中说，任何基类可以出现的地方，子类一定可以出现，作用方便扩展功能能
+答：里氏替换原则(Liskov Substitution Principle LSP)面向对象设计的基本原则之一。 里氏替换原则中说，任何基类可以出现的地方，子类一定可以出现，作用方便扩展功能能
 
 七十五：Mock和Stub有何区别？
 
@@ -686,11 +618,7 @@ Mock与Stub的区别：Mock:关注行为验证。细粒度的测试，即代码�
 
 七十七：堆和栈的区别？
 
-答：栈通常保存着我们代码执行的步骤，如在代码段1中 AddFive()方法，int
-pValue变量，int
-result变量等等。而堆上存放的则多是对象，数据等。（译者注:忽略编译器优化）我们可以把栈想象成一个接着一个叠放在一起的盒子。当我们使用的时候，每次从最顶部取走一个盒子。栈也是如此，当一个方法（或类型）被调用完成的时候，就从栈顶取走（called
-a
-Frame，译注：调用帧），接着下一个。堆则不然，像是一个仓库，储存着我们使用的各种对象等信息，跟栈不同的是他们被调用完毕不会立即被清理掉。
+答：栈通常保存着我们代码执行的步骤，如在代码段1中 AddFive()方法，int pValue变量，int result变量等等。而堆上存放的则多是对象，数据等。（译者注:忽略编译器优化）我们可以把栈想象成一个接着一个叠放在一起的盒子。当我们使用的时候，每次从最顶部取走一个盒子。栈也是如此，当一个方法（或类型）被调用完成的时候，就从栈顶取走（called a Frame，译注：调用帧），接着下一个。堆则不然，像是一个仓库，储存着我们使用的各种对象等信息，跟栈不同的是他们被调用完毕不会立即被清理掉。
 
 七十八：概述c\#中代理和事件？
 
@@ -704,35 +632,27 @@ C＃事件本质就是对消息的封装，用作对象之间的通信；发送�
 
 八十：射线检测碰撞物的原理是？
 
-答：射线是3D世界中一个点向一个方向发射的一条无终点的线，在发射轨迹中与其他物体发生碰撞时，它将停止发射
-。
+答：射线是3D世界中一个点向一个方向发射的一条无终点的线，在发射轨迹中与其他物体发生碰撞时，它将停止发射 。
 
 八十一：客户端与服务器交互方式有几种？
 
-答：
-socket通常也称作"套接字",实现服务器和客户端之间的物理连接，并进行数据传输，主要有UDP和TCP两个协议。Socket处于网络协议的传输层。
+答： socket通常也称作"套接字",实现服务器和客户端之间的物理连接，并进行数据传输，主要有UDP和TCP两个协议。Socket处于网络协议的传输层。
 
-http协议传输的主要有http协议 和基于http协议的Soap协议（web
-service）,常见的方式是 http 的post 和get 请求，web 服务。
+http协议传输的主要有http协议 和基于http协议的Soap协议（web service）,常见的方式是 http 的post 和get 请求，web 服务。
 
 八十二：Unity和Android与iOS如何交互？
 
-八十三：Unity中，照相机的Clipping
-Planes的作用是什么？调整Near、Fare两个值时，应该注意什么？
+八十三：Unity中，照相机的Clipping Planes的作用是什么？调整Near、Fare两个值时，应该注意什么？
 
 答：剪裁平面 。从相机到开始渲染和停止渲染之间的距离。
 
-八十四：如何在Unity3D中查看场景的面试，顶点数和Draw Call数？如何降低Draw
-Call数？
+八十四：如何在Unity3D中查看场景的面试，顶点数和Draw Call数？如何降低Draw Call数？
 
 答：在Game视图右上角点击Stats。降低Draw Call 的技术是Draw Call Batching
 
 八十五：请问alpha test在何时使用？能达到什么效果？
 
-Alpha Test,中文就是透明度测试。简而言之就是V&F
-shader中最后fragment函数输出的该点颜色值（即上一讲frag的输出half4）的alpha值与固定值进行比较。Alpha
-Test语句通常于Pass{}中的起始位置。Alpha
-Test产生的效果也很极端，要么完全透明，即看不到，要么完全不透明。
+Alpha Test,中文就是透明度测试。简而言之就是V&F shader中最后fragment函数输出的该点颜色值（即上一讲frag的输出half4）的alpha值与固定值进行比较。Alpha Test语句通常于Pass{}中的起始位置。Alpha Test产生的效果也很极端，要么完全透明，即看不到，要么完全不透明。
 
 八十六：UNITY3d在移动设备上的一些优化资源的方法
 
@@ -812,8 +732,7 @@ voidAwake(){    DontDestroyOnLoad(transform.gameObject);}
 
 九十四：什么是DrawCall？DrawCall高了又什么影响？如何降低DrawCall？
 
-答：Unity中，每次引擎准备数据并通知GPU的过程称为一次Draw
-Call。DrawCall越高对显卡的消耗就越大。降低DrawCall的方法：
+答：Unity中，每次引擎准备数据并通知GPU的过程称为一次Draw Call。DrawCall越高对显卡的消耗就越大。降低DrawCall的方法：
 
 Dynamic Batching
 
@@ -823,19 +742,15 @@ Static Batching
 
 九十五：实时点光源的优缺点是什么？
 
-答：可以有cookies – 带有 alpha通道的立方图(Cubemap
-)纹理。点光源是最耗费资源的。
+答：可以有cookies – 带有 alpha通道的立方图(Cubemap )纹理。点光源是最耗费资源的。
 
-九十六：Unity的Shader中，Blend SrcAlpha
-OneMinusSrcAlpha这句话是什么意思？
+九十六：Unity的Shader中，Blend SrcAlpha OneMinusSrcAlpha这句话是什么意思？
 
-答：作用就是Alpha混合。公式：最终颜色 = 源颜色*源透明值 + 目标颜色*（1 -
-源透明值）
+答：作用就是Alpha混合。公式：最终颜色 = 源颜色*源透明值 + 目标颜色*（1 - 源透明值）
 
 九十七：简述水面倒影的渲染原理
 
-答:
-原理就是对水面的贴图纹理进行扰动，以产生波光玲玲的效果。用shader可以通过GPU在像素级别作扰动，效果细腻，需要的顶点少，速度快
+答: 原理就是对水面的贴图纹理进行扰动，以产生波光玲玲的效果。用shader可以通过GPU在像素级别作扰动，效果细腻，需要的顶点少，速度快
 
 九十八：简述NGUI中Grid和Table的作用？
 
@@ -849,8 +764,7 @@ OneMinusSrcAlpha这句话是什么意思？
 
 如果挂载到一个对象上，那么他可以将这个对象依附到屏幕的角落或者边缘
 
-3.UIPanel用来收集和管理它下面所有widget的组件。通过widget的geometry创建实际的draw
-call。没有panel所有东西都不能够被渲染出来,你可以把UIPanel当做Renderer
+3.UIPanel用来收集和管理它下面所有widget的组件。通过widget的geometry创建实际的draw call。没有panel所有东西都不能够被渲染出来,你可以把UIPanel当做Renderer
 
 一百：能用foreach遍历访问的对象需要实现**\_\_**接口或声明****\_****方法的类型
 
@@ -858,14 +772,4 @@ call。没有panel所有东西都不能够被渲染出来,你可以把UIPanel当
 
 感谢 @王静怡
 
-</div>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
