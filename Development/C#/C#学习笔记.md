@@ -1,4 +1,4 @@
-C\#学习笔记
+# C\#学习笔记
 **事件和委托：**
 
 事件event是一种特殊的委托，加了event关键字后只能在该类中调用delegate，其他类中只能订阅(Subscribe,即+=）或取消订阅(Unsubscribe，即-=)该事件。

@@ -1,9 +1,12 @@
-Invoke时需要注意的问题
+# P/Invoke时需要注意的问题
 **DllImport：**
 
 我们可以使用DllImport来导入非托管代码中的函数，例如：
 
-[TABLE]
+```csharp
+[DllImport("Win32DLL.dll", EntryPoint = "add", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
+public static extern int AddNumber(int x, int y);
+```
 
 第一个参数为需要导入的dll名称，
 
@@ -19,7 +22,9 @@ extern说明该函数是从C/C++导入的，函数必须为static。
 
 我们使用\_\_declspec(dllexport)来导出函数，例如：
 
-[TABLE]
+```csharp
+extern "C" __declspec(dllexport) int __stdcall add(int x,int y);
+```
 
 extern "C"指明函数以C函数规范来编译和链接(C++为了实现函数重载会在编译时修改函数名)，
 
@@ -27,7 +32,9 @@ extern "C"指明函数以C函数规范来编译和链接(C++为了实现函数�
 
 我们可以使用宏定义来简化：
 
-[TABLE]
+```csharp
+define DllExport __declspec((dllexport)
+```
 
 **函数调用约定：**
 
@@ -37,17 +44,24 @@ Cdecl方式是C/C++语言的默认调用方式，StdCall是DllImport默认调用
 
 当需要使用非托管dll中可变参数的方法时，例如：
 
-[TABLE]
+```csharp
+int printf(const char * format, ...);
+```
 
 可以使用\_\_arglist关键字：
 
-[TABLE]
+```csharp
+[DllImport("msvcrt.dll", CallingConvention = CallingConvention.Cdecl)]
+public static extern int printf(string format, __arglist);
+```
 
 需要显式指定 CallingConvention = CallingConvention.Cdecl，这样会由调用方清理堆栈，才能支持可变参数的方法。
 
 调用方法时，也必须将可变参数用 \_\_arglist() 括起来：
 
-[TABLE]
+```csharp
+printf("Hello %s! is %d x %c\n", __arglist("World", 6, '7')); // Hello World! is 6 x 7
+```
 
 即使不传递任何可选参数，也必须写 \_\_arglist()。
 

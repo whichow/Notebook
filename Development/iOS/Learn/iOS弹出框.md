@@ -1,6 +1,6 @@
 在iOS 9之前我们可以使用UIAlertView来显示一个弹出框
 
-``` prettyprint
+```objc
 UIAlertView *messageAlert = [[UIAlertView alloc] initWithTitle:@"Raw Selected" message:@"You have select the row" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
 ```
 

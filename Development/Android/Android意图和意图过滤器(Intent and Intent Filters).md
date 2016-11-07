@@ -1,4 +1,4 @@
-Android意图和意图过滤器(Intent and Intent Filters)
+# Android意图和意图过滤器(Intent and Intent Filters)
 **Intent类型**
 
 Intent分为两种类型：
@@ -43,42 +43,30 @@ Intent中包含的主要信息如下：
 **显式 Intent 示例**
 
 例如，如果在应用中构建了一个名为 DownloadService、旨在从 Web 中下载文件的服务，则可使用以下代码启动该服务：
-
+```java
 // Executed in an Activity, so 'this' is the Context
-
 // The fileUrl is a string URL, such as "http://www.example.com/image.png"
-
 Intent downloadIntent = new Intent(this, DownloadService.class);
-
 downloadIntent.setData(Uri.parse(fileUrl));
-
 startService(downloadIntent);
-
+```
 **隐式 Intent 示例**
 
 例如，如果您希望用户与他人共享您的内容，请使用 ACTION\_SEND 操作创建 Intent，并添加指定共享内容的 Extra。使用该 Intent 调用 startActivity()时，用户可以选取共享内容所使用的应用。
 
 警告：用户可能没有任何应用处理您发送到 startActivity() 的隐式 Intent。如果出现这种情况，则调用将会失败，且应用会崩溃。要验证 Activity 是否会接收 Intent，请对 Intent 对象调用 resolveActivity()。如果结果为非空，则至少有一个应用能够处理该 Intent，且可以安全调用startActivity()。如果结果为空，则不应使用该 Intent。如有可能，您应禁用发出该 Intent 的功能。
-
+```java
 // Create the text message with a string
-
 Intent sendIntent = new Intent();
-
 sendIntent.setAction(Intent.ACTION\_SEND);
-
 sendIntent.putExtra(Intent.EXTRA\_TEXT, textMessage);
-
 sendIntent.setType("text/plain");
-
 // Verify that the intent will resolve to an activity
-
 if (sendIntent.resolveActivity(getPackageManager()) != null) {
-
     startActivity(sendIntent);
-
 }
-
-注意：在这种情况下，系统并没有使用 URI，但已声明 Intent 的数据类型，用于指定 Extra 携带的内容。
+```
+>注意：在这种情况下，系统并没有使用 URI，但已声明 Intent 的数据类型，用于指定 Extra 携带的内容。
 
 **接收隐式 Intent**
 
@@ -100,28 +88,22 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
 
      在 name 属性中，声明接受的 Intent 类别。该值必须是操作的文本字符串值，而不是类常量。
 
-注意：为了接收隐式 Intent，必须将 CATEGORY\_DEFAULT 类别包括在 Intent 过滤器中。方法 startActivity() 和 startActivityForResult() 将按照已申明 CATEGORY\_DEFAULT 类别的方式处理所有 Intent。 如果未在 Intent 过滤器中声明此类别，则隐式 Intent 不会解析为您的 Activity。
+>注意：为了接收隐式 Intent，必须将 CATEGORY\_DEFAULT 类别包括在 Intent 过滤器中。方法 startActivity() 和 startActivityForResult() 将按照已申明 CATEGORY\_DEFAULT 类别的方式处理所有 Intent。 如果未在 Intent 过滤器中声明此类别，则隐式 Intent 不会解析为您的 Activity。
 
 例如，以下是一个使用 Intent 过滤器进行的 Activity 声明，当数据类型为文本时，系统将接收 ACTION\_SEND Intent ：
-
-&lt;activity android:name="ShareActivity"&gt;
-
-    &lt;intent-filter&gt;
-
-        &lt;action android:name="android.intent.action.SEND"/&gt;
-
-        &lt;category android:name="android.intent.category.DEFAULT"/&gt;
-
-        &lt;data android:mimeType="text/plain"/&gt;
-
-    &lt;/intent-filter&gt;
-
-&lt;/activity&gt;
-
+```xml
+<activity android:name="ShareActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.SEND"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <data android:mimeType="text/plain"/>
+    </intent-filter>
+</activity>
+```
 可以创建一个包括多个 &lt;action&gt;、&lt;data&gt; 或 &lt;category&gt; 实例的过滤器。创建时，仅需确定组件能够处理这些过滤器元素的任何及所有组合即可。。
 
-警告：为了避免无意中运行不同应用的 Service，请始终使用显式 Intent 启动您自己的服务，且不必为该服务声明 Intent 过滤器。
+>警告：为了避免无意中运行不同应用的 Service，请始终使用显式 Intent 启动您自己的服务，且不必为该服务声明 Intent 过滤器。
 
-注意： 对于所有 Activity，您必须在清单文件中声明 Intent 过滤器。但是，广播接收器的过滤器可以通过调用 registerReceiver() 动态注册。稍后，您可以使用 unregisterReceiver() 注销该接收器。这样一来，应用便可仅在应用运行时的某一指定时间段内侦听特定的广播。
+>注意： 对于所有 Activity，您必须在清单文件中声明 Intent 过滤器。但是，广播接收器的过滤器可以通过调用 registerReceiver() 动态注册。稍后，您可以使用 unregisterReceiver() 注销该接收器。这样一来，应用便可仅在应用运行时的某一指定时间段内侦听特定的广播。
 
 

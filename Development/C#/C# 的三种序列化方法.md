@@ -1,4 +1,4 @@
-C\# 的三种序列化方法
+# C\# 的三种序列化方法
 序列化是将一个对象转换成字节流以达到将其长期保存在内存、数据库或文件中的处理过程。它的主要目的是保存对象的状态以便以后需要的时候使用。与其相反的过程叫做反序列化。
 
 ### 序列化一个对象
@@ -17,17 +17,73 @@ C\# 的三种序列化方法
 
 **二进制（流）序列化**是一种将数据写到输出流，以使它能够用来自动重构成相应对象的机制。二进制，其名字就暗示它的必要信息是保存在存储介质上，而这些必要信息要求创建一个对象的精确的二进制副本。在二进制（流）序列化中，整个对象的状态都被保存起来，而XML序列化只有部分数据被保存起来。为了使用序列化，我们需要引入**System.Runtime.Serialization.Formatters.Binary**名字空间. 下面的代码使用**BinaryFormatter**类序列化.NET中的string类型的对象。
 
-[?](http://www.oschina.net/translate/serialization-in-csharp#)
-
-[TABLE]
+```csharp
+using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+ 
+namespace SerializationTest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Serialization of String Object         
+            string strobj = "test string for serialization";
+            FileStream stream = new FileStream("C:\\StrObj.txt", FileMode.Create, FileAccess.Write ,
+            FileShare.None);
+            BinaryFormatter formatter = new BinaryFormatter();
+            formatter.Serialize(stream, strobj);
+            stream.Close();
+ 
+            //Deserialization of String Object
+            FileStream readstream = new FileStream("C:\\StrObj.txt", FileMode.Open , FileAccess.Read ,
+            FileShare.Read );
+            string readdata = (string)formatter.Deserialize(readstream);
+            readstream.Close();
+            Console.WriteLine(readdata);
+            Console.ReadLine();
+ 
+        }
+    }
+}
+```
 
 **SOAP序列化：**
 
 **SOAP**协议是一个在异构的应用程序之间进行信息交互的理想的选择。我们需要在应用程序中添加System.Runtime.Serialization.Formatters.Soap名字空间以便在.Net中使用**SOAP序列化**。**SOAP序列化**的主要优势在于可移植性。**SoapFormatter**把对象序列化成**SOAP**消息或解析**SOAP**消息并重构被序列化的对象。下面的代码在.Net中使用**SoapFormatter**类序列化string类的对象。
 
-[?](http://www.oschina.net/translate/serialization-in-csharp#)
-
-[TABLE]
+```csharp
+using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Soap ;
+ 
+namespace SerializationTest
+ {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Serialization of String Object           
+            string strobj = "test string for serialization";
+            FileStream stream = new FileStream("C:\\StrObj.txt", FileMode.Create, FileAccess.Write ,
+            FileShare.None);
+            SoapFormatter formatter = new SoapFormatter();
+            formatter.Serialize(stream, strobj);
+            stream.Close();
+            //Deserialization of String Object
+            FileStream readstream = new FileStream("C:\\StrObj.txt", FileMode.Open , FileAccess.Read ,
+            FileShare.Read );
+            string readdata = (string)formatter.Deserialize(readstream);
+            readstream.Close();
+            Console.WriteLine(readdata);
+            Console.ReadLine();
+        }
+    }
+}
+```
 
 **XML序列化：**
 
@@ -35,9 +91,40 @@ C\# 的三种序列化方法
 
 我们必须添加**System.XML.Serialization**引用以使用**XML序列化**。使用**XML序列化**的基础是**XmlSerializer**。下面的代码是在.Net中使用**XmlSerializer**类序列化string对象。
 
-[?](http://www.oschina.net/translate/serialization-in-csharp#)
-
-[TABLE]
+```csharp
+using System;
+using System.IO;
+using System.Xml.Serialization;
+ 
+ 
+namespace SerializationTest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Serialization of String Object           
+            string strobj = "test string for serialization";
+            FileStream stream = new FileStream("C:\\StrObj.txt", FileMode.Create, FileAccess.Write ,
+            FileShare.None);
+            XmlSerializer  xmlserializer = new XmlSerializer(typeof(string));
+            xmlserializer.Serialize(stream, strobj);
+            stream.Close();
+ 
+ 
+            //Deserialization of String Object
+            FileStream readstream = new FileStream("C:\\StrObj.txt", FileMode.Open , FileAccess.Read ,
+            FileShare.Read );
+            string readdata = (string)xmlserializer.Deserialize(readstream);
+            readstream.Close();
+            Console.WriteLine(readdata);
+            Console.ReadLine();
+ 
+ 
+        }
+    }
+}
+```
 
 **什么是格式化器？**
 
