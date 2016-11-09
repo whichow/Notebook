@@ -11,14 +11,14 @@ https://{username}:{password}@github.com
 https://{username}:{password}@192.168.0.108
  
 #运行以下git配置命令
-git config --global credential.helper store
+git config --global credential.helper wincred
 ```
 
 到这一步，执行完后查看Git目录下的.gitconfig文件，会多了一项：
 
 ```
 [credential]
-helper = store
+helper = wincred
 ```
 
 **Windows下：**
