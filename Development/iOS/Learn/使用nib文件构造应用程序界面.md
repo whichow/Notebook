@@ -22,8 +22,15 @@ XCode5之后默认使用storyboard来构造应用程序的界面，如果我们�
 
 在application:didFinishLaunchingWithOptions:方法中添加
 
-``` prettyprint
-//创建一个UIWindow做为应用程序的窗口，设置其大小为屏幕的大小self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//设置窗口的背景色self.window.backgroundColor = [UIColor whiteColor];//设置窗口的根视图控制器为我们创建的控制器self.window.rootViewController = [[ViewController alloc] init];//设置为主窗口并显示[self.window makeKeyAndVisible];
+``` objc
+//创建一个UIWindow做为应用程序的窗口，设置其大小为屏幕的大小
+self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//设置窗口的背景色
+self.window.backgroundColor = [UIColor whiteColor];
+//设置窗口的根视图控制器为我们创建的控制器
+self.window.rootViewController = [[ViewController alloc] init];
+//设置为主窗口并显示
+[self.window makeKeyAndVisible];
 ```
 
 这样应用程序运行时显示的就是nib文件中的界面了。
