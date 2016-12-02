@@ -1,0 +1,5 @@
+# NSNotificationCenter vs delegation
+
+如果主要针对一个对象，应该使用delegate，如果同时像多个对象发送事件，则应该用NSNotificationCenter。
+
+在不需要知道事件发送者的时候可以使用NotificationCenter，在确切知道发送者的时候可以使用delegate。
