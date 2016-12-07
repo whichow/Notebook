@@ -12,7 +12,9 @@ git log 显示详细日志
 
 git add  将文件或目录添加到暂存区域
 
-git rm 将文件移出git
+git rm 将文件移出git，并删除该文件，要删除文件夹加上-r
+
+git rm --cached 将文件移出git，但不会删除文件
 
 git checkout --  丢弃文件的修改
 
