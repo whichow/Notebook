@@ -8,9 +8,13 @@ git config user.email    配置用户email
 
 git log 显示详细日志
 
+---
+
 git add  将文件或目录添加到暂存区域
 
-git rm 将文件移出git
+git rm 将文件移出git，并删除该文件，要删除文件夹加上-r
+
+git rm --cached 将文件移出git，但不会删除文件
 
 git checkout --  丢弃文件的修改
 
@@ -25,6 +29,8 @@ git diff --cached或--staged 比较暂存区域和已经提交的文件的差异
 git commit -m 'commit message' 提交暂存区域的文件和提交的信息
 
 git commit -a -m 添加并提交
+
+---
 
 git branch 列出所有分支，前面有\*表示当前分支
 
@@ -41,6 +47,8 @@ git checkout -b iss53 新建并且切换到iss53分支
 git merge hotfix 将hotfix合并到当前分支
 
 git branch -d hotfix 删除hotfix分支
+
+---
 
 git clone  克隆一个远程仓库，并创建工作目录
 
@@ -78,7 +86,9 @@ git push --all origin 将本地所有分支推送到远程主机
 
 git push --force origin 强制推送到远程主机，无论远程主机是否比本地版本更新
 
-git clean -df 删除所有unchecked的文件，已经checked的文件修改后不会退回
+---
+
+git clean -df 删除所有unchecked的文件和文件夹，-d表示文件夹，-f表示强制删除
 
 git reset --hard 把checked的文件revert到前一个版本，不影响unchecked的文件
 

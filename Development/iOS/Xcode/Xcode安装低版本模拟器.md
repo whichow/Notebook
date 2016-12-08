@@ -1,0 +1,2 @@
+# Xcode安装低版本模拟器
+在Xcode菜单中选择Xcode->Preference，在打开的窗口中选择Components。里面有支持的各个版本的模拟器，点击下载等待安装完成就可以了。
