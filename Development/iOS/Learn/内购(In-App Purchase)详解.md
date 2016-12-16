@@ -132,6 +132,14 @@ payment.quantity = 2;
 
 在交易队列观察者中实现 `paymentQueue:updatedTransactions:` 方法，Store Kit 将在交易状态改变时调用这个方法。下面列出了所有的交易状态：
 
+|Status|Action to take in your app|
+|------|--------------------------|
+|SKPaymentTransactionStatePurchasing|交易正在处理中，显示等待UI|
+|SKPaymentTransactionStateDeferred|交易被延时，显示等待UI|
+|SKPaymentTransactionStateFailed|交易失败，失败原因可以查看SKErrorDomain|
+|SKPaymentTransactionStatePurchased|支付成功|
+|SKPaymentTransactionStateRestored|恢复购买|
+
 ```objc
 - (void)paymentQueue:(SKPaymentQueue *)queue
  updatedTransactions:(NSArray *)transactions
@@ -162,3 +170,21 @@ payment.quantity = 2;
     }
 }
 ```
+
+## 结束交易
+
+结束一个交易将告诉 Store Kit 你已经完成了支付所需的所有事情。未结束的交易将保留在队列中直到它们被结束，交易队列观察者将在每次 app 启动时被调用，使得你的 app 可以结束交易。无论交易成功与否，你的 app 应该始终结束每次交易。
+
+在你结束一个交易之前需要完成以下所有事情：
+- 保存支付信息。
+- 下载相关内容。
+- 更新 app 的 UI 让用户访问购买的产品。
+
+要结束一个交易，在支付队列中调用`finishTransaction:`方法。
+
+```objc
+SKPaymentTransaction *transaction = <# The current payment #>;
+[[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+```
+
+在你结束一个交易之后，不要再对交易进行任何操作或交付产品。如果有任何工作没有完成，就不应该结束这次交易。
