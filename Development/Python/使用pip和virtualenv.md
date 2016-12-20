@@ -46,5 +46,17 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
+## pip配置镜像
 
+编辑`~/.pip/pip.config`
+
+```
+[global]
+timeout = 6000
+index-url = http://mirrors.aliyun.com/pypi/simple
+[install]
+use-mirrors=true
+mirrors= http://mirrors.aliyun.com
+trusted-host=mirrors.aliyun.com
+```
 
