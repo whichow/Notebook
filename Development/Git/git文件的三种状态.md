@@ -12,3 +12,5 @@ git中的文件分为三种状态：
 使用git rm --cached将文件移出git跟踪(untrack)，并且变为staged状态，提交之后，当前分支就没有该文件了。注意，不使用--cached会将文件移出git并删除工作目录的文件。
 
 使用git commit将暂存区中(staged)的文件的增加(第一次提交)修改或者删除提交到当前分支。
+
+使用git reset --hard可以将版本回退，git reset --hard HEAD^退回上一个版本
