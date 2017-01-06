@@ -1,0 +1,2 @@
+在XCode中导入文件夹的时候，如果选择"Create folder references"，并且勾选了"Copy items if needed"则会将文件夹直接拷贝到工程目录中，不参与编译，在XCode工程中显示为蓝色的文件夹。
+如果选择"Create groups"，则会自动添加编译的源文件和依赖，在XCode工程中显示为黄色的文件夹。如果自动添加出现问题，可以在Search Paths中手动添加依赖。
