@@ -60,13 +60,17 @@ git clone --mirror  在--bare的基础上，包含所有分支
 
 git clone -b &lt;分支名&gt; 克隆一个远程仓库的分支
 
-git remote add   添加远程仓库
+git remote add origin url 添加远程仓库
+
+git remote remove origin 移除远程仓库
 
 git remote 列出所有远程仓库
 
 git remote -v 显示所有远程仓库信息
 
 git remote show  显示远程仓库信息
+
+git remote set-url origin 修改远程仓库的url
 
 git fetch &lt;远程主机名&gt; 将远程主机的更新全部取回本地
 
