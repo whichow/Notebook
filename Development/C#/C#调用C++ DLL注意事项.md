@@ -82,6 +82,14 @@ public static extern void RegisterCallBack(DecodeCallback callback);
 
 **参考**
 
+[Exporting from a DLL](https://msdn.microsoft.com/en-us/library/z4zxe9k8.aspx)
+
+[dllexport, dllimport](https://msdn.microsoft.com/en-us/library/3y1sfaz2.aspx)
+
+[extern "C" __declspec(dllexport) __declspec(dllimport) 和 def](http://www.cppblog.com/fateno13/archive/2009/08/03/92052.html)
+
 [编写和使用DLL时，常用的关键字 extern "C"，__declspec，__cdecl，__stdcall](http://blog.csdn.net/bobbypeng/article/details/6427441)
+
 [演练：创建和使用动态链接库 (C++)](https://msdn.microsoft.com/zh-cn/library/ms235636.aspx)
+
 [How to make a callback to C# from C/C++ code](https://www.codeproject.com/Tips/318140/How-to-make-a-callback-to-Csharp-from-C-Cplusplus)
