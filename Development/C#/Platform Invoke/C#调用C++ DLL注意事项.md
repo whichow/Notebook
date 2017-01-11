@@ -78,7 +78,7 @@ public delegate void DecodeCallback(int width, int height, int size, IntPtr buf)
 public static extern void RegisterCallBack(DecodeCallback callback);
 ```
 
->尤其要注意的是，如果调用的DLL还引用了其他的DLL，如果其他的DLL缺失或有问题则会出现找不到你写的DLL的情况，在这被坑了，一直以为自己写的DLL有问题。
+>尤其要注意的是，如果你的DLL还引用了其他的DLL，如果其他的DLL缺失或有问题则会出现找不到你写的DLL的情况，在这被坑了，一直以为自己写的DLL有问题。
 
 **参考**
 
