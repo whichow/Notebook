@@ -8,14 +8,22 @@
 
 要从native side找到Java code需要访问Java VM。可以通过增加下面这个函数到C/C++代码中来实现：
 
-``` prettyprint
-jint JNI_OnLoad(JavaVM* vm, void* reserved) {    JNIEnv* jni_env = 0;    vm->AttachCurrentThread(&jni_env, 0);    return JNI_VERSION_1_6;}
+``` cpp
+jint JNI_OnLoad(JavaVM* vm, void* reserved) {    
+    JNIEnv* jni_env = 0;    
+    vm->AttachCurrentThread(&jni_env, 0);    
+    return JNI_VERSION_1_6;
+}
 ```
 
 使用它可以找到类的定义，解析构造方法(&lt;init&gt;)和创建一个新的对象实例，示例如下：
 
-``` prettyprint
-jobject createJavaObject(JNIEnv* jni_env) {    jclass cls_JavaClass = jni_env->FindClass("com/your/java/Class"); // find class definition    jmethodID mid_JavaClass = jni_env->GetMethodID (cls_JavaClass, "<init>", "()V"); // find constructor method    jobject obj_JavaClass = jni_env->NewObject(cls_JavaClass, mid_JavaClass); // create object instance    return jni_env->NewGlobalRef(obj_JavaClass); // return object with a global reference }
+``` cpp
+jobject createJavaObject(JNIEnv* jni_env) {    
+    jclass cls_JavaClass = jni_env->FindClass("com/your/java/Class"); // find class definition    
+    jmethodID mid_JavaClass = jni_env->GetMethodID (cls_JavaClass, "<init>", "()V"); // find constructor method    
+    jobject obj_JavaClass = jni_env->NewObject(cls_JavaClass, mid_JavaClass); // create object instance    
+    return jni_env->NewGlobalRef(obj_JavaClass); // return object with a global reference }
 ```
 
 **通过帮助类来使用Java Plugin**
@@ -36,8 +44,15 @@ AndroidJavaObject和AndroidJavaClass的实例分别有着和Java中java.lang.Obj
 
 示例1：
 
-``` prettyprint
-//The comments describe what you would need to do if you were using raw JNIAndroidJavaObject jo = new AndroidJavaObject("java.lang.String", "some_string");// jni.FindClass("java.lang.String");// jni.GetMethodID(classID, "<init>", "(Ljava/lang/String;)V");// jni.NewStringUTF("some_string");// jni.NewObject(classID, methodID, javaString);int hash = jo.Call<int>("hashCode");// jni.GetMethodID(classID, "hashCode", "()I");// jni.CallIntMethod(objectID, methodID);
+``` csharp
+//The comments describe what you would need to do if you were using raw JNI
+AndroidJavaObject jo = new AndroidJavaObject("java.lang.String", "some_string");
+// jni.FindClass("java.lang.String");
+// jni.GetMethodID(classID, "<init>", "(Ljava/lang/String;)V");
+// jni.NewStringUTF("some_string");
+// jni.NewObject(classID, methodID, javaString);int hash = jo.Call<int>("hashCode");
+// jni.GetMethodID(classID, "hashCode", "()I");
+// jni.CallIntMethod(objectID, methodID);
 ```
 
 这里我们创建了一个java.lang.String的实例，实例化了一个字符串并且取得了该字符串的hash值。
@@ -50,8 +65,20 @@ AndroidJavaObject构造器至少需要一个参数，那就是我们想要构造
 
 展示了在C\#中怎样不使用插件来获取当前应用的cache目录
 
-``` prettyprint
-AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");// jni.FindClass("com.unity3d.player.UnityPlayer");AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");// jni.GetStaticFieldID(classID, "Ljava/lang/Object;");// jni.GetStaticObjectField(classID, fieldID);// jni.FindClass("java.lang.Object");Debug.Log(jo.Call<AndroidJavaObject>("getCacheDir").Call<string>("getCanonicalPath"));// jni.GetMethodID(classID, "getCacheDir", "()Ljava/io/File;");// or any baseclass thereof!// jni.CallObjectMethod(objectID, methodID);// jni.FindClass("java.io.File");// jni.GetMethodID(classID, "getCanonicalPath", "()Ljava/lang/String;");// jni.CallObjectMethod(objectID, methodID);// jni.GetStringUTFChars(javaString);
+``` csharp
+AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+// jni.FindClass("com.unity3d.player.UnityPlayer");
+AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
+// jni.GetStaticFieldID(classID, "Ljava/lang/Object;");
+// jni.GetStaticObjectField(classID, fieldID);
+// jni.FindClass("java.lang.Object");Debug.Log(jo.Call<AndroidJavaObject>("getCacheDir").Call<string>("getCanonicalPath"));
+// jni.GetMethodID(classID, "getCacheDir", "()Ljava/io/File;");
+// or any baseclass thereof!
+// jni.CallObjectMethod(objectID, methodID);
+// jni.FindClass("java.io.File");
+// jni.GetMethodID(classID, "getCanonicalPath", "()Ljava/lang/String;");
+// jni.CallObjectMethod(objectID, methodID);
+// jni.GetStringUTFChars(javaString);
 ```
 
 本例中，我们使用AndroidJavaClass代替AndroidJavaObject，这是因为我们要访问一个com.unity3d.player.UnityPlayer的一个静态成员而不用创建一个新的对象(Android UnityPlayer自动创建了这个实例)。然后我们访问其中的静态字段"currentActivity"，这次我们使用AndroidJavaObject作为泛型参数。这是因为实际字段的类型(android.app.Activity)是java.lang.Object的一个子类，任何非基本类型必须使用AndroidJavaObject来访问。字符串是一个例外，字符串可以直接访问，即使它在Java中不是一个基本类型。
@@ -60,8 +87,19 @@ AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer")
 
 最后，这是一个使用UnitySendMessage来从Java传递数据到脚本代码中的技巧
 
-``` prettyprint
-using UnityEngine;public class NewBehaviourScript : MonoBehaviour {    void Start () {        AndroidJNIHelper.debug = true;        using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer")) {            jc.CallStatic("UnitySendMessage", "Main Camera", "JavaMessage", "whoowhoo");        }    }    void JavaMessage(string message) {        Debug.Log("message from java: " + message);    }}
+``` csharp
+using UnityEngine;
+public class NewBehaviourScript : MonoBehaviour {    
+    void Start () {        
+        AndroidJNIHelper.debug = true;        
+        using (AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer")) {            
+            jc.CallStatic("UnitySendMessage", "Main Camera", "JavaMessage", "whoowhoo");        
+        }    
+    }    
+    void JavaMessage(string message) {        
+        Debug.Log("message from java: " + message);    
+    }
+}
 ```
 
 Java类com.unity3d.player.UnityPlayer中有一个静态方法UnitySendMessage,等同于iOS native sied的UnitySendMessage函数。它在Java中用来传递数据到脚本代码。
@@ -72,8 +110,12 @@ Java类com.unity3d.player.UnityPlayer中有一个静态方法UnitySendMessage,�
 
 记住JNI帮助类会尽可能多的缓存数据来提高性能。
 
-``` prettyprint
-//The first time you call a Java function likeAndroidJavaObject jo = new AndroidJavaObject("java.lang.String", "some_string"); // somewhat expensiveint hash = jo.Call<int>("hashCode"); // first time - expensiveint hash = jo.Call<int>("hashCode"); // second time - not as expensive as we already know the java method and can call it directly
+``` csharp
+//The first time you call a Java function like
+AndroidJavaObject jo = new AndroidJavaObject("java.lang.String", "some_string"); 
+// somewhat expensiveint hash = jo.Call<int>("hashCode"); 
+// first time - expensiveint hash = jo.Call<int>("hashCode"); 
+// second time - not as expensive as we already know the java method and can call it directly
 ```
 
 在使用完后Mono垃圾回收器应该释放所有创建的AndroidJavaObject和AndroidJavaClass实例，建议将它们放在using(){}语句中来确保尽可能快的被删除。
@@ -90,20 +132,47 @@ Java类com.unity3d.player.UnityPlayer中有一个静态方法UnitySendMessage,�
 
 下面是一个新Activity的示例，OverrideExample.java：
 
-``` prettyprint
-package com.company.product;import com.unity3d.player.UnityPlayerActivity;import android.os.Bundle;import android.util.Log;public class OverrideExample extends UnityPlayerActivity {    protected void onCreate(Bundle savedInstanceState) {        // call UnityPlayerActivity.onCreate() super.onCreate(savedInstanceState);        // print debug message to logcat        Log.d("OverrideActivity", "onCreate called!");    }    public void onBackPressed() {        // instead of calling UnityPlayerActivity.onBackPressed() we just ignore the back button event        // super.onBackPressed();    }}
+``` java
+package com.company.product;
+import com.unity3d.player.UnityPlayerActivity;
+import android.os.Bundle;
+import android.util.Log;
+public class OverrideExample extends UnityPlayerActivity {    
+    protected void onCreate(Bundle savedInstanceState) {        
+        // call UnityPlayerActivity.onCreate() 
+        super.onCreate(savedInstanceState);        
+        // print debug message to logcat        
+        Log.d("OverrideActivity", "onCreate called!");    
+    }    
+    public void onBackPressed() {        
+        // instead of calling UnityPlayerActivity.onBackPressed() we just ignore the back button event        
+        // super.onBackPressed();    
+    }
+}
 ```
 
 相应的AndroidManifest.xml会像这样：
 
-``` prettyprint
-<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.company.product">    <application android:icon="@drawable/app_icon" android:label="@string/app_name">        <activity android:name=".OverrideExample" android:label="@string/app_name" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">            <intent-filter>                <action android:name="android.intent.action.MAIN" />                <category android:name="android.intent.category.LAUNCHER" />            </intent-filter>        </activity>    </application></manifest>
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.company.product">    
+<application android:icon="@drawable/app_icon" android:label="@string/app_name">        
+<activity android:name=".OverrideExample" android:label="@string/app_name" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">            
+<intent-filter>                
+<action android:name="android.intent.action.MAIN" />                
+<category android:name="android.intent.category.LAUNCHER" />            
+</intent-filter>        
+</activity>    
+</application>
+</manifest>
 ```
 
 还可以创建UnityPlayerNativeActivity的子类。它的大部分效果和UnityPlayerActivity子类相同但是可以改善输入延时。注意NativityActivity在Gingerbread中被引入并且不能在旧的设备中运行。此后touch/motion事件将会在native code中被处理Java view通常将不会接收到这些事件。然而Unity中的一个转发机制可以允许这些事件传播到DalvikVM中。要允许这个机制，你需要修改manifest文件如下：
 
-``` prettyprint
-<activity android:name=".OverrideExampleNative"><meta-data android:name="android.app.lib_name" android:value="unity" /> <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" />
+``` xml
+<activity android:name=".OverrideExampleNative">
+<meta-data android:name="android.app.lib_name" android:value="unity" /> 
+<meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" />
 ```
 
 将activity修改为我们的nativity activity，增加了两个meta-data元素。第一个meta-data指定使用Unity库libunity.so。第二个表示允许事件转发。
