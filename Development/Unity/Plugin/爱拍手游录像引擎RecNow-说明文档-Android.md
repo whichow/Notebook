@@ -70,7 +70,7 @@ unity3d游戏的接入有点特别，所以对unity3d的游戏接入有单独介
 
        解压资源包RecNow.(version).zip，RecNow包含的资源件如图所示：
 
-       ![](爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image001ade64022-b04c-4d30-8838-13306fae62f8.jpg "2")
+       ![](/Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image001ade64022-b04c-4d30-8838-13306fae62f8.jpg "2")
 
        assets包含需要拷贝到Android项目的assets目录下的资源；
            depends包含C++ API头文件以及动态库资源；
@@ -101,7 +101,31 @@ unity3d游戏的接入有点特别，所以对unity3d的游戏接入有单独介
 
 在AndroidManifest文件中配置RecNow权限以及所需的参数，具体配置如下：
 
-[TABLE]
+``` xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<application android:label="@string/app_name"
+                        android:icon="@drawable/icon"
+              ...>
+     ...
+    <activity android:name="net.appplus.sdk.ContainerActivity"   
+              android:configChanges="orientation|screenSize|keyboardHidden"/>
+    <activity
+            android:name="com.aipai.recnow.media.projection.ProjectionActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    <meta-data android:name="aipai.gameid" android:value="-1" />
+    <meta-data android:name="aipai.apk-channel" android:value="0x0" />
+    <meta-dataandroid:name="aipai.sns"android:value="0x3F" />
+    <meta-data android:name="aipai.game-activity"
+                android:value="com.aipai.simplegame.SimpleGameActivity" />   
+ </application>
+```
 
 meta-data参数说明：
 
@@ -115,29 +139,85 @@ meta-data参数说明：
 
 假设SimpleGame的launcher Activity是 com.aipai.simplegame.LuncherActivity，在LuncherActivity的onCreate方法中调用RecNow的初始化方法，初始化时需要传入Application实例：
 
-[TABLE]
+``` java
+import com.aipai.recnow.RecNow;
+ 
+public class SimpleGame extends Cocos2dxActivity{
+                                    ...
+        @Override
+protected void onCreate(Bundle savedInstanceState){
+            super.onCreate(savedInstanceState);
+     ...
+RecNow.initializeWithApplication(this.getApplication());
+        }
+...
+}
+```
 
 [3.5代码混淆]()
 
 注意，如果需要混淆代码，为了保证RecNow的正常使用，需要在proguard-project.txt加上下面几行配置：
 
-[TABLE]
+```
+-dontshrink
+-keep class net.appplus.protocols.** {*;}
+-keep class net.appplus.sdk.** {*;}
+-keep class appplus.sharep.** {*;}
+-keep class com.aipai.recnow.**{*;}
+-keepclasseswithmembers class * {
+    native <methods>;
+}
+```
 
 [3.6调用底层C++]()接口
 
 C++接口在librecnow.so中，下面是链接动态库的示例代码，假设RecNow解压到项目的recnow目录中，在项目的Android.mk文件中添加如下代码：
 
-[TABLE]
+```
+    LOCAL_PATH := $(call my-dir)
+ 
+RECNOW_DIR := ../RecNow/depends
+ 
+include $(CLEAR_VARS)
+LOCAL_MODULE          := recnow_prebuilt
+LOCAL_MODULE_FILENAME := librecnow
+LOCAL_SRC_FILES := $(RECNOW_DIR)/lib/librecnow.so
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/$( RECNOW_DIR)/include
+include $(PREBUILT_SHARED_LIBRARY)
+ 
+include $(CLEAR_VARS)
+LOCAL_MODULE := game
+...
+LOCAL_SHARED_LIBRARIES += recnow_prebuilt
+...
+ 
+include $(BUILD_SHARED_LIBRARY)
+ 
+```
 
 注意，因为游戏依赖librecnow.so，所以要在加载libgame.so之前先加载librecnow.so，具体代码如下
 
-[TABLE]
+```
+static {
+        System.loadLibrary("recnow");
+        System.loadLibrary("game");
+}
+```
 
 [3.7设置初始化回调接口]()
 
 RecNow提供的功能，只有在初始化完成之后才会生效，可以通过监听RecNow初始化完成的事件来实现。可以在调用RecNow.initializeWithApplication的时候传一个回调接口来接收初始化完成消息；如果不需要可以设置成null。
 
-[TABLE]
+``` java
+RecNow.initializeWithApplication(this .getApplication(),
+ new RecNow.OnInitListener() {
+           @Override
+           public void onInit(int status) {
+                        //status != 0 初始化失败，设备不支持
+          //status == 0 初始化成功，可以使用recnow
+               }
+        });
+```
 
 [4.  API]()介绍
 ===============
@@ -146,185 +226,46 @@ RecNow提供的功能，只有在初始化完成之后才会生效，可以通�
 
 C++ API在 RecNow.h头文件中
 
-**return**
 
-** declaration**
+|return|declaration|
+|------|-----------|
+|bool|RecNow_IsEnabled()<br>判断设备是否支持，支持返回ture，否则返回false|
+|const char*|RecNow_GetVideoPath()<br>返回当前录像的视频保存路径|
+|int|RecNow _StartRecord()<br>开始录像，返回值不为0，表示开始录像失败|
+|void|RecNow _StopRecord()<br>停止录像|
+|void|RecNow _PauseRecord()<br>暂停录像|
+|void|RecNow _ResumeRecord()<br>恢复录像|
+|void|RecNow _ShowVideoStore()<br>显示recnow自带的视频管理界面|
+|void|RecNow _DeleteVideo(const char* path)<br>删除最近一次录的视频文件|
+|void|RecNow _Playback(const char* path)<br>回放最近一次录的视频|
+|void|RecNow _FastShare(const char* path)<br>快速分享最近一次录的视频|
+|void|RecNow _ShowPlayerClub()<br>进入爱拍recnow玩家俱乐部|
+|void|RecNow _ShowWelfareCenter()<br>进入爱拍recnow福利中心|
 
-**bool**
-
-**RecNow\_IsEnabled**()
-
-判断设备是否支持，支持返回ture，否则返回false
-
-**const char\***
-
-**RecNow\_GetVideoPath**()
-
-返回当前录像的视频保存路径
-
-**int**
-
-**RecNow \_StartRecord**()
-
-开始录像，返回值不为0，表示开始录像失败
-
-**void **
-
-**RecNow \_StopRecord**()
-
-停止录像
-
-**void**
-
-**RecNow \_PauseRecord**()
-
-暂停录像
-
-**void **
-
-**RecNow \_ResumeRecord**()
-
-恢复录像
-
-**void**
-
-**RecNow \_ShowVideoStore**()
-
-显示recnow自带的视频管理界面
-
-**void**
-
-**RecNow \_DeleteVideo**(const char\* path)
-
-删除最近一次录的视频文件
-
-**void**
-
-**RecNow \_Playback**(const char\* path)
-
-回放最近一次录的视频
-
-**void**
-
-**RecNow \_FastShare**(const char\* path)
-
-快速分享最近一次录的视频
-
-**void**
-
-**RecNow \_ShowPlayerClub**()****
-
-进入爱拍recnow玩家俱乐部
-
-**void**
-
-**RecNow \_ShowWelfareCenter**()****
-
-进入爱拍recnow福利中心
 
 4.2 [Java API]()
 
 Java API在com.aipai.recnow.RecNow类中
 
-**return**
+|return|declaration|
+|------|-----------|
+|static boolean|isEnabled()<br>判断设备是否支持，支持返回ture，否则返回false|
+|static String|getVideoPath()<br>返回当前录像的视频保存路径|
+|static int|startRecord()<br>开始录像，返回值不为0，表示开始录像失败|
+|static void|stopRecord()<br>停止录像|
+|static void|pauseRecord()<br>暂停录像|
+|static void|resumeRecord()<br>恢复录像|
+|static void|showVideoStore()<br>显示recnow自带的视频管理界面|
+|static void|setOnStartListener(OnStartListener listener)<br>设置开始录像listener|
+|static void|setOnStopListener(OnStopListener listener)<br>设置停止录像listener|
+|static void|setOnPauseListener(OnPauseListener listener)<br>设置暂停录像listener|
+|static void|setOnResumeListener(OnResumeListener listener)<br>设置恢复录像listener|
+|static void|deleteVideo(String path)<br>删除最近一次录的视频文件|
+|static void|playback(String path)<br>回放最近一次录的视频|
+|static void|fastShare(String path)<br>快速分享最近一次录的视频|
+|static void|showPlayerClub()<br>进入爱拍recnow玩家俱乐部|
+|static void|showWelfareCenter()<br>进入爱拍recnow福利中心|
 
-**declaration**
-
-**static boolean**
-
-**isEnabled**()
-
-判断设备是否支持，支持返回ture，否则返回false
-
-**static String**
-
-**getVideoPath**()
-
-返回当前录像的视频保存路径
-
-**static int**
-
-**startRecord**()
-
-开始录像，返回值不为0，表示开始录像失败
-
-**static void**
-
-**stopRecord**()
-
-停止录像
-
-**static void**
-
-**pauseRecord**()
-
-暂停录像
-
-**static void**
-
-**resumeRecord**()
-
-恢复录像
-
-**static void**
-
-**showVideoStore**()
-
-显示recnow自带的视频管理界面
-
-**static void**
-
-**setOnStartListener**(OnStartListener listener)
-
-设置开始录像listener
-
-**static void**
-
-**setOnStopListener**(OnStopListener listener)
-
-设置停止录像listener
-
-**static void**
-
-**setOnPauseListener**(OnPauseListener listener)
-
-设置暂停录像listener
-
-**static void**
-
-**setOnResumeListener**(OnResumeListener listener)
-
-设置恢复录像listener
-
-**static void **
-
-**deleteVideo**(**String** path)
-
-删除最近一次录的视频文件
-
-**static void**
-
-**playback**(**String **path)
-
-回放最近一次录的视频
-
-**static void**
-
-**fastShare**(**String** path)
-
-快速分享最近一次录的视频
-
-**static void**
-
-**showPlayerClub**()
-
-进入爱拍recnow玩家俱乐部
-
-**static void**
-
-**showWelfareCenter**()
-
-进入爱拍recnow福利中心
 
 [5.unity3d]()接入
 =================
@@ -347,7 +288,7 @@ unity3d游戏接入有两种情况：
 
 2) 拷贝RecNow.jar到project的libs 目录下；如果libs目录下没有unity-classes.jar，就从Unity的安装目录找到class.jar复制到libs目录下，Mac下classes.jar的路径是/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/bin/classes.jar，Windows下classes.jar的路径是Unity\\Editor\\Data\\PlaybackEngines\\androidplayer\\bin\\classes.jar；
 
-![](爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image002b445bc98-5310-4856-864a-cf1fc6f6ab80.png "6") 
+![](/Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image002b445bc98-5310-4856-864a-cf1fc6f6ab80.png "6") 
 
 3) 修改AndroidManifest.xml: 参考之前的说明；
 
@@ -367,11 +308,11 @@ unity3d游戏接入有两种情况：
 
 10）拷贝RecNow/depends/lib/librecnow.so 到Unity项目的Assets/Plugins/Android/libs/armeabi-v7a 目录下；
 
-![](爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image003398176dc-30e7-44f2-b03b-f4a9bf26cefe.jpg "6")
+![](/Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image003398176dc-30e7-44f2-b03b-f4a9bf26cefe.jpg "6")
 
 11）拷贝RecNow/asssets/recnow到Unity项目的Assets/Plugins/Android/assets目录下；
 
-![](爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image0045a903330-bf73-4adc-9fb5-d09781d6cbc1.jpg "6")
+![](/Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image0045a903330-bf73-4adc-9fb5-d09781d6cbc1.jpg "6")
 
 12）编译游戏。
 
@@ -381,74 +322,19 @@ RecNow提供了C\# API给厂商调用，使用时首先需要导入RecNow.unityp
 
 unity3d API在aipai. RecNow类中
 
-**return**
+|return|declaration|
+|------|-----------|
+|static bool|IsEnabled()<br>判断设备是否支持，支持返回ture，否则返回false|
+|static string|GetVideoPath()<br>返回当前录像的视频保存路径|
+|static int|StartRecord()<br>开始录像，返回值不为0，表示开始录像失败|
+|static void|StopRecord()<br>停止录像|
+|static void|PauseRecord()<br>暂停录像|
+|static void|ResumeRecord()<br>恢复录像|
+|static void|ShowVideoStore()<br>显示recnow自带的视频管理界面|
+|static void|Playback(string path)<br>回放最近一次录的视频|
+|static void|FastShare(string path)<br>快速分享最近一次录的视频|
+|static void|ShowPlayerClub()<br>进入爱拍recnow玩家俱乐部|
+|static void|ShowWelfareCenter()<br>进入爱拍recnow福利中心|
 
-**declaration**
-
-**static bool**
-
-**IsEnabled**()
-
-判断设备是否支持，支持返回ture，否则返回false
-
-**static string**
-
-**GetVideoPath**()
-
-返回当前录像的视频保存路径
-
-**static int**
-
-**StartRecord**()
-
-开始录像，返回值不为0，表示开始录像失败
-
-**static void**
-
-**StopRecord**()
-
-停止录像
-
-**static void**
-
-**PauseRecord**()
-
-暂停录像
-
-**static void**
-
-**ResumeRecord**()
-
-恢复录像
-
-**static void**
-
-**ShowVideoStore**()
-
-显示recnow自带的视频管理界面
-
-**static void**
-
-**Playback**(**string **path)
-
-回放最近一次录的视频
-
-**static void**
-
-**FastShare**(**string** path)
-
-快速分享最近一次录的视频
-
-**static void**
-
-**ShowPlayerClub**()
-
-进入爱拍recnow玩家俱乐部
-
-**static void**
-
-**ShowWelfareCenter**()
-
-进入爱拍recnow福利中心
 
  

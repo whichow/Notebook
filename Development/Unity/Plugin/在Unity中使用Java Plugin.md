@@ -50,7 +50,8 @@ AndroidJavaObject jo = new AndroidJavaObject("java.lang.String", "some_stri
 // jni.FindClass("java.lang.String");
 // jni.GetMethodID(classID, "<init>", "(Ljava/lang/String;)V");
 // jni.NewStringUTF("some_string");
-// jni.NewObject(classID, methodID, javaString);int hash = jo.Call<int>("hashCode");
+// jni.NewObject(classID, methodID, javaString);
+int hash = jo.Call<int>("hashCode");
 // jni.GetMethodID(classID, "hashCode", "()I");
 // jni.CallIntMethod(objectID, methodID);
 ```
@@ -71,7 +72,8 @@ AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer")
 AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity");
 // jni.GetStaticFieldID(classID, "Ljava/lang/Object;");
 // jni.GetStaticObjectField(classID, fieldID);
-// jni.FindClass("java.lang.Object");Debug.Log(jo.Call<AndroidJavaObject>("getCacheDir").Call<string>("getCanonicalPath"));
+// jni.FindClass("java.lang.Object");
+Debug.Log(jo.Call<AndroidJavaObject>("getCacheDir").Call<string>("getCanonicalPath"));
 // jni.GetMethodID(classID, "getCacheDir", "()Ljava/io/File;");
 // or any baseclass thereof!
 // jni.CallObjectMethod(objectID, methodID);
@@ -111,11 +113,10 @@ Java类com.unity3d.player.UnityPlayer中有一个静态方法UnitySendMessage,�
 记住JNI帮助类会尽可能多的缓存数据来提高性能。
 
 ``` csharp
-//The first time you call a Java function like
-AndroidJavaObject jo = new AndroidJavaObject("java.lang.String", "some_string"); 
-// somewhat expensiveint hash = jo.Call<int>("hashCode"); 
-// first time - expensiveint hash = jo.Call<int>("hashCode"); 
-// second time - not as expensive as we already know the java method and can call it directly
+//The first time you call a Java function like
+AndroidJavaObject jo = new AndroidJavaObject("java.lang.String", "some_string"); // somewhat expensive
+int hash = jo.Call<int>("hashCode"); // first time - expensive
+int hash = jo.Call<int>("hashCode"); // second time - not as expensive as we already know the java method and can call it directly
 ```
 
 在使用完后Mono垃圾回收器应该释放所有创建的AndroidJavaObject和AndroidJavaClass实例，建议将它们放在using(){}语句中来确保尽可能快的被删除。
@@ -151,19 +152,20 @@ public class OverrideExample extends UnityPlayerActivity {   
 }
 ```
 
-相应的AndroidManifest.xml会像这样：
+创建AndroidManifest.xml，可以从`C:\Program Files\Unity\Editor\Data\PlaybackEngines\androidplayer`文件夹中拷贝一份放到`Assets/Plugins/Android`再进行修改。
+相应的AndroidManifest.xml像这样，可以添加使用到的组建，需要的权限等：
 
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.company.product">    
-<application android:icon="@drawable/app_icon" android:label="@string/app_name">        
-<activity android:name=".OverrideExample" android:label="@string/app_name" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">            
-<intent-filter>                
-<action android:name="android.intent.action.MAIN" />                
-<category android:name="android.intent.category.LAUNCHER" />            
-</intent-filter>        
-</activity>    
-</application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.company.product">
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name">
+        <activity android:name=".OverrideExample" android:label="@string/app_name" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
 </manifest>
 ```
 
