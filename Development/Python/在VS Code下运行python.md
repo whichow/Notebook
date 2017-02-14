@@ -12,7 +12,7 @@
     "showOutput": "always"
 }
 ```
-配置好后，按下`Ctrl+Shift+B`就可以执行了。
+配置好后，按下`Ctrl+Shift+B`就可以执行了，或者按下`Ctrl+Shift+P`，输入"tasks"选择"Tasks:Run Task"。如果要停止，按下`Ctrl+Shift+P`，输入"tasks"，选择"Tasks:Terminate Running Task"。
 
 ## 调试
 点击扩展按钮或按快捷键`Ctrl+Shift+X`，搜索Python，选第一个，安装Python扩展。安装好后，点击调试按钮或按快捷键`Ctrl+Shift+D`切换到调试模式了，打上断点，点击开始调试，会让你选择要调试的程序类型，选Python就可以了。
