@@ -53,9 +53,9 @@ public class AudioPlay {
     }
 }
 ```
-生成库文件Build->Make Module，在该模块的`build\outputs\aar`文件夹下可以找到`.aar`文件，解压该文件可以看到其中有一个classes.jar文件，这个就是我们需要的库文件了，将其放到Unity中的Plugins/Android文件夹中（由于我们没有使用到任何资源文件，也没有使用到任何权限，所以库中的其他文件夹都不需要，Unity中的AndroidManifest.xml文件也不需要修改）
+生成库文件Build->Make Module，在该模块的`build\outputs\aar`文件夹下可以找到`.aar`文件（Unity 5开始支持.aar类型的Android插件，可以直接放到Unity中），解压该文件可以看到其中有一个classes.jar文件，这个就是我们需要的库文件了，将其放到Unity中的Plugins/Android文件夹中（由于我们没有使用到任何资源文件，也没有使用到任何权限，所以库中的其他文件夹都不需要，Unity中的AndroidManifest.xml文件也不需要修改）
 
-下面来看一下我们在Unity中如何使用这个库文件中的方法以及怎样从Java代码中回调，因为Java中的一切都是基于类的，所以我们需要在C#中创建对应的Java类来进行回调：
+下面来看一下我们在Unity中如何使用这个库文件中的方法以及怎样从Java代码中回调，虽然Unity自带的Java包中提供了UnityPlayer.UnitySendMessage来向C#中发送消息，但是局限性太大，我们这里采用另外一种方式。因为Java中的一切都是基于类的，所以我们需要在C#中创建对应的Java类来进行回调：
 ``` csharp
 //创建一个类继承自AndroidJavaProxy用于回调
 class OnComplishCallback : AndroidJavaProxy {
@@ -74,3 +74,13 @@ public void PlayAudio {
     jo.Call("playAudio", "/sdcard/test.aac", new OnComplishCallback());
 }
 ```
+
+**参考**
+
+[How to pass an interface to Java from Unity code?](http://answers.unity3d.com/questions/326521/how-to-pass-an-interface-to-java-from-unity-code.html)
+
+[AndroidJavaProxy](https://docs.unity3d.com/ScriptReference/AndroidJavaProxy.html)
+
+[Building Plugins for Android](https://docs.unity3d.com/Manual/PluginsForAndroid.html)
+
+[Does Unity support using aar package as Android plugin library?](https://forum.unity3d.com/threads/does-unity-support-using-aar-package-as-android-plugin-library.272776/)
