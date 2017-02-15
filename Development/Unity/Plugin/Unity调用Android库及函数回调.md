@@ -66,12 +66,13 @@ class OnComplishCallback : AndroidJavaProxy {
         Debug.Log("Play Completion");
     }
 }
-
-public void PlayAudio {
+```
+``` csharp
+public void PlayAudio(string path) {
     //使用Unity封装好的JNI类
     AndroidJavaObject jo = new AndroidJavaObject ("com.cgtiger.androidunitylib.AudioPlay");
     //调用Java对象的方法
-    jo.Call("playAudio", "/sdcard/test.aac", new OnComplishCallback());
+    jo.Call("playAudio", path, new OnComplishCallback());
 }
 ```
 
@@ -84,3 +85,5 @@ public void PlayAudio {
 [Building Plugins for Android](https://docs.unity3d.com/Manual/PluginsForAndroid.html)
 
 [Does Unity support using aar package as Android plugin library?](https://forum.unity3d.com/threads/does-unity-support-using-aar-package-as-android-plugin-library.272776/)
+
+[Step-by-Step guide for developing Android Plugin for Unity3D (I)](https://xinyustudio.wordpress.com/2015/12/31/step-by-step-guide-for-developing-android-plugin-for-unity3d-i/)
