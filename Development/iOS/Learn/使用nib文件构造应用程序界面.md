@@ -16,7 +16,7 @@ XCode5之后默认使用storyboard来构造应用程序的界面，如果我们�
 
 首先新建一个Cocoa Touch Class，Subclass of选择UIViewController，勾选Also create XIB file
 
-![](使用nib文件构造应用程序界面_files/3546277.png)
+![](../../../Images/使用nib文件构造应用程序界面_files/3546277.png)
 
 接下来在AppDelegate中引入ViewController头文件，
 

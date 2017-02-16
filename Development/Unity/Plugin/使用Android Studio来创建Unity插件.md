@@ -22,7 +22,7 @@ Many of them don't know how to add an external jar as library in the Android Stu
 
 |                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![](使用Android%20Studio来创建Unity插件_files/newproj_3.jpg)](http://4.bp.blogspot.com/-wUJrx7pHsrM/VR_00_37BhI/AAAAAAAAA94/QM31wKVf14c/s1600/newproj.jpg) |
+| [![](../../../Images/使用Android%20Studio来创建Unity插件_files/newproj_3.jpg)](http://4.bp.blogspot.com/-wUJrx7pHsrM/VR_00_37BhI/AAAAAAAAA94/QM31wKVf14c/s1600/newproj.jpg) |
 | Fig 3: Android Plugin For Unity using Android Studio - Add external jar as Library                                                                          |
 
 If you have correctly followed the steps, then you should have the build.gradle file under the app folder as below
@@ -125,7 +125,7 @@ Once this is done, you should have a new task created in the Gradle tab which 
 
 |                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![](使用Android%20Studio来创建Unity插件_files/newproj_4.jpg)](http://4.bp.blogspot.com/-gZhLL09yZEI/VR_7zpNn6MI/AAAAAAAAA-I/VqEFRHoZoX8/s1600/newproj.jpg) |
+| [![](../../../Images/使用Android%20Studio来创建Unity插件_files/newproj_4.jpg)](http://4.bp.blogspot.com/-gZhLL09yZEI/VR_7zpNn6MI/AAAAAAAAA-I/VqEFRHoZoX8/s1600/newproj.jpg) |
 | Fig 4: Android Plugin For Unity using Android Studio - Export JAR                                                                                           |
 
 Double click on exportJar and it should start building a jar file. Once you see the BUILD SUCCESSFUL message in the Run window. Navigate to \\AndroidStudioProjects\\ShareText\\app\\release and you should have a AndroidPlugin.jar file built. That is the file we needed. That is the plugin which we will be using in our Unity project to Share text.
@@ -165,14 +165,14 @@ Save the scene and now this little app is ready to be tested. However, there is 
 
 |                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![](使用Android%20Studio来创建Unity插件_files/newproj_5.jpg)](http://1.bp.blogspot.com/-klmGkWBC0RY/VSAIv9DvE_I/AAAAAAAAA-Y/rhzeX5UGWBM/s1600/newproj.jpg) |
+| [![](../../../Images/使用Android%20Studio来创建Unity插件_files/newproj_5.jpg)](http://1.bp.blogspot.com/-klmGkWBC0RY/VSAIv9DvE_I/AAAAAAAAA-Y/rhzeX5UGWBM/s1600/newproj.jpg) |
 | Fig 5: Android Plugin For Unity using Android Studio - Bundle Identifier                                                                                    |
 
 Once you build the app and test it. On clicking the button you should get something like the one that is shown screenshot below
 
 |                                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![](使用Android%20Studio来创建Unity插件_files/Screenshot_2015-04-03-22-34-42.png)](http://1.bp.blogspot.com/-6cSpm6WTFUM/VSAKOf_pt-I/AAAAAAAAA-k/8Z26E6E6WFg/s1600/Screenshot_2015-04-03-22-34-42.png) |
+| [![](../../../Images/使用Android%20Studio来创建Unity插件_files/Screenshot_2015-04-03-22-34-42.png)](http://1.bp.blogspot.com/-6cSpm6WTFUM/VSAKOf_pt-I/AAAAAAAAA-k/8Z26E6E6WFg/s1600/Screenshot_2015-04-03-22-34-42.png) |
 | Fig 5: Android Plugin For Unity using Android Studio - Share App                                                                                                                                        |
 
 Hope this post will be of some use to you guys.

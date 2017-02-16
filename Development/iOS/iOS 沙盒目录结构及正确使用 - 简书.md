@@ -5,10 +5,10 @@
 
 每个APP的沙盒下面都有相似目录结构，如图（[苹果官方文档](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)）：
 
-![](iOS%20沙盒目录结构及正确使用%20-%20简书_files/550988-e380ff054e24eb8a.jpg)
+![](../../Images/iOS%20沙盒目录结构及正确使用%20-%20简书_files/550988-e380ff054e24eb8a.jpg)
 Every App Is an Island
 
-![](iOS%20沙盒目录结构及正确使用%20-%20简书_files/550988-e6d3ef186a8c1d62.jpg)
+![](../../Images/iOS%20沙盒目录结构及正确使用%20-%20简书_files/550988-e6d3ef186a8c1d62.jpg)
 
 > NSString \*path = NSHomeDirectory();
 

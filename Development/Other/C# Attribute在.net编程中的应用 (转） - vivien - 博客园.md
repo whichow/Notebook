@@ -1134,26 +1134,3 @@ public class AppMain
 
 运行结果表明了我们对Order的Sbumit成功地进行了拦截。需要说明的是，这里的代码仅仅是作为对ContextAttribute应用的演示，它是粗线条的。在具体的实践中，大家可以设计的更精妙。
 
- 
-
-[好文要顶](#) [关注我](#) [收藏该文](#) [![](C#%20Attribute在.net编程中的应用%20(转）%20-%20vivien%20-%20博客园_files/d5aea86bdec32a66be1446dacc4efd84.png)](# "分享至新浪微博") [![](C#%20Attribute在.net编程中的应用%20(转）%20-%20vivien%20-%20博客园_files/0d5b76b4ae98cefd7c2d4300c27b1c69.png)](# "分享至微信")
-
-[](http://home.cnblogs.com/u/sleeping/)
-[vivien](http://home.cnblogs.com/u/sleeping/)
-[关注 - 0](http://home.cnblogs.com/u/sleeping/followees)
-[粉丝 - 6](http://home.cnblogs.com/u/sleeping/followers)
-
-[+加关注](#)
-
-1
-
-0
-
-(请您对文章做出评价)
-
-[«](http://www.cnblogs.com/sleeping/archive/2008/05/21/1204097.html) 上一篇：[A Single Instance Application which Minimizes to the System Tray](http://www.cnblogs.com/sleeping/archive/2008/05/21/1204097.html "发布于2008-05-21 15:28")
-[»](http://www.cnblogs.com/sleeping/archive/2009/02/13/1390186.html) 下一篇：[TextChanged Event of ComboBox](http://www.cnblogs.com/sleeping/archive/2009/02/13/1390186.html "发布于2009-02-13 16:58")
-
-posted on 2008-12-17 12:22 [vivien](http://www.cnblogs.com/sleeping/) 阅读(2899) 评论(1) [编辑](http://i.cnblogs.com/EditPosts.aspx?postid=1356691) [收藏](http://www.cnblogs.com/sleeping/archive/2008/12/17/1356691.html#)
-
-

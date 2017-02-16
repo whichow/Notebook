@@ -1,10 +1,3 @@
-最近，我在学习Linux，下面是一些笔记。
-
-使用电脑的时候，经常需要查找文件。
-
-在Linux中，有很多方法可以做到这一点。国外网站[LinuxHaxor](http://www.linuxhaxor.net/?p=904)总结了五条命令，你可以看看自己知道几条。大多数程序员，可能经常使用其中的2到3条，对这5条命令都很熟悉的人应该是不多的。
-
-![](http://photo2.bababian.com/usr491085/upload1/20091008/sBoFRsKw+OzJFYyNE2EUUjQCJlBV+J99nAarJRhCxwMaFRhlSmG8BSw==.jpg)
 
 **1. find**
 
@@ -36,7 +29,6 @@ find的使用实例：
 
 搜索当前目录中，所有过去10分钟中更新过的普通文件。如果不加-type f参数，则搜索普通文件+特殊文件+目录。
 
-![](http://photo2.bababian.com/usr491085/upload1/20091008/sPyDXwjuyGPa90ImF1FWWQd+VFEI7soi3o4IGCou34db1QpQ0ttCFyg==.jpg)
 
 **2. locate**
 
@@ -56,7 +48,6 @@ locate命令的使用实例：
 
 搜索用户主目录下，所有以m开头的文件，并且忽略大小写。
 
-![](http://photo2.bababian.com/usr491085/upload1/20091008/s_AmVmTt51hUeK2spbFLEIevqK9nV9pwfcvQ9BFAKrkuanlcSdasMBQ==.jpg)
 
 **3. whereis**
 
@@ -66,8 +57,6 @@ whereis命令的使用实例：
 
 　　**$ whereis grep**
 
-![](http://photo2.bababian.com/usr491085/upload1/20091008/sQd1vxME+KrYoIRYPrviDIwKkc+Mfg22OprkbhxvCKCCPTSHlbpsbOw==.jpg)
-
 **4. which**
 
 which命令的作用是，在PATH变量指定的路径中，搜索某个系统命令的位置，并且返回第一个搜索结果。也就是说，使用which命令，就可以看到某个系统命令是否存在，以及执行的到底是哪一个位置的命令。
@@ -75,8 +64,6 @@ which命令的作用是，在PATH变量指定的路径中，搜索某个系统�
 which命令的使用实例：
 
 　　**$ which grep**
-
-![](http://photo2.bababian.com/usr491085/upload1/20091008/swW+ZcKexo65woijErYxjZW5p25VscBxNr2sTR5LRUry26AQADbJWzA==.jpg)
 
 **5. type**
 
@@ -96,8 +83,5 @@ type命令的使用实例：
 
 加上-p参数后，就相当于which命令。
 
-![](http://photo2.bababian.com/usr491085/upload1/20091008/sveDFMiMt4K6TNsrCCYJ6ynayDIwgnkdYO6presF76ZrpTH+9d2SoOg==.jpg)
-
-（完）
 
 

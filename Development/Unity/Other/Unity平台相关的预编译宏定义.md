@@ -67,7 +67,7 @@ Unity支持的平台定义有：
 可以通过选择目标平台来在Unity Editor中测试平台相关的代码
 在菜单File &gt;Build Settings. 打开 Build Settings 窗口：
 
-![Build Settings window with the WebPlayer Selected as Target platform.](Unity平台相关的预编译宏定义_files/0.3209067168645561.png)
+![Build Settings window with the WebPlayer Selected as Target platform.](../../../Images/Unity平台相关的预编译宏定义_files/0.3209067168645561.png)
 选择要测试的平台，点击 Switch Platform来切换到目标平台。
 
 自定义平台的宏定义：
@@ -75,7 +75,7 @@ Unity支持的平台定义有：
 
 可以通过Unity编辑器内置的选项来定义自己的宏定义. 在相关平台的 Player Settings 的 Other Settings 面板中 ,你将看到 Scripting Define Symbols 文本框
 
-![](Unity平台相关的预编译宏定义_files/c72e5d28-7f35-497c-9dbd-e536798abd91.png)
+![](../../../Images/Unity平台相关的预编译宏定义_files/c72e5d28-7f35-497c-9dbd-e536798abd91.png)
 在这里可以输入你要定义的符号来定义指定的平台的宏定义，用分号隔开，这些符号可以用在宏定义的条件判断中。
 
 自定义全局的宏定义：

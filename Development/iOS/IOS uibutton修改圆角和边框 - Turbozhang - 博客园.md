@@ -1,4 +1,3 @@
-[![复制代码](IOS%20uibutton修改圆角和边框%20-%20Turbozhang%20-%20博客园_files/copycode.gif)]( "复制代码")
 
 ```
 UIButton *testButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -30,15 +29,10 @@ UIButton *testButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.view addSubview:testButton];
 ```
 
-[![复制代码](IOS%20uibutton修改圆角和边框%20-%20Turbozhang%20-%20博客园_files/copycode.gif)]( "复制代码")
 
 效果：
 
-![](IOS%20uibutton修改圆角和边框%20-%20Turbozhang%20-%20博客园_files/171352504663132.png)
-
- 
-
-[![复制代码](IOS%20uibutton修改圆角和边框%20-%20Turbozhang%20-%20博客园_files/copycode.gif)]( "复制代码")
+![](../../Images/IOS%20uibutton修改圆角和边框%20-%20Turbozhang%20-%20博客园_files/171352504663132.png)
 
 ```
 UIView的layer属性可以绘制UIView的各种效果。其实我们看到的View的动画实际上也是layer在绘制。
@@ -71,8 +65,6 @@ opacity为透明度，默认为0，即表示透明的。所以我们要把opacit
 效果如下：
 ```
 
-[![复制代码](IOS%20uibutton修改圆角和边框%20-%20Turbozhang%20-%20博客园_files/copycode.gif)]( "复制代码")
-
-![](IOS%20uibutton修改圆角和边框%20-%20Turbozhang%20-%20博客园_files/171555168267012.png)
+![](../../Images/IOS%20uibutton修改圆角和边框%20-%20Turbozhang%20-%20博客园_files/171555168267012.png)
 
 

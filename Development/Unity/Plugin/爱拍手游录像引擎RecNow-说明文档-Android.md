@@ -39,19 +39,6 @@
 [5.3        unity3d API 11](#_Toc435192733)
 
 ****
-
- 
-
-****
-
- 
-
-****
-
- 
-
-****
-
  
 
 [1.  概述]()
@@ -70,7 +57,7 @@ unity3d游戏的接入有点特别，所以对unity3d的游戏接入有单独介
 
        解压资源包RecNow.(version).zip，RecNow包含的资源件如图所示：
 
-       ![](/Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image001ade64022-b04c-4d30-8838-13306fae62f8.jpg "2")
+       ![](../../../Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image001ade64022-b04c-4d30-8838-13306fae62f8.jpg "2")
 
        assets包含需要拷贝到Android项目的assets目录下的资源；
            depends包含C++ API头文件以及动态库资源；
@@ -288,7 +275,7 @@ unity3d游戏接入有两种情况：
 
 2) 拷贝RecNow.jar到project的libs 目录下；如果libs目录下没有unity-classes.jar，就从Unity的安装目录找到class.jar复制到libs目录下，Mac下classes.jar的路径是/Applications/Unity/Unity.app/Contents/PlaybackEngines/AndroidPlayer/bin/classes.jar，Windows下classes.jar的路径是Unity\\Editor\\Data\\PlaybackEngines\\androidplayer\\bin\\classes.jar；
 
-![](/Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image002b445bc98-5310-4856-864a-cf1fc6f6ab80.png "6") 
+![](../../../Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image002b445bc98-5310-4856-864a-cf1fc6f6ab80.png "6") 
 
 3) 修改AndroidManifest.xml: 参考之前的说明；
 
@@ -308,11 +295,11 @@ unity3d游戏接入有两种情况：
 
 10）拷贝RecNow/depends/lib/librecnow.so 到Unity项目的Assets/Plugins/Android/libs/armeabi-v7a 目录下；
 
-![](/Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image003398176dc-30e7-44f2-b03b-f4a9bf26cefe.jpg "6")
+![](../../../Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image003398176dc-30e7-44f2-b03b-f4a9bf26cefe.jpg "6")
 
 11）拷贝RecNow/asssets/recnow到Unity项目的Assets/Plugins/Android/assets目录下；
 
-![](/Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image0045a903330-bf73-4adc-9fb5-d09781d6cbc1.jpg "6")
+![](../../../Images/爱拍手游录像引擎RecNow-说明文档-Android_files/clip_image0045a903330-bf73-4adc-9fb5-d09781d6cbc1.jpg "6")
 
 12）编译游戏。
 

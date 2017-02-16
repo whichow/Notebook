@@ -15,8 +15,6 @@ Make 命令教程
 
 本文介绍Make命令的用法，从简单的讲起，不需要任何基础，只要会使用命令行，就能看懂。我的参考资料主要是Isaac Schlueter的[《Makefile文件教程》](https://gist.github.com/isaacs/62a2d1825d04437c6f08)和[《GNU Make手册》](https://www.gnu.org/software/make/manual/make.html)。
 
-![](Make%20命令教程%20-%20阮一峰的网络日志_files/bg2015022001.jpg)
-
 （题图：摄于博兹贾阿达岛，土耳其，2013年7月）
 
 一、Make的概念
@@ -434,16 +432,3 @@ patsubst 函数用于模式匹配的替换，格式如下。
 >     .PHONY: edit clean
 
 今天，Make命令的介绍就到这里。下一篇文章我会介绍，[如何用 Make 来构建 Node.js 项目](http://www.ruanyifeng.com/blog/2015/03/build-website-with-make.html)。
-
-（完）
-
-### 文档信息
-
--   版权声明：自由转载-非商用-非衍生-保持署名（[创意共享3.0许可证](http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh)）
--   发表日期： 2015年2月20日
--   更多内容： [档案](http://www.ruanyifeng.com/blog/archives.html) » [开发者手册](http://www.ruanyifeng.com/blog/developer/)
--   购买文集：[![](Make%20命令教程%20-%20阮一峰的网络日志_files/4cac5ca4f4b4fcd07f8423e3cb923ad1.png) 《如何变得有思想》](http://www.ruanyifeng.com/blog/2014/12/my-blog-book.html)
--   社交媒体：[![](Make%20命令教程%20-%20阮一峰的网络日志_files/c2e74039b952fd39fcd63f49cfd246b1.png) twitter](https://twitter.com/ruanyf)，[![](Make%20命令教程%20-%20阮一峰的网络日志_files/a7f7eff4e926ff1c4a337d8c31bf7851.png) weibo](http://weibo.com/ruanyf)
--   Feed订阅： [![](Make%20命令教程%20-%20阮一峰的网络日志_files/288962953473464b516b15fbe1545346.gif)](http://www.ruanyifeng.com/feed.html)
-
-

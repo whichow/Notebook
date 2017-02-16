@@ -1,24 +1,3 @@
-iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走天涯 - 博客频道 - CSDN.NET
-[iOS Provisioning Profile(Certificate)与Code Signing详解](http://blog.csdn.net/phunxm/article/details/42685597)
-===============================================================================================================
-
-.
-
- 标签： [Certificate](http://www.csdn.net/tag/Certificate)[App\_ID](http://www.csdn.net/tag/App_ID)[Provisioning\_Profile](http://www.csdn.net/tag/Provisioning_Profile)[App\_Group](http://www.csdn.net/tag/App_Group)[CodeSigning](http://www.csdn.net/tag/CodeSigning)
-
-2015-01-13 22:01 96814人阅读 [评论](http://blog.csdn.net/phunxm/article/details/42685597#comments)(16) [举报](http://blog.csdn.net/phunxm/article/details/42685597#report "举报")
-
-.
-
-![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/category_icon.jpg) 分类：
-
- iOS*（8）* ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/1db119b0089be63f5674c35ec53f1d8f.jpg)
-
-.
-
-版权声明：本文为博主原创文章，未经博主允许不得转载。
-
-目录[(?)](http://blog.csdn.net/phunxm/article/details/42685597# "系统根据文章中H1到H6标签自动生成文章目录")[\[+\]](http://blog.csdn.net/phunxm/article/details/42685597# "展开")
 
 []()**引言**
 ============
@@ -111,7 +90,7 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 >
 > -   在［钥匙串-系统］中双击[CNNIC ROOT](http://www.williamlong.info/archives/4192.html)，在【信任】|【使用此证书时】下拉选择【永不信任】。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150815233732150.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150815233732150.png)
 >
 > 在天朝子民的一生中，户籍证明可理解为等效的根证书：有了户籍证明，才能办理身份证；有了上流的身份证，才能办理下游居住证、结婚证、计划生育证、驾驶执照等认证。
 >
@@ -140,18 +119,18 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 >
 > 如果Mac Keychain Access证书助理在申请证书时尚未安装过该证书，请先下载安装（Signing requires that you have both the signing identity and the intermediate certificate installed in your keychain）。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150114090911421.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150114090911421.png)
 >
 > []()**5.**申请证书（CSR：Certificate Signing Request）
 > ------------------------------------------------------
 >
 > 可以在缺少证书时通过Xcode Fix Issue自动请求证书，这里通过Keychain**证书助理**从证书颁发机构请求证书：填写开发账号邮件和常用名称，勾选【存储到磁盘】。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150412073437711.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150412073437711.png)
 >
 > keychain将生成一个包含开发者身份信息的**CSR**（Certificate Signing Request）文件；同时，Keychain Access|Keys中将新增一对Public/Private **Key Pair**（This signing identity consists of a public-private key pair that Apple issues）。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150114091003101.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150114091003101.png)
 >
 > ***private key***始终保存在Mac OS的Keychain Access中，用于签名（CodeSign）对外发布的App；***public key***一般随证书（随Provisioning Profile，随App）散布出去，对App签名进行校验认证。用户必须保护好本地Keychain中的private key，以防伪冒。
 >
@@ -160,21 +139,21 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 >
 > 在Apple开发网站上传该CSR文件来添加证书（Upload CSR file to generate your certificate）：
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150412073807017.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150412073807017.png)
 >
 > Apple证书颁发机构WWDRCA[*(Apple Worldwide Developer Relations Certification Authority)*](https://developer.apple.com/certificationauthority/AppleWWDRCA.cer)将使用private key对CSR中的public key和一些身份信息进行加密签名生成**数字证书**（ios\_development.cer）并记录在案（Apple Member Center）。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150412074512682.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150412074512682.png)
 >
 > 从Apple Member Center网站下载证书到Mac上双击即可安装（当然也可在Xcode中添加开发账号自动同步证书和\[生成\]配置文件）。证书安装成功后，在KeychainAccess|Keys中展开创建CSR时生成的Key Pair中的私钥前面的箭头，可以查看到包含其对应公钥的证书（Your requested certificate will be the public half of the key pair.）；在Keychain Access|Certificates中展开安装的证书（ios\_development.cer）前面的箭头，可以看到其对应的私钥。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150114091138343.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150114091138343.png)
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150114091440719.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150114091440719.png)
 >
 > Certificate**被配置到**【Xcode Target|Build Settings|Code Signing|Code Signing Identity】下，下拉选择Identities from Profile "..."（一般先配置Provisioning Profile）。以下是Xcode配置示例：
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150422073707077.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150422073707077.png)
 
 []()**四****.供应配置文件（**[Provisioning Profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html)**）**
 ===========================================================================================================================================================================================================
@@ -184,7 +163,7 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 >
 > Provisioning Profile文件包含了上述的所有内容：**证书、App ID和设备**。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150126225313444.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150126225313444.png)
 >
 > 一个Provisioning Profile对应一个Explicit App ID或Wildcard App ID（一组相同Prefix/Seed的App IDs）。在网站上手动创建一个Provisioning Profile时，需要依次指定App ID（单选）、证书（Certificates，可多选）和设备（Devices，可多选）。用户可在网站上删除（Delete）已注册的Provisioning Profiles。
 >
@@ -261,11 +240,11 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 >
 > 在Xcode中添加Apple Developer Account时，它将与Apple Member Center后台勾兑**自动生成**iOS Team Provisioning Profile（Managed by Xcode）。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150113233612875.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150113233612875.png)
 >
 > Team Provisioning Profile包含一个为Xcode iOS Wildcard App ID(\*)生成的iOS Team Provisioning Profile:\*（匹配所有应用程序），账户里所有的Development Certificates和Devices都可以使用它在这个team注册的所有设备上调试所有的应用程序（不管bundle identifier是什么）。同时，它还会为开发者自己创建的Wildcard/Explicit App IDs创建对应的iOS Team Provisioning Profile。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150126225425594.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150126225425594.png)
 >
 > []()2.Team Provisioning Profile生成/更新时机
 > --------------------------------------------
@@ -351,9 +330,9 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 > []()1.Code Signing Identity
 > ---------------------------
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150126225508120.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150126225508120.png)
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150113233322156.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150113233322156.png)
 >
 > Xcode中配置的Code Signing Identity（entitlements、certificate）必须与Provisioning Profile匹配，并且配置的Certificate必须在本机Keychain Access中存在对应Public／Private Key Pair，否则编译会报错。
 >
@@ -369,7 +348,7 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 >
 > Xcode使用指定证书配套的私钥进行签名时需要授权，选择【始终允许】后，以后使用该私钥进行签名便不会再弹出授权确认窗口。
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150412080540635.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150412080540635.png)
 >
 > []()3.Verify Code Signature with Certificate
 > --------------------------------------------
@@ -378,7 +357,7 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 >
 > 第一步，App在Mac／iOS真机上启动时，需要对配置的bundle ID、entitlements和certificate与Provisioning Profile进行匹配校验：
 >
-> ![](iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150126225634296.png)
+> ![](../../Images/iOS%20Provisioning%20Profile(Certificate)与Code%20Signing_files/20150126225634296.png)
 >
 > 第二步，iOS/Mac真机上的ios\_development.cer被AppleWWDRCA.cer中的 public key解密校验合法后，获取每个开发证书中可信任的公钥对App的可靠性和完整性进行校验。
 >
@@ -495,22 +474,3 @@ iOS Provisioning Profile(Certificate)与Code Signing详解 - 曾梦想仗剑走�
 >
 > 《[Xcode打包ipa包](http://zengwu3915.blog.163.com/blog/static/27834897201362831449893/)》《[iOS程序生成ipa进行真机测试](http://blog.csdn.net/why_ios/article/details/7798030)》
 >
-[](http://blog.csdn.net/phunxm/article/details/42685597#) [](http://blog.csdn.net/phunxm/article/details/42685597# "分享到QQ空间") [](http://blog.csdn.net/phunxm/article/details/42685597# "分享到新浪微博") [](http://blog.csdn.net/phunxm/article/details/42685597# "分享到腾讯微博") [](http://blog.csdn.net/phunxm/article/details/42685597# "分享到人人网") [](http://blog.csdn.net/phunxm/article/details/42685597# "分享到微信") .
-
-顶  
-25
-
-&nbsp;
-踩  
-0
-
-.
-
--   上一篇[iPhone屏幕尺寸、分辨率及适配](http://blog.csdn.net/phunxm/article/details/42174937)
--   下一篇[iOS8扩展插件开发配置](http://blog.csdn.net/phunxm/article/details/42715145)
-
-#### 我的同类文章
-
- iOS*（8）*
-
-
