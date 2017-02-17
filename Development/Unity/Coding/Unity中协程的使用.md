@@ -17,3 +17,13 @@ IEnumerator UpdateProgressBar (float totalTime) {
     }
 }
 ```
+
+还可以用来等待某件不固定时间的事情完成
+``` csharp
+IEnumerator WaitToRecordOver() {
+    while (recordPlayer.Control.GetCurrentTimeMs () < character.snippets [currentIndex].end) {
+        yield return null;
+    }
+    StopRecord ();
+}
+```
