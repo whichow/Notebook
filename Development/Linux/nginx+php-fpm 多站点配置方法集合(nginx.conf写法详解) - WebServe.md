@@ -1,7 +1,4 @@
-nginx+php-fpm 多站点配置方法集合(nginx.conf写法详解) - WebServer - 54rd我是程序员(php,phpunit,nginx,shell,ubuntu)
 nginx+php-fpm 多站点配置方法集合(nginx.conf写法详解)
- 2015-01-18 17:57:07    [0](http://54rd.net/html/2015/webserver_0118/26.html#comment_iframe)    120    [](# "点击登录收藏文章") 
-===================================================================================================================================
 
 在使用nginx搭建多站点时，其实就是在nginx conf中使用多个server来控制即可，需要几个站点就新增加几个server，下面来看实例讲解：1 编写server配置：假定需要增加站点1：www test1 com，站点根目录在 home wo
 
