@@ -96,7 +96,9 @@ git clean -df 删除所有unchecked的文件和文件夹，-d表示文件夹，-
 
 git reset --hard 把checked的文件revert到前一个版本，不影响unchecked的文件
 
-git revert 版本号 退回到版本号指定的版本，版本号之需要给出前几位
+git reset --hard 版本号 退回指定版本，之前的提交都会删除
+
+git revert 版本号 退回到版本号指定的版本，版本号之需要给出前几位，之前的提交都会保留
 
 git合并冲突时可使用
 
