@@ -3,7 +3,13 @@
 IEnumerator DeserializeXml(string path) {
     WWW www = new WWW (path);
     yield return www;
-    XmlSerializer serializer = new XmlSerializer (typeof(Userdata));
-    userdata = (Userdata)serializer.Deserialize (new MemoryStream(www.bytes));	
+
+    var writer = new MemoryStream(www.bytes)
+    //或者
+    Stream s = new Stream();
+    using (var writer = new BinaryWriter(s))
+    {
+        writer.Write(wwwbytes);
+    }
 }
 ```
