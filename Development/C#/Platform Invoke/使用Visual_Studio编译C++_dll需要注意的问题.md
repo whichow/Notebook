@@ -1,0 +1,1 @@
+发布时一定要使用release版本，因为debug版本需要依赖vs的一些库，所以用debug发布的dll如果没有安装Visual Studio的话是无法运行的，会报找不到dll的错误。
