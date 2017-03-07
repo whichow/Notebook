@@ -21,11 +21,29 @@ coroutine.start(WaitToWWW)
 ```lua
 function WaitToDownloadOver()
     local www = UnityEngine.WWW("http://www.unknownworlds.com/downloads/Decoda.exe")
-    while www.isDone do
+    while not www.isDone do
 		log(www.progress)
 		coroutine.wait(0.1)
 	end
 end
 
 coroutine.start(WaitToDownloadOver)
+```
+
+另一种方式，使用Unity导出的方法
+```lua
+function WaitToClosePanel()
+    WaitForSeconds(1)
+    ClosePanel()
+end
+```
+输出下载进度
+```lua
+function WaitToDownloadOver()
+	local www = UnityEngine.WWW("http://www.unknownworlds.com/downloads/Decoda.exe")
+    while not www.isDone do
+		log(www.progress)
+		WaitForSeconds(0.1)
+	end
+end
 ```
