@@ -38,17 +38,26 @@ function MainPanel:Back()
 end
 ```
 ---
-其实我们完全可以在Lua中使用闭包来实现这一功能，以下是闭包的三种写法
+其实我们完全可以在Lua中来实现这一功能
 
-一、
+一、使用函数
 ```lua
 self.gameObject:GetComponent("Button").onClick:AddListener(function()
-    return function()
-        --具体实现
-    end
+    --具体实现
 end)
 ```
-二、
+
+```lua
+self.gameObject:GetComponent("Button").onClick:AddListener(function()
+    self:ShowPanel();
+end)
+
+function MainPanel:ShowPanel()
+    --具体实现
+end
+```
+
+二、使用闭包
 ```lua
 self.gameObject:GetComponent("Button").onClick:AddListener(self:ShowPanel());
 
@@ -58,13 +67,13 @@ function MainPanel:ShowPanel()
     end
 end
 ```
-三、
+
 ```lua
 self.gameObject:GetComponent("Button").onClick:AddListener(function()
-    return self:Back()
+    return self:ShowPanel()
 end)
 
-function MainPanel:Back()
+function MainPanel:ShowPanel()
     --具体实现
 end
 ```
