@@ -62,3 +62,45 @@ Thread 1 (thread 11523):
 - 添加-mno-thumb标记，重新编译库。
 
 如果没有库源文件，你可以向提供商要一个non-thumb版本的库。
+
+## Xcode调试控制台显示: ExecutionEngineException: Attempting to JIT compile method ‘(wrapper native-to-managed) Test:TestFunc (int)’ while running with –aot-only
+
+当退管函数委托被传递到原生函数中，但是需要的包装代码在构建应用的时候没有生成，通常会收到这类消息。你可以通过添加"MonoPInvokeCallbackAttribute"自定义属性来告诉AOT编译器哪些方法需要作为委托被传递到原生代码中。
+
+示例代码：
+```csharp
+using UnityEngine;
+using System.Collections;
+using System;
+using System.Runtime.InteropServices;
+using AOT;
+
+public class NewBehaviourScript : MonoBehaviour {
+    [DllImport ("__Internal")]
+    private static extern void DoSomething (NoParamDelegate del1, StringParamDelegate del2);
+
+    delegate void NoParamDelegate ();
+    delegate void StringParamDelegate (string str);
+    
+    [MonoPInvokeCallback(typeof(NoParamDelegate))]
+    public static void NoParamCallback() {
+        Debug.Log ("Hello from NoParamCallback");
+    }
+    
+    [MonoPInvokeCallback(typeof(StringParamDelegate))]
+    public static void StringParamCallback(string str) {
+        Debug.Log(string.Format("Hello from StringParamCallback {0}", str));
+    }
+
+    // Use this for initialization
+    void Start() {
+        DoSomething(NoParamCallback, StringParamCallback);
+    }
+}
+```
+
+## Xcode报编译错误: “ld : unable to insert branch island. No insertion point available. for architecture armv7”, “clang: error: linker command failed with exit code 1 (use -v to see invocation)”
+
+这个错误通常意味着有太多的代码在一个单独的模块中。通常由在构建的时候包括了许多脚本文件或很大的外部.Net程序集导致。在启用了script debugging的时候情况更严重，因为它在每个函数中添加了一些很轻量的说明，使得很容易达到这个限制。
+
+在player setting中启用托管代码裁剪对这种这个问题可能有帮助，尤其是引入了很大的外部.NET程序集。但是如果问题依然存在，最好的解决办法是将你的脚本代码分离到多个程序集中。最简单的方式是将一些代码移动到Plugins文件夹。在这个文件夹中的代码将打包到不同的程序集中。
