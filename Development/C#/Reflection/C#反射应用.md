@@ -191,16 +191,23 @@ public class WeChatFavorites : DevInfo
 ```csharp
 void Awake()
 {				
+    DevInfoSet devInfo;
     print("ShareSDK Awake");
     Type type = devInfo.GetType();
     Hashtable platformConfigs = new Hashtable();
+    //获取所有字段
     FieldInfo[] devInfoFields = type.GetFields();
+    //遍历字段
     foreach (FieldInfo devInfoField in devInfoFields) 
     {	
+        //生成所有类型的共同基类
         DevInfo info = (DevInfo) devInfoField.GetValue(devInfo);
+        //反射读取"type"字段内容
         int platformId = (int) info.GetType().GetField("type").GetValue(info);
+        //获取所有字段
         FieldInfo[] fields = info.GetType().GetFields();
         Hashtable table = new Hashtable();
+        //遍历字段
         foreach (FieldInfo field in fields) 
         {
             if ("type".EndsWith(field.Name)) {
