@@ -12,6 +12,10 @@ adb install -r APK_FILE
 ```
 adb uninstall PACKAGE_NAME
 ```
+## 清楚应用数据
+```
+adb shell pm clear PACKAGE_NAME
+```
 ## 启动Activity
 ```
 adb shell am strat PACKAGE_NAME/ACTIVITY_IN_PACKAGE
