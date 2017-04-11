@@ -34,5 +34,5 @@ renderCamera.targetTexture = null;
 DestroyImmediate(renderTexture);
 ```
 
-该方法需要绑定一个Camera来作为渲染Camera，该方法只会得到该摄像机中的图像
+该方法需要绑定一个Camera来作为渲染Camera，该方法只会得到该摄像机渲染的层的图像
 
