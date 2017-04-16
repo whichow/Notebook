@@ -1,6 +1,7 @@
-1.插件中如果有用到Unity提供的功能，需要在插件中添加Unity中的classes.jar包作为依赖，如扩展UnityPlayerActivity和使用UnitySendMessage方法
-2.jar包如果有用到Android资源文件，需要将资源文件一同拷贝到Unity中，或者直接打包成.aar。
+1.插件中如果有用到Unity提供的功能，需要在插件中添加Unity中的classes.jar包作为依赖，如继承UnityPlayerActivity和使用UnitySendMessage方法
 
-3.增加或修改Manifest.xml文件，如添加新的Activity或其他组件，配置所需要的权限。
+2.jar包如果有用到Android资源文件，需要将资源文件一同拷贝到Unity中，或者直接打包成.aar(Unity 5.x)。
 
-4.在Unity中修改Bundle Identifier。
+3.增加或修改Manifest.xml文件，如添加新的Activity或其他组件，配置所需要的权限。如果继承了UnityPlayerActivity，需要修改入口Activity。
+
+4.如果Activity是继承自UnityPlayerActivity，则包名必须和Unity的Bundle Identifier以及AndroidManifest中的一致。

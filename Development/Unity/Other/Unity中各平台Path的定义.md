@@ -1,98 +1,53 @@
-**iOS:**
+### iPhone
 
-Application.dataPath : Application/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/xxx.app/Data
+- Application.persistentDataPath: /var/mobile/Applications/[program_ID]/Documents (read/write)
+- Application.dataPath: /var/mobile/Applications/[program_ID]/[appname].app/Data (read only)
+- Application.streamingAssetsPath: /var/mobile/Applications/[program_ID]/[appname].app/Data/Raw (read only)
+- Application.temporaryCachePath: /var/mobile/Applications/[program_ID]/Library/Caches (read/write)
 
- 
+### Android
 
-Application.streamingAssetsPath : Application/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/xxx.app/Data/Raw
+#### [External]
 
- 
+- Application.persistentDataPath: /mnt/sdcard/Android/data/[bundle id]/files (read/write)
+- Application.dataPath: /data/app/[bundle id-number].apk
+- Application.streamingAssetsPath: jar:file:///data/app/[bundle id].apk!/assets (read only, should access via WWW)
+- Application.temporaryCachePath: /mnt/sdcard/Android/data/[bundle id]/cache
 
-Application.persistentDataPath : Application/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/Documents
+#### [Internal]
 
- 
+- Application.persistentDataPath: /data/data/[bundle id]/files/ (read/write)
+- Application.dataPath: /data/app/[bundle id-number].apk
+- Application.streamingAssetsPath: jar:file:///data/app/[bundle id].apk!/assets (read only, should access via WWW)
+- Application.temporaryCachePath: /data/data/com.xxx.xxx/cache/
 
-Application.temporaryCachePath : Application/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/Library/Caches
+### WEB read only
 
- 
+- Application.persistentDataPath: /
+- Application.dataPath: folder in unity3d file
+- Application.streamingAssetsPath: empty
 
- 
+### Windows Player
 
- 
+- Application.persistentDataPath: [UserDirectory]/AppData/LocalLow/[Company]/[Product Name] (read/write)
+- Application.dataPath: [Exe file]/[Exe file]_Data : read/write
+- Application.streamingAssetsPath: [Exe file]/[Exe file]_Data/StreamingAssets (read/write)
+- Application.temporaryCachePath: %LocalAppData%/Local/Temp/Temp/%Company%/%Product%
 
-**Android:**
+### MAC Player
 
- 
+- Application.persistentDataPath: [UserDirectory]/Library/Caches/unity.[Company].[Product] (read/write)
+- Application.dataPath: [Exe file].app/Contents
+- Application.streamingAssetsPath: [Exe file].app/Contents/Data/StreamingAssets (read/write)
 
-Application.dataPath : /data/app/xxx.xxx.xxx.apk
+### Windows Editor
 
- 
+- Application.persistentDataPath: [UserDirectory]/AppData/LocalLow/[Company]/[Product] (read/write)
+- Application.dataPath: [ProjectDirectory]/Assets
+- Application.streamingAssetsPath: [ProjectDirectory]/Assets/StreamingAssets	(read/write)
 
-Application.streamingAssetsPath : jar:file:///data/app/xxx.xxx.xxx.apk/!/assets
+### MAC Editor
 
- 
-
-Application.persistentDataPath : /data/data/xxx.xxx.xxx/files
-
- 
-
-Application.temporaryCachePath : /data/data/xxx.xxx.xxx/cache
-
- 
-
- 
-
- 
-
-**Windows Web Player:**
-
- 
-
-Application.dataPath : file:///D:/MyGame/WebPlayer (即导包后保存的文件夹，html文件所在文件夹)
-
- 
-
-Application.streamingAssetsPath :
-
- 
-
-Application.persistentDataPath :
-
- 
-
-Application.temporaryCachePath :
-
----
-
-**Application.dataPath**
-
-Unity Editor: `<path to project folder>/Assets`
-
-Mac player: `<path to player app bundle>/Contents`
-
-iOS player: `<path to player app bundle>/<AppName.app>/Data` (this folder is read only, use Application.persistentDataPath to save data).
-
-Win/Linux player: `<path to executablename_Data folder>` (note that most Linux installations will be case-sensitive!)
-
-WebGL: The absolute url to the player data file folder (without the actual data file name)
-
-Android: Normally it would point directly to the APK. The exception is if you are running a split binary build in which case it points to the the OBB instead.
-
-**Application.streamingAssetsPath**
-
-On a desktop computer (Mac OS or Windows) the location of the files can be obtained with the following code:
- `path = Application.dataPath + "/StreamingAssets";`
-
-On iOS, use:
- `path = Application.dataPath + "/Raw";`
-
-On Android, use:
- `path = "jar:file://" + Application.dataPath + "!/assets/";`
-
-On Android, the files are contained within a compressed .jar file
-
-**Application.persistentDataPath**
-
-Mac: `/Users/<UserName>/Library/Application Support/<Company Name>/<ApplicationName>/`
-
-Windows: `C:\Users\<user_name>\AppData\LocalLow\<company_name>\<product_name>`
+- Application.persistentDataPath: [UserDirectory]/Library/Caches/unity.[Company].[Product] (read/write)
+- Application.dataPath: [ProjectDirectory]/Assets
+- Application.streamingAssetsPath: [ProjectDirectory]/Assets/StreamingAssets (read/write)
