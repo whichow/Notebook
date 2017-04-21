@@ -48,3 +48,7 @@ Shader "Custom/MVP" {
     }
 }
 ```
+
+[unity脚本矩阵和shader内置矩阵区别联系 思考和梳理](http://lib.csdn.net/article/47/36766?knId=1280)
+
+[Unityでなるべくシェーディング処理を自作してみる](http://esprog.hatenablog.com/entry/2016/04/14/184423)
