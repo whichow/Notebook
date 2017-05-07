@@ -12,6 +12,10 @@ adb install -r APK_FILE
 ```
 adb uninstall PACKAGE_NAME
 ```
+## 清除应用数据
+```
+adb shell pm clear PACKAGE_NAME
+```
 ## 启动Activity
 ```
 adb shell am strat PACKAGE_NAME/ACTIVITY_IN_PACKAGE
@@ -35,7 +39,7 @@ adb logcat
 ```
 按标签过滤
 ```
-adb logcat -s TAG_NAME1 TAH_NAME2
+adb logcat -s TAG_NAME1 TAG_NAME2
 ```
 按优先级过滤
 ```
