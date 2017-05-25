@@ -16,3 +16,7 @@ Unity Remote可以在你的工程在Editor中运行的时候将其中的内容�
 - 操纵杆输入
 
 > 注意使用Remote app游戏并不是真正运行在移动设备中，只是简单的讲可视的内容输出到设备并将设备输入传回。游戏仍然运行在桌面平台的Unity Editor中
+
+Unity Remote的使用
+
+打开Unity Remote，将设备用USB连到电脑，在Unity的Edit>Project Settings>Editor中选择一个设备，然后点运行就可以了
