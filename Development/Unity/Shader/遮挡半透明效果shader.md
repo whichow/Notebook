@@ -70,3 +70,5 @@ SubShader {
  }
 }
 ```
+
+[Unity3D Shader示例之角色被建筑遮住呈现半透明效果](http://www.hiwrz.com/2016/12/11/unity/330/)
