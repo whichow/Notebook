@@ -61,7 +61,7 @@ public class Demo:MonoBehaviour {
     }
 }
 ```
-然后打开WrapFile.cs文件，在binds数组里添加一行
+然后打开WrapFile.cs或CustomSettings.cs文件，在binds数组里添加一行
 ```csharp
 _GT(typeof(Demo))
 ```
