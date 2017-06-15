@@ -130,3 +130,7 @@ Shader "Cg  shader for billboards" {
    }
 }
 ```
+
+[Cg Programming/Unity/Billboards](https://en.wikibooks.org/wiki/Cg_Programming/Unity/Billboards)
+
+[3DText](http://wiki.unity3d.com/index.php?title=3DText)
