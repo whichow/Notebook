@@ -239,3 +239,5 @@ Shader "Cg  shader for billboards" {
 [GLSL Programming/Unity/Billboards](https://en.wikibooks.org/wiki/GLSL_Programming/Unity/Billboards)
 
 [3DText](http://wiki.unity3d.com/index.php?title=3DText)
+
+[【猫猫的Unity Shader之旅】之双面材质和多Pass渲染](http://blog.csdn.net/dbtxdxy/article/details/46309361)
