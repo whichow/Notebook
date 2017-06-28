@@ -6,4 +6,4 @@ screen -d 21882.pts //detach session
 
 screen -r 21882.pts //reattach session
 
-
+screen -S SESSIONNAME //创建并命名一个screen
