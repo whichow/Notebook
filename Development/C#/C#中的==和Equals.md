@@ -28,6 +28,16 @@ str == str1;    //false
 str.Equals(str1);   //true
 ```
 
+再看一个例子
+```cs
+string x = "hello";
+string y = "he" + "llo";
+
+(Object)x == (Object)y;   //true
+((Object)x).Equals((Object(y)));  //true
+```
+两个字符串指向了相同的地址，这是因为y是一个编译时常量，在编译的时候就已经确定了并且等于"hello"
+
 [== VS Equals in C#](https://www.codeproject.com/Articles/1111680/equalsequals-VS-Equals-in-Csharp)
 
 [Python中的字符串驻留](http://cnn237111.blog.51cto.com/2359144/1615356)
