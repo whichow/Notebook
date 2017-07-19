@@ -44,3 +44,5 @@ x.Equals(y);  //true
 [== VS Equals in C#](https://www.codeproject.com/Articles/1111680/equalsequals-VS-Equals-in-Csharp)
 
 [Python中的字符串驻留](http://cnn237111.blog.51cto.com/2359144/1615356)
+
+[What's the difference between “.equals” and “==”?](https://stackoverflow.com/questions/1643067/whats-the-difference-between-equals-and)
