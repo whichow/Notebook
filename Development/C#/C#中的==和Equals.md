@@ -9,8 +9,8 @@ string interning - 字符串驻留，是为了优化内存而采取的一种机�
 
 在比较String类型时，`==`是基于引用的比较，而`Equals`是基于值的比较，可以看到在string interning的时候，字符串的内容和地址都是相同的
 ```cs
-string s1 = "test";
-string s2 = "test";
+String s1 = "test";
+String s2 = "test";
 
 s1 == s2;   //true
 s1.Equals(s2);  //true
@@ -24,8 +24,9 @@ o1.Equals(o2);  //true
 
 但是有时候破坏了string interning机制，这时候`==`和`Equals`就表现出了不一致
 ```cs
-Object str = new string(new char[] { 't', 'e', 's', 't' });
-Object str1 = new string(new char[] { 't', 'e', 's', 't' });
+//new这种方式是运行的时候在堆中创建对象。即，new创建的String对象是不会放入字符串驻留池中的。
+Object str = new String(new char[] { 't', 'e', 's', 't' });
+Object str1 = new String(new char[] { 't', 'e', 's', 't' });
 //内容相同但是引用地址不同
 str == str1;    //false
 str.Equals(str1);   //true
@@ -46,3 +47,5 @@ x.Equals(y);  //true
 [Python中的字符串驻留](http://cnn237111.blog.51cto.com/2359144/1615356)
 
 [What's the difference between “.equals” and “==”?](https://stackoverflow.com/questions/1643067/whats-the-difference-between-equals-and)
+
+[JAVA 字符串驻留池](http://hilary3113.iteye.com/blog/1490223)
