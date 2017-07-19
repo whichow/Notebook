@@ -14,9 +14,12 @@ string s2 = "test";
 
 s1 == s2;   //true
 s1.Equals(s2);  //true
+
 //内容和引用地址都一样
-(Object)s1 == (Object)s2;   //true
-((Object)s1).Equals((Object(s2)));  //true
+Object o1 = s1;
+Object o2 = s2;
+o1 == o2;   //true
+o1.Equals(o2);  //true
 ```
 
 但是有时候破坏了string interning机制，这时候`==`和`Equals`就表现出了不一致
@@ -30,11 +33,11 @@ str.Equals(str1);   //true
 
 再看一个例子
 ```cs
-string x = "hello";
-string y = "he" + "llo";
+Object x = "hello";
+Object y = "he" + "llo";
 
-(Object)x == (Object)y;   //true
-((Object)x).Equals((Object(y)));  //true
+x == y;   //true
+x.Equals(y);  //true
 ```
 两个字符串指向了相同的地址，这是因为y是一个编译时常量，在编译的时候就已经确定了并且等于"hello"
 
