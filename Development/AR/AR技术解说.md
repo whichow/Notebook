@@ -4,8 +4,8 @@ AR目前主要分为两种类型
 2. 基于图像识别的AR
 
 基于图像识别的AR又可以分为
-- 有标记AR
-- 无标记AR(Markless AR)
+- 有标记AR(Marker Based AR)
+- 无标记AR(Markerless AR)
 
 基于位置的AR一般是通过GPS获取位置信息，在手机的位置靠近某个地方位置的时候，AR的内容就会在手机上面出现。
 
