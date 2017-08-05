@@ -84,3 +84,5 @@ require的处理流程：
 		}
 ```
 其中有一个loaderDelegate，当loaderDelegate为空的时候，会通过Resources或者File.ReadAllBytes来加载lua文件。我们可以通过loaderDelegate来自定义lua文件的加载过程，比如从AssetBundle中加载lua文件了。
+
+[lua中的require机制](http://blog.chinaunix.net/uid-552961-id-2736410.html)
