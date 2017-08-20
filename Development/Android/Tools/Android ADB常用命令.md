@@ -1,10 +1,21 @@
+## 启动adb
+```
+adb start-server
+```
+## 终止adb
+```
+adb kill-server
+```
 ## 查看已连接的设备
 ```
 adb devices
 ```
 会列出连接设备的ID，使用adb -s DEVICE_ID可以指定特定的设备
 ## 安装应用
-使用install命令来安装apk，如果设备上已经安装了应用，可以使用可选参数-r重新进行安装并保留所有数据
+```
+adb install
+```
+如果设备上已经安装了应用，可以使用可选参数-r重新进行安装并保留所有数据
 ```
 adb install -r APK_FILE
 ```
@@ -24,6 +35,24 @@ adb shell am strat PACKAGE_NAME/ACTIVITY_IN_PACKAGE
 ```
 adb shell
 ```
+## 上传文件
+```
+adb push <本地目录/文件> <设备端目录>
+```
+## 下载文件
+```
+adb pull <设备端目录/文件> <本机目录>
+```
+## 连接远程设备
+```
+adb connect <IP>:<端口号>
+```
+端口号可以省略，会自动扫描端口号
+## 断开连接
+```
+adb disconnect <IP>:<端口号>
+```
+端口号可以省略
 ## 截取屏幕
 ```
 adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > screen.png
