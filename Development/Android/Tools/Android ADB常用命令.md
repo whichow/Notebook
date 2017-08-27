@@ -97,3 +97,8 @@ adb logcat | grep "SEARCH_TERM_1\|SEARCH_TERM_2"
 ```
 adb logcat -c
 ```
+
+### 导出日志
+adb logcat ><导出路径>
+
+[Android 调试桥](https://developer.android.com/studio/command-line/adb.html?hl=zh-cn)
