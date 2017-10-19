@@ -1,0 +1,3 @@
+- 降低物理更新速度，可以在Edit->Project Settings->Time中设置Fixed Timestep
+- 尽量使用BoxCollider等简单的碰撞体，不要使用MeshCollider
+- 减少碰撞体数量

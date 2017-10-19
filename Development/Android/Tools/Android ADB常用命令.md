@@ -29,7 +29,11 @@ adb shell pm clear PACKAGE_NAME
 ```
 ## 启动Activity
 ```
-adb shell am strat PACKAGE_NAME/ACTIVITY_IN_PACKAGE
+adb shell am start PACKAGE_NAME/ACTIVITY_IN_PACKAGE
+```
+## 停止Activity
+```
+adb shell am force-stop PACKAGE_NAME
 ```
 ## 进入设备命令行
 ```

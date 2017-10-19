@@ -1,0 +1,14 @@
+- 不使用Invoke或带string参数的StartCoroutine
+- 不在OnGUI中使用GUILayout防止800每帧的GC
+- 不使用GameObject.Tag或GameObject.Name
+- 不在Update中使用GetComponent，要先缓存起来再使用(包括transform)
+- 使用for代替foreach
+- 不在Update或while循环里使用StartCoroutine
+- 不在Update里使用GameObject.Find和FindObjectOfType等各种Find方法
+- 不使用string+string的方式连接字符串，应该使用StringBuilder
+- 不在循环中使用yield return new WaitForSecond()等各种new出来的值
+- 应该使用定时器而不是在Update里判断触发事件
+- 不要每帧更新UI，而是要基于事件更新
+- 删除所有空的Start Update等方法
+- 不使用SendMessage
+- 不要在游戏过程中使用Instantiate和Destroy来创建和销毁对象，而是使用对象池缓存起来

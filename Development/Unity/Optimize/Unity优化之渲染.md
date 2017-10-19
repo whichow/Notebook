@@ -1,0 +1,19 @@
+- 相机
+  - 减少相机数量
+  - 相机设置
+    - Culling Mask
+    - Clipping Planes
+    - Occlusion Culling
+- 光源
+  - 减少光源数量
+  - 使用光照贴图
+  - 使用顶点照明shader
+  - 光源设置
+    - Shadow Type
+    - Realtime Shadows
+    - Render Mode
+    - Culling Mask
+- 阴影
+  - 使用阴影贴图
+- 全局光照
+  - 使用光照探针
