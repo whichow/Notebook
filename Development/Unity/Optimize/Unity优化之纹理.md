@@ -1,0 +1,5 @@
+- 选择平台相关的最优纹理压缩格式，如Android的DXT格式和iOS的PVR格式
+- 尽量减少纹理大小，纹理尺寸要为2的n次幂
+- 纹理可以打包成图集，通过共用Material来减少DrawCall
+- 纹理不要打开read/write，非常耗
+- mipmaps会占用更多的内存，但是可以减少CPU消耗

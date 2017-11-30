@@ -47,6 +47,10 @@ adb push <本地目录/文件> <设备端目录>
 ```
 adb pull <设备端目录/文件> <本机目录>
 ```
+## 开启远程调试端口
+```
+adb tcpip 5555
+```
 ## 连接远程设备
 ```
 adb connect <IP>:<端口号>
@@ -59,7 +63,7 @@ adb disconnect <IP>:<端口号>
 端口号可以省略
 ## 截取屏幕
 ```
-adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > screen.png
+adb shell screencap -p /mnt/sdcard/screen.png
 ```
 ## 解锁屏幕
 ```

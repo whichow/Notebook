@@ -15,7 +15,7 @@
 "C:\Program Files (x86)\Unity5.3.4f1\Editor\Unity.exe" -batchmode -quit -projectPath "D:\Workspace\Projects\Unity\Ocean\ClientCode" -buildTarget Android "D:\ClientCode\build.apk"
 ```
 
-使用代码来构建
+使用脚本构建
 ```csharp
 using UnityEngine;
 using System.Collections;
