@@ -59,9 +59,15 @@
 ### 9. 在UGUI的Text组件中选择生成的Font和Material，输入文字就可以看到用该字体显示的内容了，如果需要调整字体大小，需要在Text组件下加上Bitmap Font Scaling组件，设置FontSize就可以改变大小了
 
 [UGUI中使用位图艺术字（使用BMfont的两种方式）](http://blog.csdn.net/u010019717/article/details/52196364)
+
 [uGUIでビットマップフォントを使ってみよう](https://qiita.com/barasixi/items/2729e52ae3d420fe76ab)
+
 [程序和美术都能学会的Unity美术字体制作教程](http://gad.qq.com/article/detail/26188)
+
 [Unity 使用BMFont制作字体](http://www.cnblogs.com/vitah/p/3912190.html)
+
 [unity 3d中使用BMFont制作清晰字体](http://www.cnblogs.com/hejianchun/articles/3022732.html)
+
 [Unity 自定义美术字](http://www.jianshu.com/p/ca877f1e14bc)
+
 [UGUI运用美术字体](http://blog.csdn.net/akak2010110/article/details/50755270)
