@@ -13,9 +13,9 @@ sdkmanager --list [options]
 ```
 sdkmanager packages [options]
 ```
-例如，要安装版本号为26的Platforms
+例如，要安装最新的platform tools以及版本号为26的Platforms
 ```
-sdkmanager "platforms;android-26"
+sdkmanager "platform-tools" "platforms;android-26"
 ```
 还可以指定一个包含下载列表的文件
 ```
