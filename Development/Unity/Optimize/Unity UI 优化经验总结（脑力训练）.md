@@ -5,7 +5,7 @@
 |          | 尽量使用重复UI贴图，减少重复资源                        | 减少包体大小，减少内存消耗                |
 |          | 不透明的UI贴图采用ETC1的压缩格式                        | 减少包体大小，减少内存消耗                |
 |          | 透明的UI贴图采用ETC1+Alpha分离的方式                    | 减少包体大小，减少内存消耗                |
-|          | 去掉Image的interactable                                 | 减少Raycaster运算消耗                     |
+|          | 去掉Image的RaycastTarget                               | 减少Raycaster运算消耗                     |
 |          | RawImage组件替换成Image                                 | 减少DrawCall                              |
 |          | 关掉Label图，只有在标定时才启用                         | 减少CPU消耗                               |
 |          | 关掉彩色图，只有在拍照时才启用                          | 减少CPU消耗                               |

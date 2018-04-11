@@ -121,4 +121,5 @@ tex1D*                    1D纹理查询。
 tex2D*                    2D纹理查询。
 
 tex3D*                    3D纹理查询。
+
 texCUBE*                立方纹理查询。
