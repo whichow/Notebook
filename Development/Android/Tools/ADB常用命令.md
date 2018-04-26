@@ -53,7 +53,7 @@ adb push <本地目录> <设备端目录/>
 ```
 ## 下载目录
 ```
-adb push <<设备端目录/> <本机目录>
+adb pull <设备端目录/> <本机目录>
 ```
 ## 开启远程调试端口
 ```
@@ -113,8 +113,27 @@ adb logcat | grep "SEARCH_TERM_1\|SEARCH_TERM_2"
 ```
 adb logcat -c
 ```
-
-### 导出日志
-adb logcat ><导出路径>
-
+导出日志
+```
+adb logcat > <导出路径>
+```
+## 输入
+按键模拟 
+```
+adb shell input keyevent <KeyCode>
+```
+滑动模拟
+```
+adb shell input swipe x1 y1 x2 y2
+```
+模拟点击
+```
+adb shell input tap x y
+```
+输入字符
+```
+adb shell input text <Text>
+```
 [Android 调试桥](https://developer.android.com/studio/command-line/adb.html?hl=zh-cn)
+
+[adb命令模拟按键事件 KeyCode](https://blog.csdn.net/jlminghui/article/details/39268419)
