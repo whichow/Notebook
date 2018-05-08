@@ -137,3 +137,5 @@ Run with --stacktrace option to get the stack trace. Run with --info or --debug 
 Rejecting re-init on previously-faile d class java.lang.Class<com.helpshift.support.adapters.QuestionListAdapter>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/support/v7/widget/RecyclerView$Adapter;
 ```
 解决方案: 删除libs下的android-support-v4.jar保留android-support-v7-appcompat.jar
+
+[Unity打Android包报错总结](https://blog.csdn.net/qq_28775437/article/details/78605691)
