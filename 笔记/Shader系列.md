@@ -1,0 +1,48 @@
+# The Book of Shaders
+
+- [About this book](https://thebookofshaders.com/00/)
+- Getting started
+  - [What is a shader?](https://thebookofshaders.com/01/)
+  - [“Hello world!”](https://thebookofshaders.com/02/)
+  - [Uniforms](https://thebookofshaders.com/03/)
+  - [Running your shader](https://thebookofshaders.com/04/)
+- Algorithmic drawing
+  - [Shaping functions](https://thebookofshaders.com/05/)
+  - [Colors](https://thebookofshaders.com/06/)
+  - [Shapes](https://thebookofshaders.com/07/)
+  - [Matrices](https://thebookofshaders.com/08/)
+  - [Patterns](https://thebookofshaders.com/09/)
+- Generative designs
+  - [Random](https://thebookofshaders.com/10/)
+  - [Noise](https://thebookofshaders.com/11/)
+  - [Cellular noise](https://thebookofshaders.com/12/)
+  - [Fractional brownian motion](https://thebookofshaders.com/13/)
+  - Fractals
+- Image processing
+  - Textures
+  - Image operations
+  - Kernel convolutions
+  - Filters
+  - Others effects
+- Simulation
+  - Pingpong
+  - Conway
+  - Ripples
+  - Water color
+  - Reaction diffusion
+- 3D graphics
+  - Lights
+  - Normal-maps
+  - Bump-maps
+  - Ray marching
+  - Environmental-maps (spherical and cube)
+  - Reflect and refract
+- [Appendix:](https://thebookofshaders.com/appendix/) Other ways to use this book
+  - [How can I navigate this book offline?](https://thebookofshaders.com/appendix/00/)
+  - [How to run the examples on a Raspberry Pi?](https://thebookofshaders.com/appendix/01/)
+  - [How to print this book?](https://thebookofshaders.com/appendix/02/)
+  - [How can I collaborate?](https://thebookofshaders.com/appendix/03/)
+  - [An introduction for those coming from JS](https://thebookofshaders.com/appendix/04/) by [Nicolas Barradeau](http://www.barradeau.com/)
+- [Examples Gallery](https://thebookofshaders.com/examples/)
+- [Glossary](https://thebookofshaders.com/glossary/)
+
