@@ -1,0 +1,1 @@
+使用adb连上后执行`adb shell uiautomator events `，在输出里找到`EventType: TYPE_ANNOUNCEMENT `或者`EventType: TYPE_NOTIFICATION_STATE_CHANGED`，就能找到弹Toast的包名了

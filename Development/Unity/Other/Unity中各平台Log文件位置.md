@@ -6,6 +6,6 @@
 - Windows Editor: C:\Users\username\AppData\Local\Unity\Editor\Editor.log
 - MAC Editor: ~/Library/Logs/Unity/Editor.log
 
-在Unity Editor的Console中点击小三角->Open Editor Log可以代开Editor的Log文件
+在Unity Editor的Console中点击小三角->Open Editor Log可以打开Editor的Log文件
 
 [Log Files](https://docs.unity3d.com/Manual/LogFiles.html)
