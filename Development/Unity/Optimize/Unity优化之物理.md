@@ -1,3 +1,4 @@
 - 降低物理更新速度，可以在Edit->Project Settings->Time中设置Fixed Timestep
 - 尽量使用BoxCollider等简单的碰撞体，不要使用MeshCollider
 - 减少碰撞体数量
+- 减少每一帧物理模拟的调用次数，通过设置Time中的Maximum Allowed Timestep来忽略来不及处理的物理模拟

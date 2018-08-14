@@ -1,0 +1,3 @@
+在Project Settings中将Default Orientation从Auto Rotation改成Portrait或其他固定方向
+
+![1531384221467](Unity在Android某些机型上分辨率会突变.assets/1531384221467.png)

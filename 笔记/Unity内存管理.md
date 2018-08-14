@@ -1,0 +1,1 @@
+一般来说Unity脚本中的对象是由Mono进行托管的，如果new了一个对象，不再使用了是会被垃圾回收器销毁的。但是像Texture、Mesh、Material、AnimationClip、AudioClip都是由Unity进行管理的，new出来了即使不使用也是不会销毁的，只有切换了场景，Unity才会进行销毁。要手动销毁的话需要使用Destroy来进行销毁

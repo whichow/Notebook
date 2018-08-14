@@ -85,6 +85,8 @@ adb logcat
 按标签过滤
 ```
 adb logcat -s TAG_NAME1 TAG_NAME2
+#  example
+adb logcat -s Unity
 ```
 按优先级过滤
 ```
@@ -121,6 +123,8 @@ adb logcat > <导出路径>
 按键模拟 
 ```
 adb shell input keyevent <KeyCode>
+#  example
+adb shell input keyevent KEYCODE_SPACE
 ```
 滑动模拟
 ```
