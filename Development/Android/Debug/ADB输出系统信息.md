@@ -7,8 +7,12 @@ adb shell dumpsys -l
 输出内存信息
 ```
 adb shell dumpsys meminfo
+//查看某个应用的内存使用情况
+adb shell dumpsys meminfo $package_name or $pid
 ```
 输出CPU信息
 ```
 adb shell dumpsys cpuinfo
+//查看某个应用的CPU使用情况
+adb shell dumpsys cpuinfo $package_name or $pid
 ```
