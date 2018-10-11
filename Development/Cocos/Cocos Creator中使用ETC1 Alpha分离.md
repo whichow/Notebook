@@ -1,10 +1,10 @@
 使用Mali Texture Compression Tool生成带Alpha通道的ETC1格式的图片，设置如下
 
-![1539168343400](Cocos Creator中使用ETC Alpha分离.assets/1539168343400.png)
+![1539168343400](Cocos_Creator中使用ETC1_Alpha分离.assets/1539168343400.png)
 
 处理后生成一个.pkm的图片，效果如下
 
-![1539168597554](Cocos Creator中使用ETC Alpha分离.assets/1539168597554.png)
+![1539168597554](Cocos_Creator中使用ETC1_Alpha分离.assets/1539168597554.png)
 
 使用自定义的Alpha分离Shader  
 
