@@ -8,7 +8,7 @@ Cocos官方推荐使用VSCode来编辑脚本，可以享受语法高亮、只能
 
 首先安装VSCode，完成后从File->Settings打开Editor Windows，在Data Editor中设置好
 
-![1539332596406](C:\Users\ADMINI~1\AppData\Local\Temp\1539332596406.png)
+![1539332596406](Cocos Creator使用经验总结.assets/1539332596406.png)
 
 ### 配置Android环境
 
@@ -18,7 +18,7 @@ Android SDK的API Level推荐19，NDK推荐r10e
 
 按照下图所示配置好相应路径
 
-![1539333399004](C:\Users\ADMINI~1\AppData\Local\Temp\1539333399004.png)
+![1539333399004](Cocos Creator使用经验总结.assets/1539333399004.png)
 
 ### 配置Windows编译环境
 
