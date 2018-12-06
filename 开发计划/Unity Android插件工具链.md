@@ -1,0 +1,1 @@
+Unity打包命令->Android插件工程的gradlew->编译Android插件->拷贝到Unity的Plugins/Android目录->打apk包
