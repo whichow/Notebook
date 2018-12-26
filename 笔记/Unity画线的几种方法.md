@@ -6,7 +6,7 @@
     - 在OnDrawGizmos/OnDrawGizmosSelected中调用
     - 只在Scene窗口中显示
     - 不能设置材质
-- Graphic.DrawMesh
+- Graphic.DrawMesh(需要先创建Mesh)
     - 一般在Update/Fixed Update/LateUpdate中调用
     - 在Game和Scene窗口都显示
     - 可以设置材质

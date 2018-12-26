@@ -1,4 +1,4 @@
-有下面几种方式可以解决：
+在使用Gradle构建Android工程的时候，经常会遇到下载非常慢甚至超时问题，有下面几种方式可以解决：
 
 1. 设置代理
 
@@ -11,7 +11,7 @@
    systemProp.https.proxyPort=1080
    ```
 
-2. 手动下载
+2. 手动下载到指定文件夹
 
    在工程的`gradle/wrapper/gradle-wrapper.properties`文件中找到这一行
 
@@ -23,8 +23,21 @@
 
 3. 配置本地Gradle
 
-   将`gradle/wrapper/gradle-wrapper.properties`文件的`distributionUrl`修改为本地路径
+   先将gradle下载到本地，如`E:\\gradle\`，然后将`gradle/wrapper/gradle-wrapper.properties`文件的`distributionUrl`修改为本地路径
 
    ```
    distributionUrl=file:///E:/gradle/gradle-2.4-all.zip
    ```
+
+4. 换国内镜像
+   
+   修改`build.gradle`
+   ```
+   allprojects {
+        repositories {
+            maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        }
+    }
+   ```
+
+   [Gradle 修改 Maven 仓库地址](http://www.yrom.net/blog/2015/02/07/change-gradle-maven-repo-url/)
